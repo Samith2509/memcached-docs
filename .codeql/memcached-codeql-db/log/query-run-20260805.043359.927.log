@@ -1,0 +1,9 @@
+[2026-08-05 04:33:59] This is codeql query run --database=/home/samith_g/memcached-docs/.codeql/memcached-codeql-db count.ql
+[2026-08-05 04:33:59] Log file was started late.
+[2026-08-05 04:33:59] Calling plumbing command: codeql resolve ram --dataset=/home/samith_g/memcached-docs/.codeql/memcached-codeql-db/db-cpp --format=json
+[2026-08-05 04:33:59] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1347M"
+                      ]
+[2026-08-05 04:34:00] Chaining via /tmp/codeql.aQiTZ22s to plumbing: execute queries -J-Xmx1347M --verbosity=progress --logdir=/home/samith_g/memcached-docs/.codeql/memcached-codeql-db/log --evaluator-log-level=5 --warnings=show --qlconfig-file=/tmp/claude-1000/-home-samith-g-memcached-docs/03bf3aa9-1509-4ad3-8657-28465de61bf7/scratchpad/cqltest/qlconfig.yml --dynamic-join-order-mode=none -- /home/samith_g/memcached-docs/.codeql/memcached-codeql-db/db-cpp path:/tmp/claude-1000/-home-samith-g-memcached-docs/03bf3aa9-1509-4ad3-8657-28465de61bf7/scratchpad/cqltest/count.ql
+[2026-08-05 04:34:00] Exiting with code 70

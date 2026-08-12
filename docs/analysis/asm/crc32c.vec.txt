@@ -1,0 +1,175 @@
+crc32c.c:125:28: missed: couldn't vectorize loop
+crc32c.c:125:28: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+crc32c.c:64:12: missed: couldn't vectorize loop
+crc32c.c:64:12: missed: may need non-SLP handling
+crc32c.c:64:12: missed: couldn't vectorize loop
+crc32c.c:64:12: missed: may need non-SLP handling
+crc32c.c:64:12: missed: couldn't vectorize loop
+crc32c.c:64:12: missed: may need non-SLP handling
+crc32c.c:64:12: missed: couldn't vectorize loop
+crc32c.c:64:12: missed: may need non-SLP handling
+crc32c.c:112:14: missed: couldn't vectorize loop
+crc32c.c:112:14: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+crc32c.c:76:28: missed: couldn't vectorize loop
+crc32c.c:76:28: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+crc32c.c:64:12: missed: couldn't vectorize loop
+crc32c.c:64:12: missed: may need non-SLP handling
+crc32c.c:76:28: missed: couldn't vectorize loop
+crc32c.c:76:28: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+crc32c.c:64:12: missed: couldn't vectorize loop
+crc32c.c:64:12: missed: may need non-SLP handling
+crc32c.c:76:28: missed: couldn't vectorize loop
+crc32c.c:76:28: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+crc32c.c:64:12: missed: couldn't vectorize loop
+crc32c.c:64:12: missed: may need non-SLP handling
+crc32c.c:76:28: missed: couldn't vectorize loop
+crc32c.c:76:28: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+crc32c.c:64:12: missed: couldn't vectorize loop
+crc32c.c:64:12: missed: may need non-SLP handling
+crc32c.c:91:28: optimized: loop vectorized using 32 byte vectors
+crc32c.c:91:28: optimized: loop vectorized using 16 byte vectors
+crc32c.c:121:13: note: vectorized 1 loops in function.
+crc32c.c:116:17: missed: not vectorized: more than one data ref in stmt: MEM <unsigned char[128]> [(char * {ref-all})&op] = MEM <unsigned char[128]> [(char * {ref-all})&odd];
+crc32c.c:92:16: note: ***** Analysis succeeded with vector mode V8SI
+crc32c.c:92:16: note: SLPing BB part
+crc32c.c:92:16: note: Costing subgraph: 
+crc32c.c:92:16: note: node 0x1fa68dd0 (max_nunits=2, refcnt=1) vector(2) unsigned int
+crc32c.c:92:16: note: op template: odd[29] = 268435456;
+crc32c.c:92:16: note: 	stmt 0 odd[29] = 268435456;
+crc32c.c:92:16: note: 	stmt 1 odd[30] = 536870912;
+crc32c.c:92:16: note: 	children 0x1fa68e58
+crc32c.c:92:16: note: node (constant) 0x1fa68e58 (max_nunits=1, refcnt=1) vector(2) unsigned int
+crc32c.c:92:16: note: 	{ 268435456, 536870912 }
+crc32c.c:92:16: note: Cost model analysis: 
+crc32c.c:92:16: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+crc32c.c:92:16: note: Basic block will be vectorized using SLP
+crc32c.c:92:16: optimized: basic block part vectorized using 8 byte vectors
+crc32c.c:92:16: note: Vectorizing SLP tree:
+crc32c.c:92:16: note: node 0x1fa68dd0 (max_nunits=2, refcnt=1) vector(2) unsigned int
+crc32c.c:92:16: note: op template: odd[29] = 268435456;
+crc32c.c:92:16: note: 	stmt 0 odd[29] = 268435456;
+crc32c.c:92:16: note: 	stmt 1 odd[30] = 536870912;
+crc32c.c:92:16: note: 	children 0x1fa68e58
+crc32c.c:92:16: note: node (constant) 0x1fa68e58 (max_nunits=1, refcnt=1) vector(2) unsigned int
+crc32c.c:92:16: note: 	{ 268435456, 536870912 }
+crc32c.c:92:16: note: ------>vectorizing SLP node starting from: odd[29] = 268435456;
+crc32c.c:92:16: note: vect_is_simple_use: operand 536870912, type of def: constant
+crc32c.c:92:16: note: transform store. ncopies = 1
+crc32c.c:92:16: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: odd[29]
+crc32c.c:92:16: note: created &odd[29]
+crc32c.c:92:16: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)&odd + 116B] = { 268435456, 536870912 };
+crc32c.c:92:16: note: vectorizing stmts using SLP.
+crc32c.c:92:16: note: ***** The result for vector mode V32QI would be the same
+crc32c.c:156:5: missed: statement clobbers memory: crc32c_zeros (&crc32c_long, 8192);
+crc32c.c:157:5: missed: statement clobbers memory: crc32c_zeros (&crc32c_short, 256);
+crc32c.c:158:1: note: ***** Analysis failed with vector mode VOID
+crc32c.c:382:28: missed: couldn't vectorize loop
+crc32c.c:385:41: missed: possible alias involving gather/scatter between crc32c_table_little[0][_54] and crc32c_table_little[1][n_89]
+crc32c.c:370:28: optimized: loop vectorized using 32 byte vectors
+crc32c.c:369:13: note: vectorized 1 loops in function.
+crc32c.c:385:17: note: ***** Analysis failed with vector mode V8SI
+crc32c.c:385:17: note: ***** The result for vector mode V32QI would be the same
+crc32c.c:385:17: note: ***** Re-trying analysis with vector mode V16QI
+crc32c.c:385:17: note: ***** Analysis failed with vector mode V16QI
+crc32c.c:385:17: note: ***** Re-trying analysis with vector mode V8QI
+crc32c.c:385:17: note: ***** Analysis failed with vector mode V8QI
+crc32c.c:385:17: note: ***** Re-trying analysis with vector mode V4QI
+crc32c.c:385:17: note: ***** Analysis failed with vector mode V4QI
+crc32c.c:236:12: missed: couldn't vectorize loop
+crc32c.c:237:9: missed: statement clobbers memory: __asm__("crc32b	(%1), %0" : "=r" crc0_48 : "r" next_162, "m" *next_162, "0" crc0_153);
+crc32c.c:226:21: missed: couldn't vectorize loop
+crc32c.c:227:13: missed: statement clobbers memory: __asm__("crc32q	(%1), %0" : "=r" crc0_51 : "r" next_160, "m" *next_160, "0" crc0_151);
+crc32c.c:204:16: missed: couldn't vectorize loop
+crc32c.c:209:13: missed: statement clobbers memory: __asm__("crc32q	(%3), %0
+	crc32q	256(%3), %1
+	crc32q	512(%3), %2" : "=r" crc0_54, "=r" crc1_55, "=r" crc2_56 : "r" next_27, "m" *next_27, "0" crc0_20, "1" crc1_33, "2" crc2_34);
+crc32c.c:215:23: missed: couldn't vectorize loop
+crc32c.c:209:13: missed: statement clobbers memory: __asm__("crc32q	(%3), %0
+	crc32q	256(%3), %1
+	crc32q	512(%3), %2" : "=r" crc0_54, "=r" crc1_55, "=r" crc2_56 : "r" next_27, "m" *next_27, "0" crc0_20, "1" crc1_33, "2" crc2_34);
+crc32c.c:184:16: missed: couldn't vectorize loop
+crc32c.c:189:13: missed: statement clobbers memory: __asm__("crc32q	(%3), %0
+	crc32q	8192(%3), %1
+	crc32q	16384(%3), %2" : "=r" crc0_65, "=r" crc1_66, "=r" crc2_67 : "r" next_25, "m" *next_25, "0" crc0_18, "1" crc1_31, "2" crc2_32);
+crc32c.c:195:23: missed: couldn't vectorize loop
+crc32c.c:189:13: missed: statement clobbers memory: __asm__("crc32q	(%3), %0
+	crc32q	8192(%3), %1
+	crc32q	16384(%3), %2" : "=r" crc0_65, "=r" crc1_66, "=r" crc2_67 : "r" next_25, "m" *next_25, "0" crc0_18, "1" crc1_31, "2" crc2_32);
+crc32c.c:172:16: missed: couldn't vectorize loop
+crc32c.c:173:9: missed: statement clobbers memory: __asm__("crc32b	(%1), %0" : "=r" crc0_42 : "r" next_155, "m" *next_155, "0" crc0_146);
+crc32c.c:161:17: note: vectorized 0 loops in function.
+crc32c.c:163:5: missed: statement clobbers memory: pthread_once (&crc32c_once_hw, crc32c_init_hw);
+crc32c.c:173:9: missed: statement clobbers memory: __asm__("crc32b	(%1), %0" : "=r" crc0_42 : "r" next_155, "m" *next_155, "0" crc0_146);
+crc32c.c:189:13: missed: statement clobbers memory: __asm__("crc32q	(%3), %0
+	crc32q	8192(%3), %1
+	crc32q	16384(%3), %2" : "=r" crc0_65, "=r" crc1_66, "=r" crc2_67 : "r" next_25, "m" *next_25, "0" crc0_18, "1" crc1_31, "2" crc2_32);
+crc32c.c:209:13: missed: statement clobbers memory: __asm__("crc32q	(%3), %0
+	crc32q	256(%3), %1
+	crc32q	512(%3), %2" : "=r" crc0_54, "=r" crc1_55, "=r" crc2_56 : "r" next_27, "m" *next_27, "0" crc0_20, "1" crc1_33, "2" crc2_34);
+crc32c.c:227:13: missed: statement clobbers memory: __asm__("crc32q	(%1), %0" : "=r" crc0_51 : "r" next_160, "m" *next_160, "0" crc0_151);
+crc32c.c:237:9: missed: statement clobbers memory: __asm__("crc32b	(%1), %0" : "=r" crc0_173 : "r" next_161, "m" *next_161, "0" crc0_152);
+crc32c.c:237:9: missed: statement clobbers memory: __asm__("crc32b	(%1), %0" : "=r" crc0_179 : "r" next_174, "m" *next_174, "0" crc0_173);
+crc32c.c:237:9: missed: statement clobbers memory: __asm__("crc32b	(%1), %0" : "=r" crc0_185 : "r" next_180, "m" *next_180, "0" crc0_179);
+crc32c.c:237:9: missed: statement clobbers memory: __asm__("crc32b	(%1), %0" : "=r" crc0_191 : "r" next_186, "m" *next_186, "0" crc0_185);
+crc32c.c:237:9: missed: statement clobbers memory: __asm__("crc32b	(%1), %0" : "=r" crc0_197 : "r" next_192, "m" *next_192, "0" crc0_191);
+crc32c.c:237:9: missed: statement clobbers memory: __asm__("crc32b	(%1), %0" : "=r" crc0_203 : "r" next_198, "m" *next_198, "0" crc0_197);
+crc32c.c:237:9: missed: statement clobbers memory: __asm__("crc32b	(%1), %0" : "=r" crc0_48 : "r" next_204, "m" *next_204, "0" crc0_203);
+crc32c.c:217:14: note: ***** Analysis failed with vector mode V8SI
+crc32c.c:217:14: note: ***** The result for vector mode V32QI would be the same
+crc32c.c:217:14: note: ***** Re-trying analysis with vector mode V16QI
+crc32c.c:217:14: note: ***** Analysis failed with vector mode V16QI
+crc32c.c:217:14: note: ***** Re-trying analysis with vector mode V8QI
+crc32c.c:217:14: note: ***** Analysis failed with vector mode V8QI
+crc32c.c:217:14: note: ***** Re-trying analysis with vector mode V4QI
+crc32c.c:217:14: note: ***** Analysis failed with vector mode V4QI
+crc32c.c:455:28: missed: couldn't vectorize loop
+crc32c.c:457:32: missed: not vectorized: no vectype for stmt: crc32c_table_big[0][n_102] = _26;
+ scalar_type: uint64_t
+crc32c.c:443:28: optimized: loop vectorized using 32 byte vectors
+crc32c.c:442:13: note: vectorized 1 loops in function.
+crc32c.c:459:17: note: ***** Analysis failed with vector mode V8SI
+crc32c.c:459:17: note: ***** The result for vector mode V32QI would be the same
+crc32c.c:459:17: note: ***** Re-trying analysis with vector mode V16QI
+crc32c.c:459:17: note: ***** Analysis failed with vector mode V16QI
+crc32c.c:459:17: note: ***** Re-trying analysis with vector mode V8QI
+crc32c.c:459:17: note: ***** Analysis failed with vector mode V8QI
+crc32c.c:459:17: note: ***** Re-trying analysis with vector mode V4QI
+crc32c.c:459:17: note: ***** Analysis failed with vector mode V4QI
+crc32c.c:275:1: note: ***** Analysis failed with vector mode V4DI
+crc32c.c:275:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+crc32c.c:419:12: missed: couldn't vectorize loop
+crc32c.c:420:69: missed: not vectorized: unsupported use in stmt.
+crc32c.c:416:22: missed: couldn't vectorize loop
+crc32c.c:405:18: missed: not vectorized: unsupported use in stmt.
+crc32c.c:398:16: missed: couldn't vectorize loop
+crc32c.c:399:69: missed: not vectorized: unsupported use in stmt.
+crc32c.c:393:10: note: vectorized 0 loops in function.
+crc32c.c:396:5: missed: statement clobbers memory: pthread_once (&crc32c_once_little, crc32c_init_sw_little);
+crc32c.c:420:13: note: ***** Analysis failed with vector mode V32QI
+crc32c.c:420:13: note: ***** The result for vector mode V32QI would be the same
+crc32c.c:420:13: note: ***** Re-trying analysis with vector mode V16QI
+crc32c.c:420:13: note: ***** Analysis failed with vector mode V16QI
+crc32c.c:420:13: note: ***** Re-trying analysis with vector mode V8QI
+crc32c.c:420:13: note: ***** Analysis failed with vector mode V8QI
+crc32c.c:420:13: note: ***** Re-trying analysis with vector mode V4QI
+crc32c.c:420:13: note: ***** Analysis failed with vector mode V4QI
+crc32c.c:510:16: missed: statement clobbers memory: _6 = crc32c_sw_little (crc_2(D), buf_3(D), len_4(D));
+crc32c.c:510:16: note: ***** Analysis failed with vector mode VOID
+crc32c.c:493:12: missed: couldn't vectorize loop
+crc32c.c:494:68: missed: not vectorized: unsupported use in stmt.
+crc32c.c:490:22: missed: couldn't vectorize loop
+crc32c.c:479:18: missed: not vectorized: unsupported use in stmt.
+crc32c.c:472:16: missed: couldn't vectorize loop
+crc32c.c:473:68: missed: not vectorized: unsupported use in stmt.
+crc32c.c:467:10: note: vectorized 0 loops in function.
+crc32c.c:470:5: missed: statement clobbers memory: pthread_once (&crc32c_once_big, crc32c_init_sw_big);
+crc32c.c:494:13: note: ***** Analysis failed with vector mode V32QI
+crc32c.c:494:13: note: ***** The result for vector mode V32QI would be the same
+crc32c.c:494:13: note: ***** Re-trying analysis with vector mode V16QI
+crc32c.c:494:13: note: ***** Analysis failed with vector mode V16QI
+crc32c.c:494:13: note: ***** Re-trying analysis with vector mode V8QI
+crc32c.c:494:13: note: ***** Analysis failed with vector mode V8QI
+crc32c.c:494:13: note: ***** Re-trying analysis with vector mode V4QI
+crc32c.c:494:13: note: ***** Analysis failed with vector mode V4QI

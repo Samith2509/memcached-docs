@@ -1,0 +1,262 @@
+util.c:18:19: missed: couldn't vectorize loop
+util.c:18:19: missed: not vectorized: unsupported control flow in loop.
+util.c:15:6: note: vectorized 0 loops in function.
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: __builtin___snprintf_chk (str_17, 4, 2, _25, "%%%02hhX", x_20);
+util.c:19:60: note: ***** Analysis failed with vector mode V4DI
+util.c:19:60: note: ***** The result for vector mode V32QI would be the same
+util.c:19:60: note: ***** Re-trying analysis with vector mode V16QI
+util.c:19:60: note: ***** Analysis failed with vector mode V16QI
+util.c:19:60: note: ***** Re-trying analysis with vector mode V8QI
+util.c:19:60: note: ***** Analysis failed with vector mode V8QI
+util.c:19:60: note: ***** Re-trying analysis with vector mode V4QI
+util.c:19:60: note: ***** Analysis failed with vector mode V4QI
+util.c:32:19: missed: couldn't vectorize loop
+util.c:32:19: missed: not vectorized: unsupported control flow in loop.
+util.c:29:6: note: vectorized 0 loops in function.
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_43, _6, 3);
+util.c:43:12: note: ***** Analysis failed with vector mode V32QI
+util.c:43:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+util.c:52:19: missed: couldn't vectorize loop
+util.c:52:19: missed: not vectorized: unsupported control flow in loop.
+util.c:49:7: note: vectorized 0 loops in function.
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_45, _5, 3);
+util.c:61:15: note: ***** Analysis failed with vector mode V32QI
+util.c:61:15: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+util.c:68:5: missed: statement clobbers memory: __assert_fail ("out != NULL", "util.c", 68, &__PRETTY_FUNCTION__);
+util.c:72:30: missed: statement clobbers memory: ull_25 = strtoull (str_23(D), &endptr, 10);
+util.c:82:17: missed: statement clobbers memory: _15 = memchr (str_23(D), 45, _14);
+util.c:67:6: note: ***** Analysis failed with vector mode V8SI
+util.c:67:6: note: ***** The result for vector mode V32QI would be the same
+util.c:67:6: note: ***** Re-trying analysis with vector mode V16QI
+util.c:67:6: note: ***** Analysis failed with vector mode V16QI
+util.c:67:6: note: ***** Re-trying analysis with vector mode V8QI
+util.c:67:6: note: ***** Analysis failed with vector mode V8QI
+util.c:67:6: note: ***** Re-trying analysis with vector mode V4QI
+util.c:67:6: note: ***** Analysis failed with vector mode V4QI
+util.c:98:5: missed: statement clobbers memory: __assert_fail ("out != NULL", "util.c", 98, &__PRETTY_FUNCTION__);
+util.c:102:30: missed: statement clobbers memory: ull_25 = strtoull (str_23(D), &endptr, 16);
+util.c:112:17: missed: statement clobbers memory: _15 = memchr (str_23(D), 45, _14);
+util.c:97:6: note: ***** Analysis failed with vector mode V8SI
+util.c:97:6: note: ***** The result for vector mode V32QI would be the same
+util.c:97:6: note: ***** Re-trying analysis with vector mode V16QI
+util.c:97:6: note: ***** Analysis failed with vector mode V16QI
+util.c:97:6: note: ***** Re-trying analysis with vector mode V8QI
+util.c:97:6: note: ***** Analysis failed with vector mode V8QI
+util.c:97:6: note: ***** Re-trying analysis with vector mode V4QI
+util.c:97:6: note: ***** Analysis failed with vector mode V4QI
+util.c:123:5: missed: statement clobbers memory: __assert_fail ("out != NULL", "util.c", 123, &__PRETTY_FUNCTION__);
+util.c:127:20: missed: statement clobbers memory: ll_21 = strtoll (str_19(D), &endptr, 10);
+util.c:122:6: note: ***** Analysis failed with vector mode V8SI
+util.c:122:6: note: ***** The result for vector mode V32QI would be the same
+util.c:122:6: note: ***** Re-trying analysis with vector mode V16QI
+util.c:122:6: note: ***** Analysis failed with vector mode V16QI
+util.c:122:6: note: ***** Re-trying analysis with vector mode V8QI
+util.c:122:6: note: ***** Analysis failed with vector mode V8QI
+util.c:122:6: note: ***** Re-trying analysis with vector mode V4QI
+util.c:122:6: note: ***** Analysis failed with vector mode V4QI
+util.c:142:5: missed: statement clobbers memory: __assert_fail ("out", "util.c", 142, &__PRETTY_FUNCTION__);
+util.c:143:5: missed: statement clobbers memory: __assert_fail ("str", "util.c", 143, &__PRETTY_FUNCTION__);
+util.c:147:9: missed: statement clobbers memory: l_28 = strtoul (str_23(D), &endptr, 10);
+util.c:157:17: missed: statement clobbers memory: _15 = memchr (str_23(D), 45, _14);
+util.c:139:6: note: ***** Analysis failed with vector mode V4DI
+util.c:139:6: note: ***** The result for vector mode V32QI would be the same
+util.c:139:6: note: ***** Re-trying analysis with vector mode V16QI
+util.c:139:6: note: ***** Analysis failed with vector mode V16QI
+util.c:139:6: note: ***** Re-trying analysis with vector mode V8QI
+util.c:139:6: note: ***** Analysis failed with vector mode V8QI
+util.c:139:6: note: ***** Re-trying analysis with vector mode V4QI
+util.c:139:6: note: ***** Analysis failed with vector mode V4QI
+util.c:169:5: missed: statement clobbers memory: __assert_fail ("out != NULL", "util.c", 169, &__PRETTY_FUNCTION__);
+util.c:173:14: missed: statement clobbers memory: l_22 = strtol (str_20(D), &endptr, 10);
+util.c:168:6: note: ***** Analysis failed with vector mode V8SI
+util.c:168:6: note: ***** The result for vector mode V32QI would be the same
+util.c:168:6: note: ***** Re-trying analysis with vector mode V16QI
+util.c:168:6: note: ***** Analysis failed with vector mode V16QI
+util.c:168:6: note: ***** Re-trying analysis with vector mode V8QI
+util.c:168:6: note: ***** Analysis failed with vector mode V8QI
+util.c:168:6: note: ***** Re-trying analysis with vector mode V4QI
+util.c:168:6: note: ***** Analysis failed with vector mode V4QI
+util.c:186:5: missed: statement clobbers memory: __assert_fail ("out != NULL", "util.c", 186, &__PRETTY_FUNCTION__);
+util.c:190:16: missed: statement clobbers memory: d_21 = strtod (str_19(D), &endptr);
+util.c:185:6: note: ***** Analysis failed with vector mode V8SI
+util.c:185:6: note: ***** The result for vector mode V32QI would be the same
+util.c:185:6: note: ***** Re-trying analysis with vector mode V16QI
+util.c:185:6: note: ***** Analysis failed with vector mode V16QI
+util.c:185:6: note: ***** Re-trying analysis with vector mode V8QI
+util.c:185:6: note: ***** Analysis failed with vector mode V8QI
+util.c:185:6: note: ***** Re-trying analysis with vector mode V4QI
+util.c:185:6: note: ***** Analysis failed with vector mode V4QI
+util.c:211:31: optimized: loop vectorized using 32 byte vectors
+util.c:211:31: optimized:  loop versioned for vectorization because of possible aliasing
+util.c:208:6: note: vectorized 1 loops in function.
+util.c:208:6: note: ***** Analysis failed with vector mode V32QI
+util.c:208:6: note: ***** The result for vector mode V32QI would be the same
+util.c:208:6: note: ***** Re-trying analysis with vector mode V16QI
+util.c:208:6: note: ***** Analysis failed with vector mode V16QI
+util.c:208:6: note: ***** Re-trying analysis with vector mode V8QI
+util.c:208:6: note: ***** Analysis failed with vector mode V8QI
+util.c:208:6: note: ***** Re-trying analysis with vector mode V4QI
+util.c:208:6: note: ***** Analysis failed with vector mode V4QI
+util.c:230:19: missed: couldn't vectorize loop
+util.c:231:20: missed: not vectorized: volatile type: _2 ={v} *_1;
+util.c:224:6: note: vectorized 0 loops in function.
+util.c:231:20: missed: not vectorized: volatile type: _2 ={v} *_1;
+util.c:231:28: missed: not vectorized: volatile type: _4 ={v} *_3;
+util.c:231:15: note: ***** Analysis failed with vector mode V8SI
+util.c:231:15: note: ***** The result for vector mode V32QI would be the same
+util.c:231:15: note: ***** Re-trying analysis with vector mode V16QI
+util.c:231:15: note: ***** Analysis failed with vector mode V16QI
+util.c:231:15: note: ***** Re-trying analysis with vector mode V8QI
+util.c:231:15: note: ***** Analysis failed with vector mode V8QI
+util.c:231:15: note: ***** Re-trying analysis with vector mode V4QI
+util.c:231:15: note: ***** Analysis failed with vector mode V4QI
+util.c:246:5: missed: statement clobbers memory: __builtin_va_start (&ap, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:100:10: missed: statement clobbers memory: _13 = __builtin___vsnprintf_chk (&buf, 1024, 2, 1024, fmt_6(D), &ap);
+util.c:250:5: missed: statement clobbers memory: __builtin_va_end (&ap);
+util.c:254:5: missed: statement clobbers memory: perror (&buf);
+util.c:255:1: note: ***** Analysis failed with vector mode V8SI
+util.c:255:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+util.c:264:18: missed: couldn't vectorize loop
+util.c:265:18: missed: not vectorized: unsupported use in stmt.
+util.c:275:10: note: vectorized 0 loops in function.
+util.c:265:24: note: ***** Analysis failed with vector mode V4DI
+util.c:265:24: note: ***** The result for vector mode V32QI would be the same
+util.c:265:24: note: ***** Re-trying analysis with vector mode V16QI
+util.c:265:24: note: ***** Analysis failed with vector mode V16QI
+util.c:265:24: note: ***** Re-trying analysis with vector mode V8QI
+util.c:265:24: note: ***** Analysis failed with vector mode V8QI
+util.c:265:24: note: ***** Re-trying analysis with vector mode V4QI
+util.c:265:24: note: ***** Analysis failed with vector mode V4QI
+util.c:264:18: missed: couldn't vectorize loop
+util.c:265:18: missed: not vectorized: unsupported use in stmt.
+util.c:279:10: note: vectorized 0 loops in function.
+util.c:265:24: note: ***** Analysis failed with vector mode V4DI
+util.c:265:24: note: ***** The result for vector mode V32QI would be the same
+util.c:265:24: note: ***** Re-trying analysis with vector mode V16QI
+util.c:265:24: note: ***** Analysis failed with vector mode V16QI
+util.c:265:24: note: ***** Re-trying analysis with vector mode V8QI
+util.c:265:24: note: ***** Analysis failed with vector mode V8QI
+util.c:265:24: note: ***** Re-trying analysis with vector mode V4QI
+util.c:265:24: note: ***** Analysis failed with vector mode V4QI
+util.c:291:20: note: ***** Analysis succeeded with vector mode V4DI
+util.c:291:20: note: SLPing BB part
+util.c:291:20: note: Costing subgraph: 
+util.c:291:20: note: node 0x3ef43c28 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: ts1_11(D)->tv_sec = _3;
+util.c:291:20: note: 	stmt 0 ts1_11(D)->tv_sec = _3;
+util.c:291:20: note: 	stmt 1 ts1_11(D)->tv_nsec = _6;
+util.c:291:20: note: 	children 0x3ef43cb0
+util.c:291:20: note: node 0x3ef43cb0 (max_nunits=2, refcnt=2) vector(2) long int
+util.c:291:20: note: op template: _3 = _1 + _2;
+util.c:291:20: note: 	stmt 0 _3 = _1 + _2;
+util.c:291:20: note: 	[l] stmt 1 _6 = _4 + _5;
+util.c:291:20: note: 	children 0x3ef43d38 0x3ef43dc0
+util.c:291:20: note: node 0x3ef43d38 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: _1 = ts1_11(D)->tv_sec;
+util.c:291:20: note: 	stmt 0 _1 = ts1_11(D)->tv_sec;
+util.c:291:20: note: 	stmt 1 _4 = ts1_11(D)->tv_nsec;
+util.c:291:20: note: node 0x3ef43dc0 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: _2 = ts2_12(D)->tv_sec;
+util.c:291:20: note: 	stmt 0 _2 = ts2_12(D)->tv_sec;
+util.c:291:20: note: 	stmt 1 _5 = ts2_12(D)->tv_nsec;
+util.c:291:20: note: node 0x3ef43e48 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: ts1_11(D)->tv_sec = _7;
+util.c:291:20: note: 	stmt 0 ts1_11(D)->tv_sec = _7;
+util.c:291:20: note: 	stmt 1 ts1_11(D)->tv_nsec = _8;
+util.c:291:20: note: 	children 0x3ef43ed0
+util.c:291:20: note: node 0x3ef43ed0 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: _7 = _3 + 1;
+util.c:291:20: note: 	stmt 0 _7 = _3 + 1;
+util.c:291:20: note: 	stmt 1 _8 = _6 + -1000000000;
+util.c:291:20: note: 	children 0x3ef43cb0 0x3ef43f58
+util.c:291:20: note: node (constant) 0x3ef43f58 (max_nunits=1, refcnt=1) vector(2) long int
+util.c:291:20: note: 	{ 1, -1000000000 }
+util.c:291:20: note: Cost model analysis: 
+util.c:291:20: note: Cost model analysis for part in loop 0:
+  Vector cost: 80
+  Scalar cost: 128
+util.c:291:20: note: Basic block will be vectorized using SLP
+util.c:288:17: optimized: basic block part vectorized using 16 byte vectors
+util.c:291:20: optimized: basic block part vectorized using 16 byte vectors
+util.c:291:20: note: Vectorizing SLP tree:
+util.c:291:20: note: node 0x3ef43c28 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: ts1_11(D)->tv_sec = _3;
+util.c:291:20: note: 	stmt 0 ts1_11(D)->tv_sec = _3;
+util.c:291:20: note: 	stmt 1 ts1_11(D)->tv_nsec = _6;
+util.c:291:20: note: 	children 0x3ef43cb0
+util.c:291:20: note: node 0x3ef43cb0 (max_nunits=2, refcnt=2) vector(2) long int
+util.c:291:20: note: op template: _3 = _1 + _2;
+util.c:291:20: note: 	stmt 0 _3 = _1 + _2;
+util.c:291:20: note: 	[l] stmt 1 _6 = _4 + _5;
+util.c:291:20: note: 	children 0x3ef43d38 0x3ef43dc0
+util.c:291:20: note: node 0x3ef43d38 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: _1 = ts1_11(D)->tv_sec;
+util.c:291:20: note: 	stmt 0 _1 = ts1_11(D)->tv_sec;
+util.c:291:20: note: 	stmt 1 _4 = ts1_11(D)->tv_nsec;
+util.c:291:20: note: node 0x3ef43dc0 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: _2 = ts2_12(D)->tv_sec;
+util.c:291:20: note: 	stmt 0 _2 = ts2_12(D)->tv_sec;
+util.c:291:20: note: 	stmt 1 _5 = ts2_12(D)->tv_nsec;
+util.c:291:20: note: ------>vectorizing SLP node starting from: _1 = ts1_11(D)->tv_sec;
+util.c:291:20: note: transform load. ncopies = 1
+util.c:291:20: note: create vector_type-pointer variable to type: vector(2) long int  vectorizing a pointer ref: ts1_11(D)->tv_sec
+util.c:291:20: note: created vectp.173_17
+util.c:291:20: note: add new stmt: vect__1.174_18 = MEM <vector(2) long int> [(long int *)vectp.173_17];
+util.c:291:20: note: ------>vectorizing SLP node starting from: _2 = ts2_12(D)->tv_sec;
+util.c:291:20: note: transform load. ncopies = 1
+util.c:291:20: note: create vector_type-pointer variable to type: vector(2) long int  vectorizing a pointer ref: ts2_12(D)->tv_sec
+util.c:291:20: note: created vectp.176_19
+util.c:291:20: note: add new stmt: vect__2.177_20 = MEM <vector(2) long int> [(long int *)vectp.176_19];
+util.c:291:20: note: ------>vectorizing SLP node starting from: _3 = _1 + _2;
+util.c:291:20: note: vect_is_simple_use: operand ts1_11(D)->tv_sec, type of def: internal
+util.c:291:20: note: vect_is_simple_use: operand ts2_12(D)->tv_sec, type of def: internal
+util.c:291:20: note: transform binary/unary operation.
+util.c:291:20: note: add new stmt: vect__3.178_21 = vect__1.174_18 + vect__2.177_20;
+util.c:291:20: note: extracting lane for live stmt _6 = _4 + _5;
+util.c:291:20: note: ------>vectorizing SLP node starting from: ts1_11(D)->tv_sec = _3;
+util.c:291:20: note: vect_is_simple_use: operand _1 + _2, type of def: internal
+util.c:291:20: note: vect_is_simple_use: operand _4 + _5, type of def: internal
+util.c:291:20: note: transform store. ncopies = 1
+util.c:291:20: note: create vector_type-pointer variable to type: vector(2) long int  vectorizing a pointer ref: ts1_11(D)->tv_sec
+util.c:291:20: note: created vectp.180_23
+util.c:291:20: note: add new stmt: MEM <vector(2) long int> [(long int *)vectp.180_23] = vect__3.178_21;
+util.c:291:20: note: vectorizing stmts using SLP.
+util.c:291:20: note: Vectorizing SLP tree:
+util.c:291:20: note: node 0x3ef43e48 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: ts1_11(D)->tv_sec = _7;
+util.c:291:20: note: 	stmt 0 ts1_11(D)->tv_sec = _7;
+util.c:291:20: note: 	stmt 1 ts1_11(D)->tv_nsec = _8;
+util.c:291:20: note: 	children 0x3ef43ed0
+util.c:291:20: note: node 0x3ef43ed0 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: _7 = _3 + 1;
+util.c:291:20: note: 	stmt 0 _7 = _3 + 1;
+util.c:291:20: note: 	stmt 1 _8 = _6 + -1000000000;
+util.c:291:20: note: 	children 0x3ef43cb0 0x3ef43f58
+util.c:291:20: note: node 0x3ef43cb0 (max_nunits=2, refcnt=2) vector(2) long int
+util.c:291:20: note: op template: _3 = _1 + _2;
+util.c:291:20: note: 	stmt 0 _3 = _1 + _2;
+util.c:291:20: note: 	[l] stmt 1 _6 = _4 + _5;
+util.c:291:20: note: 	children 0x3ef43d38 0x3ef43dc0
+util.c:291:20: note: node 0x3ef43d38 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: _1 = ts1_11(D)->tv_sec;
+util.c:291:20: note: 	stmt 0 _1 = ts1_11(D)->tv_sec;
+util.c:291:20: note: 	stmt 1 _4 = ts1_11(D)->tv_nsec;
+util.c:291:20: note: node 0x3ef43dc0 (max_nunits=2, refcnt=1) vector(2) long int
+util.c:291:20: note: op template: _2 = ts2_12(D)->tv_sec;
+util.c:291:20: note: 	stmt 0 _2 = ts2_12(D)->tv_sec;
+util.c:291:20: note: 	stmt 1 _5 = ts2_12(D)->tv_nsec;
+util.c:291:20: note: node (constant) 0x3ef43f58 (max_nunits=1, refcnt=1) vector(2) long int
+util.c:291:20: note: 	{ 1, -1000000000 }
+util.c:291:20: note: ------>vectorizing SLP node starting from: _7 = _3 + 1;
+util.c:291:20: note: vect_is_simple_use: operand _1 + _2, type of def: internal
+util.c:291:20: note: transform binary/unary operation.
+util.c:291:20: note: add new stmt: vect__7.181_25 = vect__3.178_21 + { 1, -1000000000 };
+util.c:291:20: note: ------>vectorizing SLP node starting from: ts1_11(D)->tv_sec = _7;
+util.c:291:20: note: vect_is_simple_use: operand _3 + 1, type of def: internal
+util.c:291:20: note: vect_is_simple_use: operand _6 + -1000000000, type of def: internal
+util.c:291:20: note: transform store. ncopies = 1
+util.c:291:20: note: create vector_type-pointer variable to type: vector(2) long int  vectorizing a pointer ref: ts1_11(D)->tv_sec
+util.c:291:20: note: created vectp.183_26
+util.c:291:20: note: add new stmt: MEM <vector(2) long int> [(long int *)vectp.183_26] = vect__7.181_25;
+util.c:291:20: note: vectorizing stmts using SLP.
+util.c:291:20: note: ***** The result for vector mode V32QI would be the same

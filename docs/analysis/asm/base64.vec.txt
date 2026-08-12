@@ -1,0 +1,50 @@
+base64.c:116:21: missed: couldn't vectorize loop
+base64.c:116:21: missed: not vectorized: number of iterations cannot be computed.
+base64.c:93:8: note: vectorized 0 loops in function.
+base64.c:102:9: note: ***** Analysis failed with vector mode V32QI
+base64.c:102:9: note: ***** The result for vector mode V32QI would be the same
+base64.c:102:9: note: ***** Re-trying analysis with vector mode V16QI
+base64.c:102:9: note: ***** Analysis failed with vector mode V16QI
+base64.c:102:9: note: ***** Re-trying analysis with vector mode V8QI
+base64.c:117:16: note: ***** Analysis failed with vector mode V8QI
+base64.c:117:16: note: ***** Re-trying analysis with vector mode V4QI
+base64.c:117:16: note: ***** Analysis failed with vector mode V4QI
+base64.c:176:19: missed: couldn't vectorize loop
+base64.c:176:19: missed: not vectorized: unsupported control flow in loop.
+base64.c:158:19: missed: couldn't vectorize loop
+base64.c:150:8: missed: not vectorized: unsupported data-type size_t
+base64.c:158:19: note: ***** Analysis failed with vector mode V32QI
+base64.c:158:19: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+base64.c:150:8: note: vectorized 0 loops in function.
+base64.c:186:20: note: ***** Analysis succeeded with vector mode V32QI
+base64.c:186:20: note: SLPing BB part
+base64.c:186:20: note: Costing subgraph: 
+base64.c:186:20: note: node 0x5e147c0 (max_nunits=2, refcnt=1) vector(2) unsigned char
+base64.c:186:20: note: op template: *pos_71 = _13;
+base64.c:186:20: note: 	stmt 0 *pos_71 = _13;
+base64.c:186:20: note: 	stmt 1 MEM[(unsigned char *)pos_71 + 1B] = _17;
+base64.c:186:20: note: 	children 0x5e14af0
+base64.c:186:20: note: node (external) 0x5e14af0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+base64.c:186:20: note: 	{ _13, _17 }
+base64.c:186:20: note: Cost model analysis: 
+base64.c:186:20: note: Cost model analysis for part in loop 2:
+  Vector cost: 32
+  Scalar cost: 32
+base64.c:186:20: note: Basic block will be vectorized using SLP
+base64.c:186:20: optimized: basic block part vectorized using 2 byte vectors
+base64.c:186:20: note: Vectorizing SLP tree:
+base64.c:186:20: note: node 0x5e147c0 (max_nunits=2, refcnt=1) vector(2) unsigned char
+base64.c:186:20: note: op template: *pos_71 = _13;
+base64.c:186:20: note: 	stmt 0 *pos_71 = _13;
+base64.c:186:20: note: 	stmt 1 MEM[(unsigned char *)pos_71 + 1B] = _17;
+base64.c:186:20: note: 	children 0x5e14af0
+base64.c:186:20: note: node (external) 0x5e14af0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+base64.c:186:20: note: 	{ _13, _17 }
+base64.c:186:20: note: ------>vectorizing SLP node starting from: *pos_71 = _13;
+base64.c:186:20: note: vect_is_simple_use: operand _16 | _57, type of def: internal
+base64.c:186:20: note: transform store. ncopies = 1
+base64.c:186:20: note: create vector_type-pointer variable to type: vector(2) unsigned char  vectorizing a pointer ref: *pos_71
+base64.c:186:20: note: created vectp.34_74
+base64.c:186:20: note: add new stmt: MEM <vector(2) unsigned char> [(unsigned char *)vectp.34_74] = _94;
+base64.c:186:20: note: vectorizing stmts using SLP.
+base64.c:186:20: note: ***** The result for vector mode V32QI would be the same

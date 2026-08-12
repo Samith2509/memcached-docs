@@ -1,0 +1,1954 @@
+proto_parser.c:439:27: missed: couldn't vectorize loop
+proto_parser.c:439:27: missed: not vectorized: could not determine main exit from loop with multiple exits.
+proto_parser.c:434:12: note: vectorized 0 loops in function.
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_45, buf_55(D), _30);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_23, _20, _18);
+proto_parser.c:448:35: missed: statement clobbers memory: tch_63 = do_item_alloc_chunk (dch_74, _28);
+proto_parser.c:445:13: missed: statement clobbers memory: __assert_fail ("dch->used <= dch->size", "proto_parser.c", 445, &__PRETTY_FUNCTION__);
+proto_parser.c:456:9: missed: statement clobbers memory: __assert_fail ("len == done", "proto_parser.c", 456, &__PRETTY_FUNCTION__);
+proto_parser.c:444:23: note: ***** Analysis failed with vector mode V16HI
+proto_parser.c:444:23: note: ***** The result for vector mode V32QI would be the same
+proto_parser.c:444:23: note: ***** Re-trying analysis with vector mode V16QI
+proto_parser.c:444:23: note: ***** Analysis failed with vector mode V16QI
+proto_parser.c:444:23: note: ***** Re-trying analysis with vector mode V8QI
+proto_parser.c:444:23: note: ***** Analysis failed with vector mode V8QI
+proto_parser.c:444:23: note: ***** Re-trying analysis with vector mode V4QI
+proto_parser.c:444:23: note: ***** Analysis failed with vector mode V4QI
+proto_parser.c:381:5: missed: statement clobbers memory: resp_reset (resp_3(D));
+proto_parser.c:392:11: missed: statement clobbers memory: len_10 = strlen (str_5(D));
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_12, str_14, len_15);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_16, "\r\n", 2);
+proto_parser.c:401:5: missed: statement clobbers memory: resp_add_iov (resp_3(D), _12, prephitmp_28);
+proto_parser.c:386:20: note: ***** Analysis failed with vector mode V32QI
+proto_parser.c:386:20: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+proto_parser.c:486:23: missed: couldn't vectorize loop
+proto_parser.c:486:23: missed: not vectorized: could not determine main exit from loop with multiple exits.
+proto_parser.c:465:12: note: vectorized 0 loops in function.
+proto_parser.c:556:27: missed: failed: bit offset alignment.
+proto_parser.c:556:27: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->value = 1;
+proto_parser.c:562:31: missed: failed: bit offset alignment.
+proto_parser.c:562:31: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->no_update = 1;
+proto_parser.c:565:30: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->no_reply = 1;
+proto_parser.c:542:24: missed: failed: bit offset alignment.
+proto_parser.c:542:24: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->la = 1;
+proto_parser.c:543:28: missed: failed: bit offset alignment.
+proto_parser.c:543:28: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->locked = 1;
+proto_parser.c:559:28: missed: failed: bit offset alignment.
+proto_parser.c:559:28: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->locked = 1;
+proto_parser.c:568:32: missed: failed: bit offset alignment.
+proto_parser.c:568:32: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->remove_val = 1;
+proto_parser.c:498:23: missed: statement clobbers memory: ret_32 = base64_decode (_30, _25, binkey_31(D), _25);
+proto_parser.c:503:35: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_error = 1;
+proto_parser.c:507:32: missed: failed: bit offset alignment.
+proto_parser.c:507:32: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->key_binary = 1;
+proto_parser.c:523:28: missed: failed: bit offset alignment.
+proto_parser.c:523:28: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->locked = 1;
+proto_parser.c:524:21: missed: statement clobbers memory: _43 = mcmc_token_get_flag_arg_32 (prephitmp_276, _42, i.55_41, &tmp_int);
+proto_parser.c:529:35: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_error = 1;
+proto_parser.c:525:35: missed: statement clobbers memory: _47 = realtime (prephitmp_298);
+proto_parser.c:526:33: missed: failed: bit offset alignment.
+proto_parser.c:526:33: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->new_ttl = 1;
+proto_parser.c:533:28: missed: failed: bit offset alignment.
+proto_parser.c:533:28: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->locked = 1;
+proto_parser.c:534:21: missed: statement clobbers memory: _50 = mcmc_token_get_flag_arg_32 (prephitmp_276, _49, i.59_48, &tmp_int);
+proto_parser.c:538:35: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_error = 1;
+proto_parser.c:535:40: missed: statement clobbers memory: _54 = realtime (prephitmp_300);
+proto_parser.c:513:28: missed: failed: bit offset alignment.
+proto_parser.c:513:28: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->locked = 1;
+proto_parser.c:514:28: missed: failed: bit offset alignment.
+proto_parser.c:514:28: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->vivify = 1;
+proto_parser.c:515:21: missed: statement clobbers memory: _36 = mcmc_token_get_flag_arg_32 (prephitmp_276, _35, i.51_34, &tmp_int);
+proto_parser.c:519:35: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_error = 1;
+proto_parser.c:516:43: missed: statement clobbers memory: _40 = realtime (prephitmp_302);
+proto_parser.c:602:21: missed: statement clobbers memory: _73 = mcmc_token_get_flag_arg_u64 (prephitmp_276, _72, i.66_71, _70);
+proto_parser.c:604:35: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_error = 1;
+proto_parser.c:614:31: missed: failed: bit offset alignment.
+proto_parser.c:614:31: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->set_stale = 1;
+proto_parser.c:575:21: missed: statement clobbers memory: _58 = mcmc_token_get_flag_arg_u32 (prephitmp_276, _57, i.63_56, _55);
+proto_parser.c:577:35: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_error = 1;
+proto_parser.c:589:21: missed: statement clobbers memory: _66 = mcmc_token_get_flag_arg_u64 (prephitmp_276, _65, i.65_64, _63);
+proto_parser.c:593:35: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_error = 1;
+proto_parser.c:590:36: missed: failed: bit offset alignment.
+proto_parser.c:590:36: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_cas_in = 1;
+proto_parser.c:608:21: missed: statement clobbers memory: _77 = mcmc_token_get_flag_arg_u64 (prephitmp_276, _76, i.67_75, _74);
+proto_parser.c:610:35: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_error = 1;
+proto_parser.c:581:21: missed: statement clobbers memory: _62 = mcmc_token_get_flag_arg_u64 (prephitmp_276, _61, i.64_60, _59);
+proto_parser.c:585:35: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_error = 1;
+proto_parser.c:582:33: missed: failed: bit offset alignment.
+proto_parser.c:582:33: missed: not vectorized: statement is an unsupported bitfield access of_8(D)->has_cas = 1;
+proto_parser.c:475:17: note: ***** Analysis failed with vector mode V4DI
+proto_parser.c:475:17: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+proto_parser.c:147:5: missed: statement clobbers memory: mcmc_tokenize (_5, _4, _2, 255);
+proto_parser.c:51:5: missed: statement clobbers memory: mcmc_token_get (_9, _2, 1, &len);
+proto_parser.c:112:23: missed: statement clobbers memory: tok_27 = mcmc_token_get (_26, _2, _24, &len);
+proto_parser.c:113:30: missed: statement clobbers memory: _29 = strncmp ("noreply", tok_27, 7);
+proto_parser.c:146:12: note: ***** Analysis failed with vector mode V8SI
+proto_parser.c:146:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+proto_parser.c:123:5: missed: statement clobbers memory: mcmc_tokenize (_5, _4, _2, 255);
+proto_parser.c:51:5: missed: statement clobbers memory: mcmc_token_get (_7, _2, 1, &len);
+proto_parser.c:131:9: missed: statement clobbers memory: _11 = mcmc_token_get_32 (_10, _2, 4, &vlen);
+proto_parser.c:112:23: missed: statement clobbers memory: tok_36 = mcmc_token_get (_35, _2, _33, &len);
+proto_parser.c:113:30: missed: statement clobbers memory: _38 = strncmp ("noreply", tok_36, 7);
+proto_parser.c:122:12: note: ***** Analysis failed with vector mode V8SI
+proto_parser.c:122:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+proto_parser.c:179:5: missed: statement clobbers memory: __assert_fail ("cm[cmdlen-1] == \'\\n\'", "proto_parser.c", 179, &__PRETTY_FUNCTION__);
+proto_parser.c:186:21: missed: statement clobbers memory: s_54 = memchr (command_50(D), 32, endlen_43);
+proto_parser.c:294:17: missed: statement clobbers memory: _34 = strncmp (command_50(D), "delete", 6);
+proto_parser.c:297:24: missed: statement clobbers memory: _35 = strncmp (command_50(D), "append", 6);
+proto_parser.c:299:23: missed: statement clobbers memory: ret_61 = _process_request_storage.constprop (pr_56(D));
+proto_parser.c:296:23: missed: statement clobbers memory: ret_63 = _process_request_simple.constprop (pr_56(D), 2);
+proto_parser.c:281:17: missed: statement clobbers memory: _29 = strncmp (command_50(D), "touch", 5);
+proto_parser.c:284:24: missed: statement clobbers memory: _30 = strncmp (command_50(D), "stats", 5);
+proto_parser.c:288:24: missed: statement clobbers memory: _32 = strncmp (command_50(D), "watch", 5);
+proto_parser.c:290:17: missed: statement clobbers memory: mcmc_tokenize (command_50(D), _135, _33, 255);
+proto_parser.c:287:17: missed: statement clobbers memory: mcmc_tokenize (command_50(D), _135, _31, 255);
+proto_parser.c:283:23: missed: statement clobbers memory: ret_67 = _process_request_simple.constprop (pr_56(D), 3);
+proto_parser.c:262:17: missed: statement clobbers memory: _24 = strncmp (command_50(D), "gets", 4);
+proto_parser.c:266:24: missed: statement clobbers memory: _25 = strncmp (command_50(D), "incr", 4);
+proto_parser.c:269:24: missed: statement clobbers memory: _26 = strncmp (command_50(D), "decr", 4);
+proto_parser.c:272:24: missed: statement clobbers memory: _27 = strncmp (command_50(D), "gats", 4);
+proto_parser.c:276:24: missed: statement clobbers memory: _28 = strncmp (command_50(D), "quit", 4);
+proto_parser.c:96:5: missed: statement clobbers memory: mcmc_tokenize (command_50(D), _251, _169, 255);
+proto_parser.c:51:5: missed: statement clobbers memory: mcmc_token_get (_174, _169, 2, &len);
+proto_parser.c:271:23: missed: statement clobbers memory: ret_71 = _process_request_simple.constprop (pr_56(D), 3);
+proto_parser.c:268:23: missed: statement clobbers memory: ret_73 = _process_request_simple.constprop (pr_56(D), 3);
+proto_parser.c:265:23: missed: statement clobbers memory: ret_75 = _process_request_simple.constprop (pr_56(D), 2);
+proto_parser.c:258:23: missed: statement clobbers memory: ret_81 = _process_request_storage.constprop (pr_56(D));
+proto_parser.c:255:23: missed: statement clobbers memory: ret_79 = _process_request_storage.constprop (pr_56(D));
+proto_parser.c:252:23: missed: statement clobbers memory: ret_77 = _process_request_storage.constprop (pr_56(D));
+proto_parser.c:243:27: missed: statement clobbers memory: ret_83 = _process_request_simple.constprop (pr_56(D), 2);
+proto_parser.c:96:5: missed: statement clobbers memory: mcmc_tokenize (prephitmp_196, _162, _160, 255);
+proto_parser.c:51:5: missed: statement clobbers memory: mcmc_token_get (_165, _160, 2, &len);
+proto_parser.c:72:5: missed: statement clobbers memory: mcmc_tokenize (command_50(D), _244, _119, 3);
+proto_parser.c:51:5: missed: statement clobbers memory: mcmc_token_get (_124, _119, 1, &len);
+proto_parser.c:80:9: missed: statement clobbers memory: _128 = mcmc_token_get_32 (_127, _119, 2, &vlen);
+proto_parser.c:60:5: missed: statement clobbers memory: mcmc_tokenize (command_50(D), _237, _110, 2);
+proto_parser.c:51:5: missed: statement clobbers memory: mcmc_token_get (_115, _110, 1, &len);
+proto_parser.c:60:5: missed: statement clobbers memory: mcmc_tokenize (command_50(D), _230, _151, 2);
+proto_parser.c:51:5: missed: statement clobbers memory: mcmc_token_get (_156, _151, 1, &len);
+proto_parser.c:60:5: missed: statement clobbers memory: mcmc_tokenize (command_50(D), _223, _133, 2);
+proto_parser.c:51:5: missed: statement clobbers memory: mcmc_token_get (_138, _133, 1, &len);
+proto_parser.c:60:5: missed: statement clobbers memory: mcmc_tokenize (command_50(D), _216, _142, 2);
+proto_parser.c:51:5: missed: statement clobbers memory: mcmc_token_get (_147, _142, 1, &len);
+proto_parser.c:303:17: missed: statement clobbers memory: _36 = strncmp (command_50(D), "replace", 7);
+proto_parser.c:306:24: missed: statement clobbers memory: _37 = strncmp (command_50(D), "prepend", 7);
+proto_parser.c:309:24: missed: statement clobbers memory: _38 = strncmp (command_50(D), "version", 7);
+proto_parser.c:311:17: missed: statement clobbers memory: mcmc_tokenize (command_50(D), _112, _39, 255);
+proto_parser.c:308:23: missed: statement clobbers memory: ret_98 = _process_request_storage.constprop (pr_56(D));
+proto_parser.c:305:23: missed: statement clobbers memory: ret_100 = _process_request_storage.constprop (pr_56(D));
+proto_parser.c:158:5: missed: statement clobbers memory: mcmc_tokenize (command_50(D), _181, _178, 255);
+proto_parser.c:112:23: missed: statement clobbers memory: tok_187 = mcmc_token_get (_186, _178, _184, &len);
+proto_parser.c:113:30: missed: statement clobbers memory: _189 = strncmp ("noreply", tok_187, 7);
+proto_parser.c:322:17: note: ***** Analysis succeeded with vector mode V32QI
+proto_parser.c:322:17: note: SLPing BB part
+proto_parser.c:322:17: note: Costing subgraph: 
+proto_parser.c:322:17: note: node 0x428b9e38 (max_nunits=2, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: op template: pr_56(D)->command = prephitmp_171;
+proto_parser.c:322:17: note: 	stmt 0 pr_56(D)->command = prephitmp_171;
+proto_parser.c:322:17: note: 	stmt 1 pr_56(D)->cmd_type = prephitmp_121;
+proto_parser.c:322:17: note: 	children 0x428b9ec0
+proto_parser.c:322:17: note: node 0x428b9ec0 (max_nunits=2, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: op template: prephitmp_171 = PHI <7(95), 27(73), 19(69), 17(67), 18(65), 25(63), 16(59), 15(53), 13(56), 22(109), 12(49), 10(43), 11(47), 8(35), 1(13), 2(19), 3(21), 4(86), 5(23), 6(25), 23(61), 14(51), 9(39), 20(71), 13(108), 8(100), 6(93), 5(92), 3(91), 1(87), 7(96)>
+proto_parser.c:322:17: note: 	stmt 0 prephitmp_171 = PHI <7(95), 27(73), 19(69), 17(67), 18(65), 25(63), 16(59), 15(53), 13(56), 22(109), 12(49), 10(43), 11(47), 8(35), 1(13), 2(19), 3(21), 4(86), 5(23), 6(25), 23(61), 14(51), 9(39), 20(71), 13(108), 8(100), 6(93), 5(92), 3(91), 1(87), 7(96)>
+proto_parser.c:322:17: note: 	stmt 1 prephitmp_121 = PHI <1(95), 0(73), 0(69), 0(67), 0(65), 0(63), 0(59), 0(53), 1(56), 0(109), 1(49), 0(43), 0(47), 1(35), 2(13), 2(19), 2(21), 2(86), 2(23), 2(25), 0(61), 0(51), 0(39), 0(71), 1(108), 1(100), 2(93), 2(92), 2(91), 2(87), 1(96)>
+proto_parser.c:322:17: note: 	children 0x428b9f48 0x428b9fd0 0x428ba058 0x428ba0e0 0x428ba168 0x428ba1f0 0x428ba278 0x428ba300 0x428ba388 0x428ba410 0x428ba498 0x428ba520 0x428ba5a8 0x428ba630 0x428ba6b8 0x428ba740 0x428ba7c8 0x428ba850 0x428ba8d8 0x428ba960 0x428ba9e8 0x428baa70 0x428baaf8 0x428bab80 0x428bac08 0x428bac90 0x428bad18 0x428bada0 0x428bae28 0x428baeb0 0x428baf38
+proto_parser.c:322:17: note: node (constant) 0x428b9f48 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 7, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428b9fd0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 27, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba058 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 19, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba0e0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 17, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba168 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 18, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba1f0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 25, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba278 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 16, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba300 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 15, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba388 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 13, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba410 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 22, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba498 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 12, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba520 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 10, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba5a8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 11, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba630 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 8, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba6b8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 1, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba740 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 2, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba7c8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 3, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba850 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 4, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba8d8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 5, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba960 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 6, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba9e8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 23, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428baa70 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 14, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428baaf8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 9, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bab80 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 20, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bac08 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 13, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428bac90 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 8, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428bad18 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 6, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428bada0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 5, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428bae28 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 3, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428baeb0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 1, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428baf38 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 7, 1 }
+proto_parser.c:322:17: note: Cost model analysis: 
+proto_parser.c:322:17: note: Cost model analysis for part in loop 0:
+  Vector cost: 392
+  Scalar cost: 40
+proto_parser.c:322:17: missed: not vectorized: vectorization is not profitable.
+proto_parser.c:322:17: note: ***** The result for vector mode V32QI would be the same
+proto_parser.c:322:17: note: ***** Re-trying analysis with vector mode V16QI
+proto_parser.c:322:17: note: ***** Analysis succeeded with vector mode V16QI
+proto_parser.c:322:17: note: SLPing BB part
+proto_parser.c:322:17: note: Costing subgraph: 
+proto_parser.c:322:17: note: node 0x428b9e38 (max_nunits=2, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: op template: pr_56(D)->command = prephitmp_171;
+proto_parser.c:322:17: note: 	stmt 0 pr_56(D)->command = prephitmp_171;
+proto_parser.c:322:17: note: 	stmt 1 pr_56(D)->cmd_type = prephitmp_121;
+proto_parser.c:322:17: note: 	children 0x428b9ec0
+proto_parser.c:322:17: note: node 0x428b9ec0 (max_nunits=2, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: op template: prephitmp_171 = PHI <7(95), 27(73), 19(69), 17(67), 18(65), 25(63), 16(59), 15(53), 13(56), 22(109), 12(49), 10(43), 11(47), 8(35), 1(13), 2(19), 3(21), 4(86), 5(23), 6(25), 23(61), 14(51), 9(39), 20(71), 13(108), 8(100), 6(93), 5(92), 3(91), 1(87), 7(96)>
+proto_parser.c:322:17: note: 	stmt 0 prephitmp_171 = PHI <7(95), 27(73), 19(69), 17(67), 18(65), 25(63), 16(59), 15(53), 13(56), 22(109), 12(49), 10(43), 11(47), 8(35), 1(13), 2(19), 3(21), 4(86), 5(23), 6(25), 23(61), 14(51), 9(39), 20(71), 13(108), 8(100), 6(93), 5(92), 3(91), 1(87), 7(96)>
+proto_parser.c:322:17: note: 	stmt 1 prephitmp_121 = PHI <1(95), 0(73), 0(69), 0(67), 0(65), 0(63), 0(59), 0(53), 1(56), 0(109), 1(49), 0(43), 0(47), 1(35), 2(13), 2(19), 2(21), 2(86), 2(23), 2(25), 0(61), 0(51), 0(39), 0(71), 1(108), 1(100), 2(93), 2(92), 2(91), 2(87), 1(96)>
+proto_parser.c:322:17: note: 	children 0x428baf38 0x428baeb0 0x428bae28 0x428bada0 0x428bad18 0x428bac90 0x428bac08 0x428bab80 0x428baaf8 0x428baa70 0x428ba9e8 0x428ba960 0x428ba8d8 0x428ba850 0x428ba7c8 0x428ba740 0x428ba6b8 0x428ba630 0x428ba5a8 0x428ba520 0x428ba498 0x428ba410 0x428ba388 0x428ba300 0x428ba278 0x428ba1f0 0x428ba168 0x428ba0e0 0x428ba058 0x428b9fd0 0x428b9f48
+proto_parser.c:322:17: note: node (constant) 0x428baf38 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 7, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428baeb0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 27, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bae28 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 19, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bada0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 17, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bad18 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 18, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bac90 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 25, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bac08 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 16, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bab80 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 15, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428baaf8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 13, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428baa70 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 22, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba9e8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 12, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba960 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 10, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba8d8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 11, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba850 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 8, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba7c8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 1, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba740 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 2, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba6b8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 3, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba630 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 4, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba5a8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 5, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba520 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 6, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba498 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 23, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba410 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 14, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba388 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 9, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba300 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 20, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba278 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 13, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba1f0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 8, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba168 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 6, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba0e0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 5, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba058 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 3, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428b9fd0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 1, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428b9f48 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 7, 1 }
+proto_parser.c:322:17: note: Cost model analysis: 
+proto_parser.c:322:17: note: Cost model analysis for part in loop 0:
+  Vector cost: 392
+  Scalar cost: 40
+proto_parser.c:322:17: missed: not vectorized: vectorization is not profitable.
+proto_parser.c:322:17: note: ***** Re-trying analysis with vector mode V8QI
+proto_parser.c:322:17: note: ***** Analysis succeeded with vector mode V8QI
+proto_parser.c:322:17: note: SLPing BB part
+proto_parser.c:322:17: note: Costing subgraph: 
+proto_parser.c:322:17: note: node 0x428b9e38 (max_nunits=2, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: op template: pr_56(D)->command = prephitmp_171;
+proto_parser.c:322:17: note: 	stmt 0 pr_56(D)->command = prephitmp_171;
+proto_parser.c:322:17: note: 	stmt 1 pr_56(D)->cmd_type = prephitmp_121;
+proto_parser.c:322:17: note: 	children 0x428b9ec0
+proto_parser.c:322:17: note: node 0x428b9ec0 (max_nunits=2, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: op template: prephitmp_171 = PHI <7(95), 27(73), 19(69), 17(67), 18(65), 25(63), 16(59), 15(53), 13(56), 22(109), 12(49), 10(43), 11(47), 8(35), 1(13), 2(19), 3(21), 4(86), 5(23), 6(25), 23(61), 14(51), 9(39), 20(71), 13(108), 8(100), 6(93), 5(92), 3(91), 1(87), 7(96)>
+proto_parser.c:322:17: note: 	stmt 0 prephitmp_171 = PHI <7(95), 27(73), 19(69), 17(67), 18(65), 25(63), 16(59), 15(53), 13(56), 22(109), 12(49), 10(43), 11(47), 8(35), 1(13), 2(19), 3(21), 4(86), 5(23), 6(25), 23(61), 14(51), 9(39), 20(71), 13(108), 8(100), 6(93), 5(92), 3(91), 1(87), 7(96)>
+proto_parser.c:322:17: note: 	stmt 1 prephitmp_121 = PHI <1(95), 0(73), 0(69), 0(67), 0(65), 0(63), 0(59), 0(53), 1(56), 0(109), 1(49), 0(43), 0(47), 1(35), 2(13), 2(19), 2(21), 2(86), 2(23), 2(25), 0(61), 0(51), 0(39), 0(71), 1(108), 1(100), 2(93), 2(92), 2(91), 2(87), 1(96)>
+proto_parser.c:322:17: note: 	children 0x428b9f48 0x428b9fd0 0x428ba058 0x428ba0e0 0x428ba168 0x428ba1f0 0x428ba278 0x428ba300 0x428ba388 0x428ba410 0x428ba498 0x428ba520 0x428ba5a8 0x428ba630 0x428ba6b8 0x428ba740 0x428ba7c8 0x428ba850 0x428ba8d8 0x428ba960 0x428ba9e8 0x428baa70 0x428baaf8 0x428bab80 0x428bac08 0x428bac90 0x428bad18 0x428bada0 0x428bae28 0x428baeb0 0x428baf38
+proto_parser.c:322:17: note: node (constant) 0x428b9f48 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 7, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428b9fd0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 27, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba058 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 19, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba0e0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 17, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba168 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 18, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba1f0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 25, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba278 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 16, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba300 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 15, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba388 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 13, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba410 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 22, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba498 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 12, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba520 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 10, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba5a8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 11, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba630 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 8, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba6b8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 1, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba740 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 2, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba7c8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 3, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba850 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 4, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba8d8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 5, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba960 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 6, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba9e8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 23, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428baa70 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 14, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428baaf8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 9, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bab80 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 20, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bac08 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 13, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428bac90 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 8, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428bad18 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 6, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428bada0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 5, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428bae28 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 3, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428baeb0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 1, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428baf38 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 7, 1 }
+proto_parser.c:322:17: note: Cost model analysis: 
+proto_parser.c:322:17: note: Cost model analysis for part in loop 0:
+  Vector cost: 392
+  Scalar cost: 40
+proto_parser.c:322:17: missed: not vectorized: vectorization is not profitable.
+proto_parser.c:322:17: note: ***** Re-trying analysis with vector mode V4QI
+proto_parser.c:322:17: note: ***** Analysis succeeded with vector mode V4QI
+proto_parser.c:322:17: note: SLPing BB part
+proto_parser.c:322:17: note: Costing subgraph: 
+proto_parser.c:322:17: note: node 0x428b9e38 (max_nunits=2, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: op template: pr_56(D)->command = prephitmp_171;
+proto_parser.c:322:17: note: 	stmt 0 pr_56(D)->command = prephitmp_171;
+proto_parser.c:322:17: note: 	stmt 1 pr_56(D)->cmd_type = prephitmp_121;
+proto_parser.c:322:17: note: 	children 0x428b9ec0
+proto_parser.c:322:17: note: node 0x428b9ec0 (max_nunits=2, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: op template: prephitmp_171 = PHI <7(95), 27(73), 19(69), 17(67), 18(65), 25(63), 16(59), 15(53), 13(56), 22(109), 12(49), 10(43), 11(47), 8(35), 1(13), 2(19), 3(21), 4(86), 5(23), 6(25), 23(61), 14(51), 9(39), 20(71), 13(108), 8(100), 6(93), 5(92), 3(91), 1(87), 7(96)>
+proto_parser.c:322:17: note: 	stmt 0 prephitmp_171 = PHI <7(95), 27(73), 19(69), 17(67), 18(65), 25(63), 16(59), 15(53), 13(56), 22(109), 12(49), 10(43), 11(47), 8(35), 1(13), 2(19), 3(21), 4(86), 5(23), 6(25), 23(61), 14(51), 9(39), 20(71), 13(108), 8(100), 6(93), 5(92), 3(91), 1(87), 7(96)>
+proto_parser.c:322:17: note: 	stmt 1 prephitmp_121 = PHI <1(95), 0(73), 0(69), 0(67), 0(65), 0(63), 0(59), 0(53), 1(56), 0(109), 1(49), 0(43), 0(47), 1(35), 2(13), 2(19), 2(21), 2(86), 2(23), 2(25), 0(61), 0(51), 0(39), 0(71), 1(108), 1(100), 2(93), 2(92), 2(91), 2(87), 1(96)>
+proto_parser.c:322:17: note: 	children 0x428baf38 0x428baeb0 0x428bae28 0x428bada0 0x428bad18 0x428bac90 0x428bac08 0x428bab80 0x428baaf8 0x428baa70 0x428ba9e8 0x428ba960 0x428ba8d8 0x428ba850 0x428ba7c8 0x428ba740 0x428ba6b8 0x428ba630 0x428ba5a8 0x428ba520 0x428ba498 0x428ba410 0x428ba388 0x428ba300 0x428ba278 0x428ba1f0 0x428ba168 0x428ba0e0 0x428ba058 0x428b9fd0 0x428b9f48
+proto_parser.c:322:17: note: node (constant) 0x428baf38 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 7, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428baeb0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 27, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bae28 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 19, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bada0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 17, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bad18 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 18, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bac90 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 25, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bac08 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 16, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428bab80 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 15, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428baaf8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 13, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428baa70 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 22, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba9e8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 12, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba960 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 10, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba8d8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 11, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba850 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 8, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba7c8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 1, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba740 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 2, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba6b8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 3, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba630 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 4, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba5a8 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 5, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba520 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 6, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba498 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 23, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba410 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 14, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba388 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 9, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba300 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 20, 0 }
+proto_parser.c:322:17: note: node (constant) 0x428ba278 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 13, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba1f0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 8, 1 }
+proto_parser.c:322:17: note: node (constant) 0x428ba168 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 6, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba0e0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 5, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428ba058 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 3, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428b9fd0 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 1, 2 }
+proto_parser.c:322:17: note: node (constant) 0x428b9f48 (max_nunits=1, refcnt=1) vector(2) unsigned char
+proto_parser.c:322:17: note: 	{ 7, 1 }
+proto_parser.c:322:17: note: Cost model analysis: 
+proto_parser.c:322:17: note: Cost model analysis for part in loop 0:
+  Vector cost: 392
+  Scalar cost: 40
+proto_parser.c:322:17: missed: not vectorized: vectorization is not profitable.
+proto_parser.c:338:21: missed: statement clobbers memory: t_10 = mcmc_token_get (_2, _1, token_8(D), &len);
+proto_parser.c:339:12: missed: statement clobbers memory: _12 = strncmp (t_10, s_11(D), _4);
+proto_parser.c:339:12: note: ***** Analysis failed with vector mode V8SI
+proto_parser.c:339:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+proto_parser.c:343:9: missed: statement clobbers memory: _3 = mcmc_token_get_u32 (_2, _1, token_7(D), val_8(D));
+proto_parser.c:343:8: note: ***** Analysis failed with vector mode V4DI
+proto_parser.c:343:8: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+proto_parser.c:350:9: missed: statement clobbers memory: _3 = mcmc_token_get_32 (_2, _1, token_7(D), val_8(D));
+proto_parser.c:350:8: note: ***** Analysis failed with vector mode V4DI
+proto_parser.c:350:8: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+proto_parser.c:359:21: missed: statement clobbers memory: t_13 = mcmc_token_get (_2, _1, token_11(D), &len);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (&buffer, t_13, _5);
+proto_parser.c:366:12: missed: statement clobbers memory: _17 = safe_strtod (&buffer, val_15(D));
+proto_parser.c:356:6: note: ***** Analysis failed with vector mode V8SI
+proto_parser.c:356:6: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+proto_parser.c:415:9: missed: statement clobbers memory: _3 = mcmc_token_get_32 (_2, _1, token_13(D), &exptime_int);
+proto_parser.c:419:16: missed: statement clobbers memory: _6 = realtime (prephitmp_22);
+proto_parser.c:416:9: missed: statement clobbers memory: pout_string (resp_18(D), "CLIENT_ERROR invalid exptime argument");
+proto_parser.c:413:6: note: ***** Analysis failed with vector mode V8SI
+proto_parser.c:413:6: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+proto_parser.c:721:29: missed: couldn't vectorize loop
+proto_parser.c:721:29: missed: not vectorized: number of iterations cannot be computed.
+proto_parser.c:652:5: note: vectorized 0 loops in function.
+proto_parser.c:660:16: missed: statement clobbers memory: it_92 = limited_get (key_88(D), _2, t_89(D), exptime_90(D), _1, 1, &overflow);
+proto_parser.c:662:9: missed: statement clobbers memory: stats_prefix_record_get (key_88(D), _2, _5);
+proto_parser.c:727:9: missed: statement clobbers memory: pthread_mutex_lock (_65);
+proto_parser.c:735:9: missed: statement clobbers memory: pthread_mutex_unlock (_65);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_103, "VALUE ", 6);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_104, _13, _7);
+proto_parser.c:636:13: missed: statement clobbers memory: p_159 = itoa_u64 (_158, p_143);
+proto_parser.c:639:9: missed: statement clobbers memory: p_164 = itoa_u32 (_163, _161);
+proto_parser.c:643:13: missed: statement clobbers memory: p_170 = itoa_u64 (iftmp.22_169, _165);
+proto_parser.c:673:7: missed: statement clobbers memory: resp_add_iov (resp_102(D), p_103, _19);
+proto_parser.c:689:11: missed: statement clobbers memory: resp_add_chunked_iov (resp_102(D), it_92, pretmp_206);
+proto_parser.c:687:11: missed: statement clobbers memory: resp_add_iov (resp_102(D), _37, pretmp_206);
+proto_parser.c:677:15: missed: statement clobbers memory: _21 = storage_cb_113(D) (t_89(D), it_92, resp_102(D));
+proto_parser.c:700:9: missed: statement clobbers memory: pthread_mutex_lock (_39);
+proto_parser.c:708:9: missed: statement clobbers memory: pthread_mutex_unlock (_39);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __fprintf_chk (stderr.19_56, 2, ">%d sending key ", _55);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fputc (_60, stderr.20_61);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fputc (10, stderr.21_64);
+proto_parser.c:678:15: missed: statement clobbers memory: pthread_mutex_lock (_22);
+proto_parser.c:680:15: missed: statement clobbers memory: pthread_mutex_unlock (_22);
+proto_parser.c:682:15: missed: statement clobbers memory: item_remove (it_92);
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_102(D), "SERVER_ERROR out of memory writing get response");
+proto_parser.c:656:9: missed: statement clobbers memory: pout_string (resp_102(D), "CLIENT_ERROR bad command line format");
+proto_parser.c:646:8: note: ***** Analysis succeeded with vector mode V32QI
+proto_parser.c:646:8: note: SLPing BB part
+proto_parser.c:733:30: note: Costing subgraph: 
+proto_parser.c:733:30: note: node 0x4272b768 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:733:30: note: op template: t_89(D)->stats.get_cmds = _73;
+proto_parser.c:733:30: note: 	stmt 0 t_89(D)->stats.get_cmds = _73;
+proto_parser.c:733:30: note: 	stmt 1 t_89(D)->stats.get_misses = _71;
+proto_parser.c:733:30: note: 	children 0x4272b7f0
+proto_parser.c:733:30: note: node 0x4272b7f0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:733:30: note: op template: _73 = _72 + 1;
+proto_parser.c:733:30: note: 	stmt 0 _73 = _72 + 1;
+proto_parser.c:733:30: note: 	stmt 1 _71 = _70 + 1;
+proto_parser.c:733:30: note: 	children 0x4272b878 0x4272b900
+proto_parser.c:733:30: note: node 0x4272b878 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:733:30: note: op template: _72 = t_89(D)->stats.get_cmds;
+proto_parser.c:733:30: note: 	stmt 0 _72 = t_89(D)->stats.get_cmds;
+proto_parser.c:733:30: note: 	stmt 1 _70 = t_89(D)->stats.get_misses;
+proto_parser.c:733:30: note: node (constant) 0x4272b900 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+proto_parser.c:733:30: note: 	{ 1, 1 }
+proto_parser.c:733:30: note: Cost model analysis: 
+proto_parser.c:733:30: note: Cost model analysis for part in loop 0:
+  Vector cost: 44
+  Scalar cost: 64
+proto_parser.c:729:32: note: Costing subgraph: 
+proto_parser.c:729:32: note: node 0x4272b988 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:729:32: note: op template: t_89(D)->stats.touch_cmds = _67;
+proto_parser.c:729:32: note: 	stmt 0 t_89(D)->stats.touch_cmds = _67;
+proto_parser.c:729:32: note: 	stmt 1 t_89(D)->stats.touch_misses = _69;
+proto_parser.c:729:32: note: 	children 0x4272ba10
+proto_parser.c:729:32: note: node 0x4272ba10 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:729:32: note: op template: _67 = _66 + 1;
+proto_parser.c:729:32: note: 	stmt 0 _67 = _66 + 1;
+proto_parser.c:729:32: note: 	stmt 1 _69 = _68 + 1;
+proto_parser.c:729:32: note: 	children 0x4272ba98 0x4272bb20
+proto_parser.c:729:32: note: node 0x4272ba98 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:729:32: note: op template: _66 = t_89(D)->stats.touch_cmds;
+proto_parser.c:729:32: note: 	stmt 0 _66 = t_89(D)->stats.touch_cmds;
+proto_parser.c:729:32: note: 	stmt 1 _68 = t_89(D)->stats.touch_misses;
+proto_parser.c:729:32: note: node (constant) 0x4272bb20 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+proto_parser.c:729:32: note: 	{ 1, 1 }
+proto_parser.c:729:32: note: Cost model analysis: 
+proto_parser.c:729:32: note: Cost model analysis for part in loop 0:
+  Vector cost: 44
+  Scalar cost: 64
+proto_parser.c:646:8: note: Costing subgraph: 
+proto_parser.c:646:8: note: node 0x4272bc30 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:646:8: note: op template: *p_171 = 13;
+proto_parser.c:646:8: note: 	stmt 0 *p_171 = 13;
+proto_parser.c:646:8: note: 	stmt 1 MEM[(char *)p_171 + 1B] = 10;
+proto_parser.c:646:8: note: 	children 0x4272bcb8
+proto_parser.c:646:8: note: node (constant) 0x4272bcb8 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:646:8: note: 	{ 13, 10 }
+proto_parser.c:646:8: note: Cost model analysis: 
+proto_parser.c:646:8: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:646:8: note: Basic block will be vectorized using SLP
+proto_parser.c:733:30: optimized: basic block part vectorized using 16 byte vectors
+proto_parser.c:733:30: note: Vectorizing SLP tree:
+proto_parser.c:733:30: note: node 0x4272b768 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:733:30: note: op template: t_89(D)->stats.get_cmds = _73;
+proto_parser.c:733:30: note: 	stmt 0 t_89(D)->stats.get_cmds = _73;
+proto_parser.c:733:30: note: 	stmt 1 t_89(D)->stats.get_misses = _71;
+proto_parser.c:733:30: note: 	children 0x4272b7f0
+proto_parser.c:733:30: note: node 0x4272b7f0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:733:30: note: op template: _73 = _72 + 1;
+proto_parser.c:733:30: note: 	stmt 0 _73 = _72 + 1;
+proto_parser.c:733:30: note: 	stmt 1 _71 = _70 + 1;
+proto_parser.c:733:30: note: 	children 0x4272b878 0x4272b900
+proto_parser.c:733:30: note: node 0x4272b878 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:733:30: note: op template: _72 = t_89(D)->stats.get_cmds;
+proto_parser.c:733:30: note: 	stmt 0 _72 = t_89(D)->stats.get_cmds;
+proto_parser.c:733:30: note: 	stmt 1 _70 = t_89(D)->stats.get_misses;
+proto_parser.c:733:30: note: node (constant) 0x4272b900 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+proto_parser.c:733:30: note: 	{ 1, 1 }
+proto_parser.c:733:30: note: ------>vectorizing SLP node starting from: _72 = t_89(D)->stats.get_cmds;
+proto_parser.c:733:30: note: transform load. ncopies = 1
+proto_parser.c:733:30: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: t_89(D)->stats.get_misses
+proto_parser.c:733:30: note: created vectp.197_108
+proto_parser.c:733:30: note: add new stmt: vectp.197_107 = vectp.197_108 + 18446744073709551608;
+proto_parser.c:733:30: note: add new stmt: vect__72.198_82 = MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.197_107];
+proto_parser.c:733:30: note: ------>vectorizing SLP node starting from: _73 = _72 + 1;
+proto_parser.c:733:30: note: vect_is_simple_use: operand t_89(D)->stats.get_cmds, type of def: internal
+proto_parser.c:733:30: note: transform binary/unary operation.
+proto_parser.c:733:30: note: add new stmt: vect__73.199_35 = vect__72.198_82 + { 1, 1 };
+proto_parser.c:733:30: note: ------>vectorizing SLP node starting from: t_89(D)->stats.get_cmds = _73;
+proto_parser.c:733:30: note: vect_is_simple_use: operand _72 + 1, type of def: internal
+proto_parser.c:733:30: note: vect_is_simple_use: operand _70 + 1, type of def: internal
+proto_parser.c:733:30: note: transform store. ncopies = 1
+proto_parser.c:733:30: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: t_89(D)->stats.get_cmds
+proto_parser.c:733:30: note: created vectp.201_31
+proto_parser.c:733:30: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.201_31] = vect__73.199_35;
+proto_parser.c:733:30: note: vectorizing stmts using SLP.
+proto_parser.c:729:32: optimized: basic block part vectorized using 16 byte vectors
+proto_parser.c:729:32: note: Vectorizing SLP tree:
+proto_parser.c:729:32: note: node 0x4272b988 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:729:32: note: op template: t_89(D)->stats.touch_cmds = _67;
+proto_parser.c:729:32: note: 	stmt 0 t_89(D)->stats.touch_cmds = _67;
+proto_parser.c:729:32: note: 	stmt 1 t_89(D)->stats.touch_misses = _69;
+proto_parser.c:729:32: note: 	children 0x4272ba10
+proto_parser.c:729:32: note: node 0x4272ba10 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:729:32: note: op template: _67 = _66 + 1;
+proto_parser.c:729:32: note: 	stmt 0 _67 = _66 + 1;
+proto_parser.c:729:32: note: 	stmt 1 _69 = _68 + 1;
+proto_parser.c:729:32: note: 	children 0x4272ba98 0x4272bb20
+proto_parser.c:729:32: note: node 0x4272ba98 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:729:32: note: op template: _66 = t_89(D)->stats.touch_cmds;
+proto_parser.c:729:32: note: 	stmt 0 _66 = t_89(D)->stats.touch_cmds;
+proto_parser.c:729:32: note: 	stmt 1 _68 = t_89(D)->stats.touch_misses;
+proto_parser.c:729:32: note: node (constant) 0x4272bb20 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+proto_parser.c:729:32: note: 	{ 1, 1 }
+proto_parser.c:729:32: note: ------>vectorizing SLP node starting from: _66 = t_89(D)->stats.touch_cmds;
+proto_parser.c:729:32: note: transform load. ncopies = 1
+proto_parser.c:729:32: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: t_89(D)->stats.touch_cmds
+proto_parser.c:729:32: note: created vectp.203_38
+proto_parser.c:729:32: note: add new stmt: vect__66.204_25 = MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.203_38];
+proto_parser.c:729:32: note: ------>vectorizing SLP node starting from: _67 = _66 + 1;
+proto_parser.c:729:32: note: vect_is_simple_use: operand t_89(D)->stats.touch_cmds, type of def: internal
+proto_parser.c:729:32: note: transform binary/unary operation.
+proto_parser.c:729:32: note: add new stmt: vect__67.205_208 = vect__66.204_25 + { 1, 1 };
+proto_parser.c:729:32: note: ------>vectorizing SLP node starting from: t_89(D)->stats.touch_cmds = _67;
+proto_parser.c:729:32: note: vect_is_simple_use: operand _66 + 1, type of def: internal
+proto_parser.c:729:32: note: vect_is_simple_use: operand _68 + 1, type of def: internal
+proto_parser.c:729:32: note: transform store. ncopies = 1
+proto_parser.c:729:32: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: t_89(D)->stats.touch_cmds
+proto_parser.c:729:32: note: created vectp.207_209
+proto_parser.c:729:32: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.207_209] = vect__67.205_208;
+proto_parser.c:729:32: note: vectorizing stmts using SLP.
+proto_parser.c:646:8: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:646:8: note: Vectorizing SLP tree:
+proto_parser.c:646:8: note: node 0x4272bc30 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:646:8: note: op template: *p_171 = 13;
+proto_parser.c:646:8: note: 	stmt 0 *p_171 = 13;
+proto_parser.c:646:8: note: 	stmt 1 MEM[(char *)p_171 + 1B] = 10;
+proto_parser.c:646:8: note: 	children 0x4272bcb8
+proto_parser.c:646:8: note: node (constant) 0x4272bcb8 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:646:8: note: 	{ 13, 10 }
+proto_parser.c:646:8: note: ------>vectorizing SLP node starting from: *p_171 = 13;
+proto_parser.c:646:8: note: vect_is_simple_use: operand 10, type of def: constant
+proto_parser.c:646:8: note: transform store. ncopies = 1
+proto_parser.c:646:8: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_171
+proto_parser.c:646:8: note: created vectp.209_211
+proto_parser.c:646:8: note: add new stmt: MEM <vector(2) char> [(char *)vectp.209_211] = { 13, 10 };
+proto_parser.c:646:8: note: vectorizing stmts using SLP.
+proto_parser.c:646:8: note: ***** The result for vector mode V32QI would be the same
+proto_parser.c:750:5: missed: statement clobbers memory: __assert_fail ("resp != NULL", "proto_parser.c", 750, &__PRETTY_FUNCTION__);
+proto_parser.c:757:12: missed: statement clobbers memory: _11 = safe_strtoul (_10, &flags);
+proto_parser.c:758:15: missed: statement clobbers memory: _16 = safe_strtol (_15, &exptime_int);
+proto_parser.c:763:15: missed: statement clobbers memory: exptime_70 = realtime (prephitmp_109);
+proto_parser.c:767:13: missed: statement clobbers memory: _21 = mcmc_token_get_u64 (_20, _19, 5, &req_cas_id);
+proto_parser.c:776:9: missed: statement clobbers memory: stats_prefix_record_set (key_61, nkey_62);
+proto_parser.c:779:10: missed: statement clobbers memory: it_76 = item_alloc (key_61, nkey_62, flags.26_24, exptime_70, _23);
+proto_parser.c:814:5: missed: statement clobbers memory: pthread_mutex_lock (_40);
+proto_parser.c:816:5: missed: statement clobbers memory: pthread_mutex_unlock (_40);
+proto_parser.c:783:15: missed: statement clobbers memory: _27 = item_size_ok (nkey_62, flags.27_26, _25);
+proto_parser.c:790:13: missed: statement clobbers memory: pout_string (resp_65(D), "SERVER_ERROR out of memory storing object");
+proto_parser.c:792:13: missed: statement clobbers memory: pthread_mutex_lock (_31);
+proto_parser.c:794:13: missed: statement clobbers memory: pthread_mutex_unlock (_31);
+proto_parser.c:784:13: missed: statement clobbers memory: pout_string (resp_65(D), "SERVER_ERROR object too large for cache");
+proto_parser.c:786:13: missed: statement clobbers memory: pthread_mutex_lock (_28);
+proto_parser.c:788:13: missed: statement clobbers memory: pthread_mutex_unlock (_28);
+proto_parser.c:796:9: missed: statement clobbers memory: myl_93 = pthread_getspecific (logger_key.28_34);
+proto_parser.c:796:9: missed: statement clobbers memory: logger_log (myl_47, 3, 0B, status_46, comm_94(D), key_61, nkey_62, 0, 0, _36);
+proto_parser.c:802:18: missed: statement clobbers memory: it_97 = item_get (key_61, nkey_62, t_78(D), 0);
+proto_parser.c:804:17: missed: statement clobbers memory: item_unlink (it_97);
+proto_parser.c:805:17: missed: statement clobbers memory: storage_delete (_37, it_97);
+proto_parser.c:806:17: missed: statement clobbers memory: item_remove (it_97);
+proto_parser.c:753:9: missed: statement clobbers memory: pout_string (resp_65(D), "CLIENT_ERROR bad command line format");
+proto_parser.c:741:7: note: ***** Analysis failed with vector mode V4DI
+proto_parser.c:741:7: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+proto_parser.c:822:16: missed: statement clobbers memory: it_18 = process_update_cmd_start (t_13(D), pr_14(D), resp_15(D), comm_16(D), _1);
+proto_parser.c:828:9: missed: statement clobbers memory: _4 = _store_item_copy_from_buf (it_18, _3, _2);
+proto_parser.c:834:72: missed: statement clobbers memory: iftmp.30_21 = get_cas_id ();
+proto_parser.c:834:15: missed: statement clobbers memory: _6 = store_item (it_18, comm_16(D), t_13(D), 0B, 0B, iftmp.30_7, 0);
+proto_parser.c:843:7: missed: statement clobbers memory: pout_string (resp_15(D), "NOT_FOUND");
+proto_parser.c:840:7: missed: statement clobbers memory: pout_string (resp_15(D), "EXISTS");
+proto_parser.c:837:7: missed: statement clobbers memory: pout_string (resp_15(D), "STORED");
+proto_parser.c:846:7: missed: statement clobbers memory: pout_string (resp_15(D), "NOT_STORED");
+proto_parser.c:849:7: missed: statement clobbers memory: pout_string (resp_15(D), "SERVER_ERROR Unhandled storage type.");
+proto_parser.c:853:5: missed: statement clobbers memory: item_remove (it_18);
+proto_parser.c:829:9: missed: statement clobbers memory: pout_string (resp_15(D), "SERVER_ERROR out of memory storing object");
+proto_parser.c:830:9: missed: statement clobbers memory: item_remove (it_18);
+proto_parser.c:830:9: note: ***** Analysis failed with vector mode V8SI
+proto_parser.c:830:9: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+proto_parser.c:862:5: missed: statement clobbers memory: __assert_fail ("t != NULL", "proto_parser.c", 862, &__PRETTY_FUNCTION__);
+proto_parser.c:869:9: missed: statement clobbers memory: _8 = mcmc_token_get_u64 (_1, _7, 2, &delta);
+proto_parser.c:874:12: missed: statement clobbers memory: _12 = add_delta (t_26(D), key_24, nkey_25, _11, delta.32_10, &temp, 0B);
+proto_parser.c:885:9: missed: statement clobbers memory: pthread_mutex_lock (_13);
+proto_parser.c:891:9: missed: statement clobbers memory: pthread_mutex_unlock (_13);
+proto_parser.c:893:9: missed: statement clobbers memory: pout_string (resp_35(D), "NOT_FOUND");
+proto_parser.c:882:9: missed: statement clobbers memory: pout_string (resp_35(D), "SERVER_ERROR out of memory");
+proto_parser.c:879:9: missed: statement clobbers memory: pout_string (resp_35(D), "CLIENT_ERROR cannot increment or decrement non-numeric value");
+proto_parser.c:876:9: missed: statement clobbers memory: pout_string (resp_35(D), &temp);
+proto_parser.c:870:9: missed: statement clobbers memory: pout_string (resp_35(D), "CLIENT_ERROR invalid numeric delta argument");
+proto_parser.c:865:9: missed: statement clobbers memory: pout_string (resp_35(D), "CLIENT_ERROR bad command line format");
+proto_parser.c:856:6: note: ***** Analysis failed with vector mode V8SI
+proto_parser.c:856:6: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+proto_parser.c:906:5: missed: statement clobbers memory: __assert_fail ("t != NULL", "proto_parser.c", 906, &__PRETTY_FUNCTION__);
+proto_parser.c:920:9: missed: statement clobbers memory: stats_prefix_record_delete (key_30, nkey_31);
+proto_parser.c:923:10: missed: statement clobbers memory: it_36 = item_get_locked (key_30, nkey_31, t_32(D), 0, &hv);
+proto_parser.c:936:9: missed: statement clobbers memory: pthread_mutex_lock (_18);
+proto_parser.c:938:9: missed: statement clobbers memory: pthread_mutex_unlock (_18);
+proto_parser.c:940:9: missed: statement clobbers memory: pout_string (resp_40(D), "NOT_FOUND");
+proto_parser.c:927:9: missed: statement clobbers memory: pthread_mutex_lock (_8);
+proto_parser.c:929:9: missed: statement clobbers memory: pthread_mutex_unlock (_8);
+proto_parser.c:930:9: missed: statement clobbers memory: myl_47 = pthread_getspecific (logger_key.33_14);
+proto_parser.c:930:9: missed: statement clobbers memory: logger_log (myl_22, 10, it_36, 1);
+proto_parser.c:931:9: missed: statement clobbers memory: do_item_unlink (it_36, hv.34_16);
+proto_parser.c:932:9: missed: statement clobbers memory: storage_delete (_17, it_36);
+proto_parser.c:933:9: missed: statement clobbers memory: do_item_remove (it_36);
+proto_parser.c:934:9: missed: statement clobbers memory: pout_string (resp_40(D), "DELETED");
+proto_parser.c:942:5: missed: statement clobbers memory: item_unlock (hv.35_21);
+proto_parser.c:915:9: missed: statement clobbers memory: pout_string (resp_40(D), "CLIENT_ERROR bad command line format");
+proto_parser.c:900:6: note: ***** Analysis failed with vector mode V8SI
+proto_parser.c:900:6: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+proto_parser.c:952:5: missed: statement clobbers memory: __assert_fail ("t != NULL", "proto_parser.c", 952, &__PRETTY_FUNCTION__);
+proto_parser.c:959:9: missed: statement clobbers memory: _9 = mcmc_token_get_32 (_1, _7, 2, &exptime_int);
+proto_parser.c:964:15: missed: statement clobbers memory: exptime_37 = realtime (prephitmp_57);
+proto_parser.c:965:10: missed: statement clobbers memory: it_39 = item_touch (key_30, nkey_31, exptime_37, t_33(D));
+proto_parser.c:975:9: missed: statement clobbers memory: pthread_mutex_lock (_19);
+proto_parser.c:978:9: missed: statement clobbers memory: pthread_mutex_unlock (_19);
+proto_parser.c:980:9: missed: statement clobbers memory: pout_string (resp_44(D), "NOT_FOUND");
+proto_parser.c:967:9: missed: statement clobbers memory: pthread_mutex_lock (_11);
+proto_parser.c:970:9: missed: statement clobbers memory: pthread_mutex_unlock (_11);
+proto_parser.c:972:9: missed: statement clobbers memory: pout_string (resp_44(D), "TOUCHED");
+proto_parser.c:973:9: missed: statement clobbers memory: item_remove (it_39);
+proto_parser.c:960:9: missed: statement clobbers memory: pout_string (resp_44(D), "CLIENT_ERROR invalid exptime argument");
+proto_parser.c:955:9: missed: statement clobbers memory: pout_string (resp_44(D), "CLIENT_ERROR bad command line format");
+proto_parser.c:976:28: note: ***** Analysis succeeded with vector mode V4DI
+proto_parser.c:976:28: note: SLPing BB part
+proto_parser.c:976:28: note: Costing subgraph: 
+proto_parser.c:976:28: note: node 0x428e9e68 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:976:28: note: op template: t_33(D)->stats.touch_cmds = _21;
+proto_parser.c:976:28: note: 	stmt 0 t_33(D)->stats.touch_cmds = _21;
+proto_parser.c:976:28: note: 	stmt 1 t_33(D)->stats.touch_misses = _23;
+proto_parser.c:976:28: note: 	children 0x428e9ef0
+proto_parser.c:976:28: note: node 0x428e9ef0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:976:28: note: op template: _21 = _20 + 1;
+proto_parser.c:976:28: note: 	stmt 0 _21 = _20 + 1;
+proto_parser.c:976:28: note: 	stmt 1 _23 = _22 + 1;
+proto_parser.c:976:28: note: 	children 0x428e9f78 0x428ea000
+proto_parser.c:976:28: note: node 0x428e9f78 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:976:28: note: op template: _20 = t_33(D)->stats.touch_cmds;
+proto_parser.c:976:28: note: 	stmt 0 _20 = t_33(D)->stats.touch_cmds;
+proto_parser.c:976:28: note: 	stmt 1 _22 = t_33(D)->stats.touch_misses;
+proto_parser.c:976:28: note: node (constant) 0x428ea000 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+proto_parser.c:976:28: note: 	{ 1, 1 }
+proto_parser.c:976:28: note: Cost model analysis: 
+proto_parser.c:976:28: note: Cost model analysis for part in loop 0:
+  Vector cost: 44
+  Scalar cost: 64
+proto_parser.c:976:28: note: Basic block will be vectorized using SLP
+proto_parser.c:976:28: optimized: basic block part vectorized using 16 byte vectors
+proto_parser.c:976:28: note: Vectorizing SLP tree:
+proto_parser.c:976:28: note: node 0x428e9e68 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:976:28: note: op template: t_33(D)->stats.touch_cmds = _21;
+proto_parser.c:976:28: note: 	stmt 0 t_33(D)->stats.touch_cmds = _21;
+proto_parser.c:976:28: note: 	stmt 1 t_33(D)->stats.touch_misses = _23;
+proto_parser.c:976:28: note: 	children 0x428e9ef0
+proto_parser.c:976:28: note: node 0x428e9ef0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:976:28: note: op template: _21 = _20 + 1;
+proto_parser.c:976:28: note: 	stmt 0 _21 = _20 + 1;
+proto_parser.c:976:28: note: 	stmt 1 _23 = _22 + 1;
+proto_parser.c:976:28: note: 	children 0x428e9f78 0x428ea000
+proto_parser.c:976:28: note: node 0x428e9f78 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:976:28: note: op template: _20 = t_33(D)->stats.touch_cmds;
+proto_parser.c:976:28: note: 	stmt 0 _20 = t_33(D)->stats.touch_cmds;
+proto_parser.c:976:28: note: 	stmt 1 _22 = t_33(D)->stats.touch_misses;
+proto_parser.c:976:28: note: node (constant) 0x428ea000 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+proto_parser.c:976:28: note: 	{ 1, 1 }
+proto_parser.c:976:28: note: ------>vectorizing SLP node starting from: _20 = t_33(D)->stats.touch_cmds;
+proto_parser.c:976:28: note: transform load. ncopies = 1
+proto_parser.c:976:28: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: t_33(D)->stats.touch_cmds
+proto_parser.c:976:28: note: created vectp.231_26
+proto_parser.c:976:28: note: add new stmt: vect__20.232_55 = MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.231_26];
+proto_parser.c:976:28: note: ------>vectorizing SLP node starting from: _21 = _20 + 1;
+proto_parser.c:976:28: note: vect_is_simple_use: operand t_33(D)->stats.touch_cmds, type of def: internal
+proto_parser.c:976:28: note: transform binary/unary operation.
+proto_parser.c:976:28: note: add new stmt: vect__21.233_24 = vect__20.232_55 + { 1, 1 };
+proto_parser.c:976:28: note: ------>vectorizing SLP node starting from: t_33(D)->stats.touch_cmds = _21;
+proto_parser.c:976:28: note: vect_is_simple_use: operand _20 + 1, type of def: internal
+proto_parser.c:976:28: note: vect_is_simple_use: operand _22 + 1, type of def: internal
+proto_parser.c:976:28: note: transform store. ncopies = 1
+proto_parser.c:976:28: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: t_33(D)->stats.touch_cmds
+proto_parser.c:976:28: note: created vectp.235_58
+proto_parser.c:976:28: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.235_58] = vect__21.233_24;
+proto_parser.c:976:28: note: vectorizing stmts using SLP.
+proto_parser.c:976:28: note: ***** The result for vector mode V32QI would be the same
+proto_parser.c:1254:36: missed: couldn't vectorize loop
+proto_parser.c:1254:36: missed: not vectorized: could not determine main exit from loop with multiple exits.
+proto_parser.c:428:17: missed: couldn't vectorize loop
+proto_parser.c:428:17: missed: not vectorized: number of iterations cannot be computed.
+proto_parser.c:1060:36: missed: couldn't vectorize loop
+proto_parser.c:1060:36: missed: not vectorized: could not determine main exit from loop with multiple exits.
+proto_parser.c:428:17: missed: couldn't vectorize loop
+proto_parser.c:428:17: missed: not vectorized: number of iterations cannot be computed.
+proto_parser.c:984:6: note: vectorized 0 loops in function.
+proto_parser.c:996:5: missed: statement clobbers memory: __assert_fail ("t != NULL", "proto_parser.c", 996, &__PRETTY_FUNCTION__);
+proto_parser.c:1002:9: missed: statement clobbers memory: _1 = _meta_flag_preparse.constprop (pr_258(D), 2, &of, &binkey, &errstr);
+proto_parser.c:1016:14: missed: statement clobbers memory: it_264 = limited_get_locked (key_260, nkey_261, t_253(D), 0, &hv, &overflow);
+proto_parser.c:1013:14: missed: statement clobbers memory: it_266 = limited_get (key_260, nkey_261, t_253(D), 0, 0, _8, &overflow);
+proto_parser.c:1239:9: missed: statement clobbers memory: pthread_mutex_lock (_494);
+proto_parser.c:1223:9: missed: statement clobbers memory: item_unlock (hv.48_490);
+proto_parser.c:1239:9: missed: statement clobbers memory: pthread_mutex_lock (_426);
+proto_parser.c:1030:14: missed: statement clobbers memory: _12 = realtime (0);
+proto_parser.c:1030:14: missed: statement clobbers memory: it_269 = item_alloc (key_260, nkey_261, 0, _12, 2);
+proto_parser.c:1239:9: missed: statement clobbers memory: pthread_mutex_lock (_67);
+proto_parser.c:1223:9: missed: statement clobbers memory: item_unlock (hv.48_146);
+proto_parser.c:1239:9: missed: statement clobbers memory: pthread_mutex_lock (_545);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_26, "\r\n", 2);
+proto_parser.c:1040:65: missed: statement clobbers memory: iftmp.41_271 = get_cas_id ();
+proto_parser.c:1040:13: missed: statement clobbers memory: do_item_link (it_269, hv.42_29, iftmp.41_224);
+proto_parser.c:1049:22: missed: failed: bit offset alignment.
+proto_parser.c:1049:22: missed: not vectorized: statement is an unsupported bitfield access of.value = 0;
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_256, "HD", 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_256, "VA ", 3);
+proto_parser.c:1054:17: missed: statement clobbers memory: p_279 = itoa_u32 (_39, _36);
+proto_parser.c:1095:29: missed: not vectorized: volatile type: current_time.44_61 ={v} current_time;
+proto_parser.c:1095:29: missed: statement clobbers memory: p_313 = itoa_u32 (_62, p_311);
+proto_parser.c:1084:25: missed: statement clobbers memory: p_321 = itoa_u32 (_58, p_319);
+proto_parser.c:1115:25: missed: not vectorized: volatile type: current_time.46_80 ={v} current_time;
+proto_parser.c:1115:25: missed: statement clobbers memory: p_326 = itoa_u32 (_82, p_324);
+proto_parser.c:1137:21: missed: statement clobbers memory: _331 = base64_encode (_106, _755, p_329, 512);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_329, _97, _755);
+proto_parser.c:1110:29: missed: statement clobbers memory: p_348 = itoa_u64 (_79, p_344);
+proto_parser.c:1100:25: missed: statement clobbers memory: p_357 = itoa_u64 (iftmp.45_226, p_353);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_363, _89, _85);
+proto_parser.c:1168:9: missed: statement clobbers memory: resp_add_iov (resp_255(D), p_256, _117);
+proto_parser.c:1183:17: missed: statement clobbers memory: resp_add_chunked_iov (resp_255(D), it_69, pretmp_749);
+proto_parser.c:1181:17: missed: statement clobbers memory: resp_add_iov (resp_255(D), _138, pretmp_749);
+proto_parser.c:1173:21: missed: statement clobbers memory: _121 = storage_cb_299(D) (t_253(D), it_69, resp_255(D));
+proto_parser.c:1223:9: missed: statement clobbers memory: item_unlock (pretmp_745);
+proto_parser.c:1223:9: missed: statement clobbers memory: item_unlock (pretmp_744);
+proto_parser.c:1221:13: missed: statement clobbers memory: do_item_bump (t_253(D), it_69, hv.47_525);
+proto_parser.c:1223:9: missed: statement clobbers memory: item_unlock (hv.48_239);
+proto_parser.c:1229:9: missed: statement clobbers memory: pthread_mutex_lock (_150);
+proto_parser.c:1237:9: missed: statement clobbers memory: pthread_mutex_unlock (_150);
+proto_parser.c:1174:21: missed: statement clobbers memory: pthread_mutex_lock (_122);
+proto_parser.c:1176:21: missed: statement clobbers memory: pthread_mutex_unlock (_122);
+proto_parser.c:1208:17: missed: statement clobbers memory: item_remove (it_69);
+proto_parser.c:1223:9: missed: statement clobbers memory: item_unlock (pretmp_743);
+proto_parser.c:1206:17: missed: statement clobbers memory: do_item_remove (it_69);
+proto_parser.c:1223:9: missed: statement clobbers memory: item_unlock (pretmp_742);
+proto_parser.c:1221:13: missed: statement clobbers memory: do_item_bump (t_253(D), it_69, hv.47_582);
+proto_parser.c:1223:9: missed: statement clobbers memory: item_unlock (hv.48_584);
+proto_parser.c:1239:9: missed: statement clobbers memory: pthread_mutex_lock (_122);
+proto_parser.c:1247:9: missed: statement clobbers memory: pthread_mutex_unlock (_571);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_578, "EN", 2);
+proto_parser.c:1268:21: missed: statement clobbers memory: _387 = base64_encode (key_260, nkey_261, p_385, 512);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_385, key_260, nkey_261);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_396, _189, _185);
+proto_parser.c:1284:13: missed: statement clobbers memory: item_remove (it_519);
+proto_parser.c:1281:13: missed: statement clobbers memory: do_item_remove (it_519);
+proto_parser.c:1282:13: missed: statement clobbers memory: item_unlock (hv.49_202);
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_255(D), prephitmp_734);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_197, "\r\n", 2);
+proto_parser.c:1275:9: missed: statement clobbers memory: resp_add_iov (resp_255(D), p_256, _199);
+proto_parser.c:1023:9: missed: statement clobbers memory: __assert_fail ("it == NULL", "proto_parser.c", 1023, &__PRETTY_FUNCTION__);
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_255(D), "SERVER_ERROR refcount overflow during fetch");
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_255(D), errstr.39_2);
+proto_parser.c:1268:21: note: ***** Analysis succeeded with vector mode V4DI
+proto_parser.c:1268:21: note: SLPing BB part
+proto_parser.c:1089:21: note: Costing subgraph: 
+proto_parser.c:1089:21: note: node 0x4272b768 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1089:21: note: op template: *p_482 = 32;
+proto_parser.c:1089:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1089:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 116;
+proto_parser.c:1089:21: note: 	children 0x4272b7f0
+proto_parser.c:1089:21: note: node (constant) 0x4272b7f0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1089:21: note: 	{ 32, 116 }
+proto_parser.c:1089:21: note: Cost model analysis: 
+proto_parser.c:1089:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1091:28: note: Costing subgraph: 
+proto_parser.c:1091:28: note: node 0x4272b878 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1091:28: note: op template: MEM[(char *)p_482 + 2B] = 45;
+proto_parser.c:1091:28: note: 	stmt 0 MEM[(char *)p_482 + 2B] = 45;
+proto_parser.c:1091:28: note: 	stmt 1 MEM[(char *)p_482 + 3B] = 49;
+proto_parser.c:1091:28: note: 	children 0x4272b900
+proto_parser.c:1091:28: note: node (constant) 0x4272b900 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1091:28: note: 	{ 45, 49 }
+proto_parser.c:1091:28: note: Cost model analysis: 
+proto_parser.c:1091:28: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1083:21: note: Costing subgraph: 
+proto_parser.c:1083:21: note: node 0x4272b988 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1083:21: note: op template: *p_482 = 32;
+proto_parser.c:1083:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1083:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 115;
+proto_parser.c:1083:21: note: 	children 0x4272ba10
+proto_parser.c:1083:21: note: node (constant) 0x4272ba10 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1083:21: note: 	{ 32, 115 }
+proto_parser.c:1083:21: note: Cost model analysis: 
+proto_parser.c:1083:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1114:21: note: Costing subgraph: 
+proto_parser.c:1114:21: note: node 0x4272ba98 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1114:21: note: op template: *p_482 = 32;
+proto_parser.c:1114:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1114:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 108;
+proto_parser.c:1114:21: note: 	children 0x4272bb20
+proto_parser.c:1114:21: note: node (constant) 0x4272bb20 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1114:21: note: 	{ 32, 108 }
+proto_parser.c:1114:21: note: Cost model analysis: 
+proto_parser.c:1114:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1137:21: note: Costing subgraph: 
+proto_parser.c:1137:21: note: node 0x4272bba8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1137:21: note: op template: *p_482 = 32;
+proto_parser.c:1137:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1137:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 107;
+proto_parser.c:1137:21: note: 	children 0x4272bc30
+proto_parser.c:1137:21: note: node (constant) 0x4272bc30 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1137:21: note: 	{ 32, 107 }
+proto_parser.c:1137:21: note: Cost model analysis: 
+proto_parser.c:1137:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1137:21: note: Costing subgraph: 
+proto_parser.c:1137:21: note: node 0x4272bcb8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1137:21: note: op template: *p_332 = 32;
+proto_parser.c:1137:21: note: 	stmt 0 *p_332 = 32;
+proto_parser.c:1137:21: note: 	stmt 1 MEM[(char *)p_332 + 1B] = 98;
+proto_parser.c:1137:21: note: 	children 0x4272bd40
+proto_parser.c:1137:21: note: node (constant) 0x4272bd40 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1137:21: note: 	{ 32, 98 }
+proto_parser.c:1137:21: note: Cost model analysis: 
+proto_parser.c:1137:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1118:21: note: Costing subgraph: 
+proto_parser.c:1118:21: note: node 0x4272bdc8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1118:21: note: op template: *p_482 = 32;
+proto_parser.c:1118:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1118:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 104;
+proto_parser.c:1118:21: note: 	children 0x4272be50
+proto_parser.c:1118:21: note: node (constant) 0x4272be50 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1118:21: note: 	{ 32, 104 }
+proto_parser.c:1118:21: note: Cost model analysis: 
+proto_parser.c:1118:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1103:21: note: Costing subgraph: 
+proto_parser.c:1103:21: note: node 0x4272bed8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1103:21: note: op template: *p_482 = 32;
+proto_parser.c:1103:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1103:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 102;
+proto_parser.c:1103:21: note: 	children 0x4272bf60
+proto_parser.c:1103:21: note: node (constant) 0x4272bf60 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1103:21: note: 	{ 32, 102 }
+proto_parser.c:1103:21: note: Cost model analysis: 
+proto_parser.c:1103:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1099:21: note: Costing subgraph: 
+proto_parser.c:1099:21: note: node 0x4272bfe8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1099:21: note: op template: *p_482 = 32;
+proto_parser.c:1099:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1099:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 99;
+proto_parser.c:1099:21: note: 	children 0x4272c070
+proto_parser.c:1099:21: note: node (constant) 0x4272c070 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1099:21: note: 	{ 32, 99 }
+proto_parser.c:1099:21: note: Cost model analysis: 
+proto_parser.c:1099:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1146:13: note: Costing subgraph: 
+proto_parser.c:1146:13: note: node 0x4272c0f8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1146:13: note: op template: *p_479 = 32;
+proto_parser.c:1146:13: note: 	stmt 0 *p_479 = 32;
+proto_parser.c:1146:13: note: 	stmt 1 MEM[(char *)p_479 + 1B] = 90;
+proto_parser.c:1146:13: note: 	children 0x4272c180
+proto_parser.c:1146:13: note: node (constant) 0x4272c180 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1146:13: note: 	{ 32, 90 }
+proto_parser.c:1146:13: note: Cost model analysis: 
+proto_parser.c:1146:13: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1149:13: note: Costing subgraph: 
+proto_parser.c:1149:13: note: node 0x4272c208 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1149:13: note: op template: *p_218 = 32;
+proto_parser.c:1149:13: note: 	stmt 0 *p_218 = 32;
+proto_parser.c:1149:13: note: 	stmt 1 MEM[(char *)p_218 + 1B] = 88;
+proto_parser.c:1149:13: note: 	children 0x4272c290
+proto_parser.c:1149:13: note: node (constant) 0x4272c290 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1149:13: note: 	{ 32, 88 }
+proto_parser.c:1149:13: note: Cost model analysis: 
+proto_parser.c:1149:13: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1159:13: note: Costing subgraph: 
+proto_parser.c:1159:13: note: node 0x4272c318 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1159:13: note: op template: *p_64 = 32;
+proto_parser.c:1159:13: note: 	stmt 0 *p_64 = 32;
+proto_parser.c:1159:13: note: 	stmt 1 MEM[(char *)p_64 + 1B] = 87;
+proto_parser.c:1159:13: note: 	children 0x4272c3a0
+proto_parser.c:1159:13: note: node (constant) 0x4272c3a0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1159:13: note: 	{ 32, 87 }
+proto_parser.c:1159:13: note: Cost model analysis: 
+proto_parser.c:1159:13: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1163:12: note: Costing subgraph: 
+proto_parser.c:1163:12: note: node 0x4272c4b0 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1163:12: note: op template: *p_220 = 13;
+proto_parser.c:1163:12: note: 	stmt 0 *p_220 = 13;
+proto_parser.c:1163:12: note: 	stmt 1 MEM[(char *)p_220 + 1B] = 10;
+proto_parser.c:1163:12: note: 	children 0x4272c538
+proto_parser.c:1163:12: note: node (constant) 0x4272c538 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1163:12: note: 	{ 13, 10 }
+proto_parser.c:1163:12: note: Cost model analysis: 
+proto_parser.c:1163:12: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1245:30: note: Costing subgraph: 
+proto_parser.c:1245:30: note: node 0x4272c5c0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1245:30: note: op template: t_253(D)->stats.get_cmds = _172;
+proto_parser.c:1245:30: note: 	stmt 0 t_253(D)->stats.get_cmds = _172;
+proto_parser.c:1245:30: note: 	stmt 1 t_253(D)->stats.get_misses = _170;
+proto_parser.c:1245:30: note: 	children 0x4272c648
+proto_parser.c:1245:30: note: node 0x4272c648 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1245:30: note: op template: _172 = _171 + 1;
+proto_parser.c:1245:30: note: 	stmt 0 _172 = _171 + 1;
+proto_parser.c:1245:30: note: 	stmt 1 _170 = _169 + 1;
+proto_parser.c:1245:30: note: 	children 0x4272c6d0 0x4272c758
+proto_parser.c:1245:30: note: node 0x4272c6d0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1245:30: note: op template: _171 = t_253(D)->stats.get_cmds;
+proto_parser.c:1245:30: note: 	stmt 0 _171 = t_253(D)->stats.get_cmds;
+proto_parser.c:1245:30: note: 	stmt 1 _169 = t_253(D)->stats.get_misses;
+proto_parser.c:1245:30: note: node (constant) 0x4272c758 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1245:30: note: 	{ 1, 1 }
+proto_parser.c:1245:30: note: Cost model analysis: 
+proto_parser.c:1245:30: note: Cost model analysis for part in loop 0:
+  Vector cost: 44
+  Scalar cost: 64
+proto_parser.c:1241:32: note: Costing subgraph: 
+proto_parser.c:1241:32: note: node 0x4272c7e0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1241:32: note: op template: t_253(D)->stats.touch_cmds = _166;
+proto_parser.c:1241:32: note: 	stmt 0 t_253(D)->stats.touch_cmds = _166;
+proto_parser.c:1241:32: note: 	stmt 1 t_253(D)->stats.touch_misses = _168;
+proto_parser.c:1241:32: note: 	children 0x4272c868
+proto_parser.c:1241:32: note: node 0x4272c868 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1241:32: note: op template: _166 = _165 + 1;
+proto_parser.c:1241:32: note: 	stmt 0 _166 = _165 + 1;
+proto_parser.c:1241:32: note: 	stmt 1 _168 = _167 + 1;
+proto_parser.c:1241:32: note: 	children 0x4272c8f0 0x4272c978
+proto_parser.c:1241:32: note: node 0x4272c8f0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1241:32: note: op template: _165 = t_253(D)->stats.touch_cmds;
+proto_parser.c:1241:32: note: 	stmt 0 _165 = t_253(D)->stats.touch_cmds;
+proto_parser.c:1241:32: note: 	stmt 1 _167 = t_253(D)->stats.touch_misses;
+proto_parser.c:1241:32: note: node (constant) 0x4272c978 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1241:32: note: 	{ 1, 1 }
+proto_parser.c:1241:32: note: Cost model analysis: 
+proto_parser.c:1241:32: note: Cost model analysis for part in loop 0:
+  Vector cost: 44
+  Scalar cost: 64
+proto_parser.c:1268:21: note: Costing subgraph: 
+proto_parser.c:1268:21: note: node 0x4272ca00 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1268:21: note: op template: *p_478 = 32;
+proto_parser.c:1268:21: note: 	stmt 0 *p_478 = 32;
+proto_parser.c:1268:21: note: 	stmt 1 MEM[(char *)p_478 + 1B] = 107;
+proto_parser.c:1268:21: note: 	children 0x4272ca88
+proto_parser.c:1268:21: note: node (constant) 0x4272ca88 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1268:21: note: 	{ 32, 107 }
+proto_parser.c:1268:21: note: Cost model analysis: 
+proto_parser.c:1268:21: note: Cost model analysis for part in loop 2:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1268:21: note: Costing subgraph: 
+proto_parser.c:1268:21: note: node 0x4272cb10 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1268:21: note: op template: *p_388 = 32;
+proto_parser.c:1268:21: note: 	stmt 0 *p_388 = 32;
+proto_parser.c:1268:21: note: 	stmt 1 MEM[(char *)p_388 + 1B] = 98;
+proto_parser.c:1268:21: note: 	children 0x4272cb98
+proto_parser.c:1268:21: note: node (constant) 0x4272cb98 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1268:21: note: 	{ 32, 98 }
+proto_parser.c:1268:21: note: Cost model analysis: 
+proto_parser.c:1268:21: note: Cost model analysis for part in loop 2:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1268:21: note: Basic block will be vectorized using SLP
+proto_parser.c:1089:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1089:21: note: Vectorizing SLP tree:
+proto_parser.c:1089:21: note: node 0x4272b768 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1089:21: note: op template: *p_482 = 32;
+proto_parser.c:1089:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1089:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 116;
+proto_parser.c:1089:21: note: 	children 0x4272b7f0
+proto_parser.c:1089:21: note: node (constant) 0x4272b7f0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1089:21: note: 	{ 32, 116 }
+proto_parser.c:1089:21: note: ------>vectorizing SLP node starting from: *p_482 = 32;
+proto_parser.c:1089:21: note: vect_is_simple_use: operand 116, type of def: constant
+proto_parser.c:1089:21: note: transform store. ncopies = 1
+proto_parser.c:1089:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_482
+proto_parser.c:1089:21: note: created vectp.244_710
+proto_parser.c:1089:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.244_710] = { 32, 116 };
+proto_parser.c:1089:21: note: vectorizing stmts using SLP.
+proto_parser.c:1091:28: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1091:28: note: Vectorizing SLP tree:
+proto_parser.c:1091:28: note: node 0x4272b878 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1091:28: note: op template: MEM[(char *)p_482 + 2B] = 45;
+proto_parser.c:1091:28: note: 	stmt 0 MEM[(char *)p_482 + 2B] = 45;
+proto_parser.c:1091:28: note: 	stmt 1 MEM[(char *)p_482 + 3B] = 49;
+proto_parser.c:1091:28: note: 	children 0x4272b900
+proto_parser.c:1091:28: note: node (constant) 0x4272b900 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1091:28: note: 	{ 45, 49 }
+proto_parser.c:1091:28: note: ------>vectorizing SLP node starting from: MEM[(char *)p_482 + 2B] = 45;
+proto_parser.c:1091:28: note: vect_is_simple_use: operand 49, type of def: constant
+proto_parser.c:1091:28: note: transform store. ncopies = 1
+proto_parser.c:1091:28: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: MEM[(char *)p_482 + 2B]
+proto_parser.c:1091:28: note: created vectp.246_708
+proto_parser.c:1091:28: note: add new stmt: MEM <vector(2) char> [(char *)vectp.246_708] = { 45, 49 };
+proto_parser.c:1091:28: note: vectorizing stmts using SLP.
+proto_parser.c:1083:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1083:21: note: Vectorizing SLP tree:
+proto_parser.c:1083:21: note: node 0x4272b988 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1083:21: note: op template: *p_482 = 32;
+proto_parser.c:1083:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1083:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 115;
+proto_parser.c:1083:21: note: 	children 0x4272ba10
+proto_parser.c:1083:21: note: node (constant) 0x4272ba10 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1083:21: note: 	{ 32, 115 }
+proto_parser.c:1083:21: note: ------>vectorizing SLP node starting from: *p_482 = 32;
+proto_parser.c:1083:21: note: vect_is_simple_use: operand 115, type of def: constant
+proto_parser.c:1083:21: note: transform store. ncopies = 1
+proto_parser.c:1083:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_482
+proto_parser.c:1083:21: note: created vectp.248_704
+proto_parser.c:1083:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.248_704] = { 32, 115 };
+proto_parser.c:1083:21: note: vectorizing stmts using SLP.
+proto_parser.c:1114:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1114:21: note: Vectorizing SLP tree:
+proto_parser.c:1114:21: note: node 0x4272ba98 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1114:21: note: op template: *p_482 = 32;
+proto_parser.c:1114:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1114:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 108;
+proto_parser.c:1114:21: note: 	children 0x4272bb20
+proto_parser.c:1114:21: note: node (constant) 0x4272bb20 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1114:21: note: 	{ 32, 108 }
+proto_parser.c:1114:21: note: ------>vectorizing SLP node starting from: *p_482 = 32;
+proto_parser.c:1114:21: note: vect_is_simple_use: operand 108, type of def: constant
+proto_parser.c:1114:21: note: transform store. ncopies = 1
+proto_parser.c:1114:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_482
+proto_parser.c:1114:21: note: created vectp.250_690
+proto_parser.c:1114:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.250_690] = { 32, 108 };
+proto_parser.c:1114:21: note: vectorizing stmts using SLP.
+proto_parser.c:1137:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1137:21: note: Vectorizing SLP tree:
+proto_parser.c:1137:21: note: node 0x4272bba8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1137:21: note: op template: *p_482 = 32;
+proto_parser.c:1137:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1137:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 107;
+proto_parser.c:1137:21: note: 	children 0x4272bc30
+proto_parser.c:1137:21: note: node (constant) 0x4272bc30 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1137:21: note: 	{ 32, 107 }
+proto_parser.c:1137:21: note: ------>vectorizing SLP node starting from: *p_482 = 32;
+proto_parser.c:1137:21: note: vect_is_simple_use: operand 107, type of def: constant
+proto_parser.c:1137:21: note: transform store. ncopies = 1
+proto_parser.c:1137:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_482
+proto_parser.c:1137:21: note: created vectp.252_688
+proto_parser.c:1137:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.252_688] = { 32, 107 };
+proto_parser.c:1137:21: note: vectorizing stmts using SLP.
+proto_parser.c:1137:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1137:21: note: Vectorizing SLP tree:
+proto_parser.c:1137:21: note: node 0x4272bcb8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1137:21: note: op template: *p_332 = 32;
+proto_parser.c:1137:21: note: 	stmt 0 *p_332 = 32;
+proto_parser.c:1137:21: note: 	stmt 1 MEM[(char *)p_332 + 1B] = 98;
+proto_parser.c:1137:21: note: 	children 0x4272bd40
+proto_parser.c:1137:21: note: node (constant) 0x4272bd40 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1137:21: note: 	{ 32, 98 }
+proto_parser.c:1137:21: note: ------>vectorizing SLP node starting from: *p_332 = 32;
+proto_parser.c:1137:21: note: vect_is_simple_use: operand 98, type of def: constant
+proto_parser.c:1137:21: note: transform store. ncopies = 1
+proto_parser.c:1137:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_332
+proto_parser.c:1137:21: note: created vectp.254_686
+proto_parser.c:1137:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.254_686] = { 32, 98 };
+proto_parser.c:1137:21: note: vectorizing stmts using SLP.
+proto_parser.c:1118:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1118:21: note: Vectorizing SLP tree:
+proto_parser.c:1118:21: note: node 0x4272bdc8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1118:21: note: op template: *p_482 = 32;
+proto_parser.c:1118:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1118:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 104;
+proto_parser.c:1118:21: note: 	children 0x4272be50
+proto_parser.c:1118:21: note: node (constant) 0x4272be50 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1118:21: note: 	{ 32, 104 }
+proto_parser.c:1118:21: note: ------>vectorizing SLP node starting from: *p_482 = 32;
+proto_parser.c:1118:21: note: vect_is_simple_use: operand 104, type of def: constant
+proto_parser.c:1118:21: note: transform store. ncopies = 1
+proto_parser.c:1118:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_482
+proto_parser.c:1118:21: note: created vectp.256_684
+proto_parser.c:1118:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.256_684] = { 32, 104 };
+proto_parser.c:1118:21: note: vectorizing stmts using SLP.
+proto_parser.c:1103:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1103:21: note: Vectorizing SLP tree:
+proto_parser.c:1103:21: note: node 0x4272bed8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1103:21: note: op template: *p_482 = 32;
+proto_parser.c:1103:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1103:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 102;
+proto_parser.c:1103:21: note: 	children 0x4272bf60
+proto_parser.c:1103:21: note: node (constant) 0x4272bf60 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1103:21: note: 	{ 32, 102 }
+proto_parser.c:1103:21: note: ------>vectorizing SLP node starting from: *p_482 = 32;
+proto_parser.c:1103:21: note: vect_is_simple_use: operand 102, type of def: constant
+proto_parser.c:1103:21: note: transform store. ncopies = 1
+proto_parser.c:1103:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_482
+proto_parser.c:1103:21: note: created vectp.258_681
+proto_parser.c:1103:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.258_681] = { 32, 102 };
+proto_parser.c:1103:21: note: vectorizing stmts using SLP.
+proto_parser.c:1099:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1099:21: note: Vectorizing SLP tree:
+proto_parser.c:1099:21: note: node 0x4272bfe8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1099:21: note: op template: *p_482 = 32;
+proto_parser.c:1099:21: note: 	stmt 0 *p_482 = 32;
+proto_parser.c:1099:21: note: 	stmt 1 MEM[(char *)p_482 + 1B] = 99;
+proto_parser.c:1099:21: note: 	children 0x4272c070
+proto_parser.c:1099:21: note: node (constant) 0x4272c070 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1099:21: note: 	{ 32, 99 }
+proto_parser.c:1099:21: note: ------>vectorizing SLP node starting from: *p_482 = 32;
+proto_parser.c:1099:21: note: vect_is_simple_use: operand 99, type of def: constant
+proto_parser.c:1099:21: note: transform store. ncopies = 1
+proto_parser.c:1099:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_482
+proto_parser.c:1099:21: note: created vectp.260_679
+proto_parser.c:1099:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.260_679] = { 32, 99 };
+proto_parser.c:1099:21: note: vectorizing stmts using SLP.
+proto_parser.c:1146:13: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1146:13: note: Vectorizing SLP tree:
+proto_parser.c:1146:13: note: node 0x4272c0f8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1146:13: note: op template: *p_479 = 32;
+proto_parser.c:1146:13: note: 	stmt 0 *p_479 = 32;
+proto_parser.c:1146:13: note: 	stmt 1 MEM[(char *)p_479 + 1B] = 90;
+proto_parser.c:1146:13: note: 	children 0x4272c180
+proto_parser.c:1146:13: note: node (constant) 0x4272c180 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1146:13: note: 	{ 32, 90 }
+proto_parser.c:1146:13: note: ------>vectorizing SLP node starting from: *p_479 = 32;
+proto_parser.c:1146:13: note: vect_is_simple_use: operand 90, type of def: constant
+proto_parser.c:1146:13: note: transform store. ncopies = 1
+proto_parser.c:1146:13: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_479
+proto_parser.c:1146:13: note: created vectp.262_677
+proto_parser.c:1146:13: note: add new stmt: MEM <vector(2) char> [(char *)vectp.262_677] = { 32, 90 };
+proto_parser.c:1146:13: note: vectorizing stmts using SLP.
+proto_parser.c:1149:13: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1149:13: note: Vectorizing SLP tree:
+proto_parser.c:1149:13: note: node 0x4272c208 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1149:13: note: op template: *p_218 = 32;
+proto_parser.c:1149:13: note: 	stmt 0 *p_218 = 32;
+proto_parser.c:1149:13: note: 	stmt 1 MEM[(char *)p_218 + 1B] = 88;
+proto_parser.c:1149:13: note: 	children 0x4272c290
+proto_parser.c:1149:13: note: node (constant) 0x4272c290 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1149:13: note: 	{ 32, 88 }
+proto_parser.c:1149:13: note: ------>vectorizing SLP node starting from: *p_218 = 32;
+proto_parser.c:1149:13: note: vect_is_simple_use: operand 88, type of def: constant
+proto_parser.c:1149:13: note: transform store. ncopies = 1
+proto_parser.c:1149:13: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_218
+proto_parser.c:1149:13: note: created vectp.264_675
+proto_parser.c:1149:13: note: add new stmt: MEM <vector(2) char> [(char *)vectp.264_675] = { 32, 88 };
+proto_parser.c:1149:13: note: vectorizing stmts using SLP.
+proto_parser.c:1159:13: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1159:13: note: Vectorizing SLP tree:
+proto_parser.c:1159:13: note: node 0x4272c318 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1159:13: note: op template: *p_64 = 32;
+proto_parser.c:1159:13: note: 	stmt 0 *p_64 = 32;
+proto_parser.c:1159:13: note: 	stmt 1 MEM[(char *)p_64 + 1B] = 87;
+proto_parser.c:1159:13: note: 	children 0x4272c3a0
+proto_parser.c:1159:13: note: node (constant) 0x4272c3a0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1159:13: note: 	{ 32, 87 }
+proto_parser.c:1159:13: note: ------>vectorizing SLP node starting from: *p_64 = 32;
+proto_parser.c:1159:13: note: vect_is_simple_use: operand 87, type of def: constant
+proto_parser.c:1159:13: note: transform store. ncopies = 1
+proto_parser.c:1159:13: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_64
+proto_parser.c:1159:13: note: created vectp.266_673
+proto_parser.c:1159:13: note: add new stmt: MEM <vector(2) char> [(char *)vectp.266_673] = { 32, 87 };
+proto_parser.c:1159:13: note: vectorizing stmts using SLP.
+proto_parser.c:1163:12: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1163:12: note: Vectorizing SLP tree:
+proto_parser.c:1163:12: note: node 0x4272c4b0 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1163:12: note: op template: *p_220 = 13;
+proto_parser.c:1163:12: note: 	stmt 0 *p_220 = 13;
+proto_parser.c:1163:12: note: 	stmt 1 MEM[(char *)p_220 + 1B] = 10;
+proto_parser.c:1163:12: note: 	children 0x4272c538
+proto_parser.c:1163:12: note: node (constant) 0x4272c538 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1163:12: note: 	{ 13, 10 }
+proto_parser.c:1163:12: note: ------>vectorizing SLP node starting from: *p_220 = 13;
+proto_parser.c:1163:12: note: vect_is_simple_use: operand 10, type of def: constant
+proto_parser.c:1163:12: note: transform store. ncopies = 1
+proto_parser.c:1163:12: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_220
+proto_parser.c:1163:12: note: created vectp.268_671
+proto_parser.c:1163:12: note: add new stmt: MEM <vector(2) char> [(char *)vectp.268_671] = { 13, 10 };
+proto_parser.c:1163:12: note: vectorizing stmts using SLP.
+proto_parser.c:1245:30: optimized: basic block part vectorized using 16 byte vectors
+proto_parser.c:1245:30: note: Vectorizing SLP tree:
+proto_parser.c:1245:30: note: node 0x4272c5c0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1245:30: note: op template: t_253(D)->stats.get_cmds = _172;
+proto_parser.c:1245:30: note: 	stmt 0 t_253(D)->stats.get_cmds = _172;
+proto_parser.c:1245:30: note: 	stmt 1 t_253(D)->stats.get_misses = _170;
+proto_parser.c:1245:30: note: 	children 0x4272c648
+proto_parser.c:1245:30: note: node 0x4272c648 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1245:30: note: op template: _172 = _171 + 1;
+proto_parser.c:1245:30: note: 	stmt 0 _172 = _171 + 1;
+proto_parser.c:1245:30: note: 	stmt 1 _170 = _169 + 1;
+proto_parser.c:1245:30: note: 	children 0x4272c6d0 0x4272c758
+proto_parser.c:1245:30: note: node 0x4272c6d0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1245:30: note: op template: _171 = t_253(D)->stats.get_cmds;
+proto_parser.c:1245:30: note: 	stmt 0 _171 = t_253(D)->stats.get_cmds;
+proto_parser.c:1245:30: note: 	stmt 1 _169 = t_253(D)->stats.get_misses;
+proto_parser.c:1245:30: note: node (constant) 0x4272c758 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1245:30: note: 	{ 1, 1 }
+proto_parser.c:1245:30: note: ------>vectorizing SLP node starting from: _171 = t_253(D)->stats.get_cmds;
+proto_parser.c:1245:30: note: transform load. ncopies = 1
+proto_parser.c:1245:30: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: t_253(D)->stats.get_misses
+proto_parser.c:1245:30: note: created vectp.270_669
+proto_parser.c:1245:30: note: add new stmt: vectp.270_668 = vectp.270_669 + 18446744073709551608;
+proto_parser.c:1245:30: note: add new stmt: vect__171.271_667 = MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.270_668];
+proto_parser.c:1245:30: note: ------>vectorizing SLP node starting from: _172 = _171 + 1;
+proto_parser.c:1245:30: note: vect_is_simple_use: operand t_253(D)->stats.get_cmds, type of def: internal
+proto_parser.c:1245:30: note: transform binary/unary operation.
+proto_parser.c:1245:30: note: add new stmt: vect__172.272_666 = vect__171.271_667 + { 1, 1 };
+proto_parser.c:1245:30: note: ------>vectorizing SLP node starting from: t_253(D)->stats.get_cmds = _172;
+proto_parser.c:1245:30: note: vect_is_simple_use: operand _171 + 1, type of def: internal
+proto_parser.c:1245:30: note: vect_is_simple_use: operand _169 + 1, type of def: internal
+proto_parser.c:1245:30: note: transform store. ncopies = 1
+proto_parser.c:1245:30: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: t_253(D)->stats.get_cmds
+proto_parser.c:1245:30: note: created vectp.274_665
+proto_parser.c:1245:30: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.274_665] = vect__172.272_666;
+proto_parser.c:1245:30: note: vectorizing stmts using SLP.
+proto_parser.c:1241:32: optimized: basic block part vectorized using 16 byte vectors
+proto_parser.c:1241:32: note: Vectorizing SLP tree:
+proto_parser.c:1241:32: note: node 0x4272c7e0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1241:32: note: op template: t_253(D)->stats.touch_cmds = _166;
+proto_parser.c:1241:32: note: 	stmt 0 t_253(D)->stats.touch_cmds = _166;
+proto_parser.c:1241:32: note: 	stmt 1 t_253(D)->stats.touch_misses = _168;
+proto_parser.c:1241:32: note: 	children 0x4272c868
+proto_parser.c:1241:32: note: node 0x4272c868 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1241:32: note: op template: _166 = _165 + 1;
+proto_parser.c:1241:32: note: 	stmt 0 _166 = _165 + 1;
+proto_parser.c:1241:32: note: 	stmt 1 _168 = _167 + 1;
+proto_parser.c:1241:32: note: 	children 0x4272c8f0 0x4272c978
+proto_parser.c:1241:32: note: node 0x4272c8f0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1241:32: note: op template: _165 = t_253(D)->stats.touch_cmds;
+proto_parser.c:1241:32: note: 	stmt 0 _165 = t_253(D)->stats.touch_cmds;
+proto_parser.c:1241:32: note: 	stmt 1 _167 = t_253(D)->stats.touch_misses;
+proto_parser.c:1241:32: note: node (constant) 0x4272c978 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+proto_parser.c:1241:32: note: 	{ 1, 1 }
+proto_parser.c:1241:32: note: ------>vectorizing SLP node starting from: _165 = t_253(D)->stats.touch_cmds;
+proto_parser.c:1241:32: note: transform load. ncopies = 1
+proto_parser.c:1241:32: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: t_253(D)->stats.touch_cmds
+proto_parser.c:1241:32: note: created vectp.276_663
+proto_parser.c:1241:32: note: add new stmt: vect__165.277_662 = MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.276_663];
+proto_parser.c:1241:32: note: ------>vectorizing SLP node starting from: _166 = _165 + 1;
+proto_parser.c:1241:32: note: vect_is_simple_use: operand t_253(D)->stats.touch_cmds, type of def: internal
+proto_parser.c:1241:32: note: transform binary/unary operation.
+proto_parser.c:1241:32: note: add new stmt: vect__166.278_661 = vect__165.277_662 + { 1, 1 };
+proto_parser.c:1241:32: note: ------>vectorizing SLP node starting from: t_253(D)->stats.touch_cmds = _166;
+proto_parser.c:1241:32: note: vect_is_simple_use: operand _165 + 1, type of def: internal
+proto_parser.c:1241:32: note: vect_is_simple_use: operand _167 + 1, type of def: internal
+proto_parser.c:1241:32: note: transform store. ncopies = 1
+proto_parser.c:1241:32: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: t_253(D)->stats.touch_cmds
+proto_parser.c:1241:32: note: created vectp.280_660
+proto_parser.c:1241:32: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.280_660] = vect__166.278_661;
+proto_parser.c:1241:32: note: vectorizing stmts using SLP.
+proto_parser.c:1268:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1268:21: note: Vectorizing SLP tree:
+proto_parser.c:1268:21: note: node 0x4272ca00 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1268:21: note: op template: *p_478 = 32;
+proto_parser.c:1268:21: note: 	stmt 0 *p_478 = 32;
+proto_parser.c:1268:21: note: 	stmt 1 MEM[(char *)p_478 + 1B] = 107;
+proto_parser.c:1268:21: note: 	children 0x4272ca88
+proto_parser.c:1268:21: note: node (constant) 0x4272ca88 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1268:21: note: 	{ 32, 107 }
+proto_parser.c:1268:21: note: ------>vectorizing SLP node starting from: *p_478 = 32;
+proto_parser.c:1268:21: note: vect_is_simple_use: operand 107, type of def: constant
+proto_parser.c:1268:21: note: transform store. ncopies = 1
+proto_parser.c:1268:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_478
+proto_parser.c:1268:21: note: created vectp.282_658
+proto_parser.c:1268:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.282_658] = { 32, 107 };
+proto_parser.c:1268:21: note: vectorizing stmts using SLP.
+proto_parser.c:1268:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1268:21: note: Vectorizing SLP tree:
+proto_parser.c:1268:21: note: node 0x4272cb10 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1268:21: note: op template: *p_388 = 32;
+proto_parser.c:1268:21: note: 	stmt 0 *p_388 = 32;
+proto_parser.c:1268:21: note: 	stmt 1 MEM[(char *)p_388 + 1B] = 98;
+proto_parser.c:1268:21: note: 	children 0x4272cb98
+proto_parser.c:1268:21: note: node (constant) 0x4272cb98 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1268:21: note: 	{ 32, 98 }
+proto_parser.c:1268:21: note: ------>vectorizing SLP node starting from: *p_388 = 32;
+proto_parser.c:1268:21: note: vect_is_simple_use: operand 98, type of def: constant
+proto_parser.c:1268:21: note: transform store. ncopies = 1
+proto_parser.c:1268:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_388
+proto_parser.c:1268:21: note: created vectp.284_656
+proto_parser.c:1268:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.284_656] = { 32, 98 };
+proto_parser.c:1268:21: note: vectorizing stmts using SLP.
+proto_parser.c:1268:21: note: ***** The result for vector mode V32QI would be the same
+proto_parser.c:1299:5: missed: statement clobbers memory: __assert_fail ("t != NULL", "proto_parser.c", 1299, &__PRETTY_FUNCTION__);
+proto_parser.c:1309:9: missed: statement clobbers memory: _2 = _meta_flag_preparse.constprop (pr_70(D), 3, &of, &binkey, &errstr);
+proto_parser.c:1361:10: missed: statement clobbers memory: it_89 = item_alloc (key_75, nkey_76, _15, exptime_145, vlen_71);
+proto_parser.c:1407:23: missed: not vectorized: statement is an unsupported bitfield access _38 = of.no_reply;
+proto_parser.c:1409:5: missed: statement clobbers memory: pthread_mutex_lock (_39);
+proto_parser.c:1411:5: missed: statement clobbers memory: pthread_mutex_unlock (_39);
+proto_parser.c:1365:15: missed: statement clobbers memory: _17 = item_size_ok (nkey_76, _16, vlen_71);
+proto_parser.c:1374:13: missed: statement clobbers memory: pthread_mutex_lock (_21);
+proto_parser.c:1376:13: missed: statement clobbers memory: pthread_mutex_unlock (_21);
+proto_parser.c:1368:13: missed: statement clobbers memory: pthread_mutex_lock (_18);
+proto_parser.c:1370:13: missed: statement clobbers memory: pthread_mutex_unlock (_18);
+proto_parser.c:1379:9: missed: statement clobbers memory: myl_115 = pthread_getspecific (logger_key.68_24);
+proto_parser.c:1379:9: missed: statement clobbers memory: logger_log (myl_51, 3, 0B, status_50, comm_66(D), key_75, nkey_76, 0, _26);
+proto_parser.c:1384:14: missed: statement clobbers memory: it_118 = item_get_locked (key_75, nkey_76, t_72(D), 0, &hv);
+proto_parser.c:1386:13: missed: statement clobbers memory: do_item_unlink (it_118, pretmp_147);
+proto_parser.c:1387:13: missed: statement clobbers memory: storage_delete (_28, it_118);
+proto_parser.c:1388:13: missed: statement clobbers memory: do_item_remove (it_118);
+proto_parser.c:1390:9: missed: statement clobbers memory: item_unlock (hv.70_29);
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_92(D), prephitmp_144);
+proto_parser.c:1302:9: missed: statement clobbers memory: pout_string (resp_92(D), "CLIENT_ERROR bad command line format");
+proto_parser.c:1290:7: note: ***** Analysis failed with vector mode V16HI
+proto_parser.c:1290:7: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V16HI
+proto_parser.c:1472:36: missed: couldn't vectorize loop
+proto_parser.c:1472:36: missed: not vectorized: could not determine main exit from loop with multiple exits.
+proto_parser.c:428:17: missed: couldn't vectorize loop
+proto_parser.c:428:17: missed: not vectorized: number of iterations cannot be computed.
+proto_parser.c:1425:6: note: vectorized 0 loops in function.
+proto_parser.c:1429:16: missed: statement clobbers memory: it_70 = process_mset_cmd_start (t_66(D), pr_67(D), resp_68(D), &cas_in, &has_cas_in, &comm);
+proto_parser.c:1437:9: missed: statement clobbers memory: _3 = _store_item_copy_from_buf (it_70, _2, _1);
+proto_parser.c:1446:76: missed: statement clobbers memory: iftmp.72_77 = get_cas_id ();
+proto_parser.c:1446:15: missed: statement clobbers memory: _9 = store_item (it_70, _8, t_66(D), &nbytes, &cas, iftmp.72_55, _5);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_72, "NF", 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_72, "EX", 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_72, "HD", 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_72, "NS", 2);
+proto_parser.c:1499:25: missed: statement clobbers memory: p_90 = itoa_u32 (_47, p_88);
+proto_parser.c:1497:25: missed: statement clobbers memory: p_92 = itoa_u32 (_44, p_88);
+proto_parser.c:1486:17: missed: statement clobbers memory: _97 = base64_encode (_40, _247, p_95, 512);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_95, _31, _247);
+proto_parser.c:1490:21: missed: statement clobbers memory: p_107 = itoa_u64 (cas.75_41, p_105);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_110, _23, _19);
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_68(D), "CLIENT_ERROR opaque token too long");
+proto_parser.c:1519:5: missed: statement clobbers memory: item_remove (it_70);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_158, "\r\n", 2);
+proto_parser.c:1512:5: missed: statement clobbers memory: resp_add_iov (resp_68(D), p_72, _51);
+proto_parser.c:1514:5: missed: statement clobbers memory: item_remove (it_70);
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_68(D), "SERVER_ERROR Unhandled storage type.");
+proto_parser.c:1466:11: missed: statement clobbers memory: item_remove (it_70);
+proto_parser.c:1438:9: missed: statement clobbers memory: pout_string (resp_68(D), "SERVER_ERROR out of memory storing object");
+proto_parser.c:1439:9: missed: statement clobbers memory: item_remove (it_70);
+proto_parser.c:1489:17: note: ***** Analysis succeeded with vector mode V32QI
+proto_parser.c:1489:17: note: SLPing BB part
+proto_parser.c:1494:17: note: Costing subgraph: 
+proto_parser.c:1494:17: note: node 0x42653348 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1494:17: note: op template: *p_157 = 32;
+proto_parser.c:1494:17: note: 	stmt 0 *p_157 = 32;
+proto_parser.c:1494:17: note: 	stmt 1 MEM[(char *)p_157 + 1B] = 115;
+proto_parser.c:1494:17: note: 	children 0x426533d0
+proto_parser.c:1494:17: note: node (constant) 0x426533d0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1494:17: note: 	{ 32, 115 }
+proto_parser.c:1494:17: note: Cost model analysis: 
+proto_parser.c:1494:17: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1486:17: note: Costing subgraph: 
+proto_parser.c:1486:17: note: node 0x42653458 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1486:17: note: op template: *p_157 = 32;
+proto_parser.c:1486:17: note: 	stmt 0 *p_157 = 32;
+proto_parser.c:1486:17: note: 	stmt 1 MEM[(char *)p_157 + 1B] = 107;
+proto_parser.c:1486:17: note: 	children 0x426534e0
+proto_parser.c:1486:17: note: node (constant) 0x426534e0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1486:17: note: 	{ 32, 107 }
+proto_parser.c:1486:17: note: Cost model analysis: 
+proto_parser.c:1486:17: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1486:17: note: Costing subgraph: 
+proto_parser.c:1486:17: note: node 0x42653568 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1486:17: note: op template: *p_98 = 32;
+proto_parser.c:1486:17: note: 	stmt 0 *p_98 = 32;
+proto_parser.c:1486:17: note: 	stmt 1 MEM[(char *)p_98 + 1B] = 98;
+proto_parser.c:1486:17: note: 	children 0x426535f0
+proto_parser.c:1486:17: note: node (constant) 0x426535f0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1486:17: note: 	{ 32, 98 }
+proto_parser.c:1486:17: note: Cost model analysis: 
+proto_parser.c:1486:17: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1489:17: note: Costing subgraph: 
+proto_parser.c:1489:17: note: node 0x42653678 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1489:17: note: op template: *p_157 = 32;
+proto_parser.c:1489:17: note: 	stmt 0 *p_157 = 32;
+proto_parser.c:1489:17: note: 	stmt 1 MEM[(char *)p_157 + 1B] = 99;
+proto_parser.c:1489:17: note: 	children 0x42653700
+proto_parser.c:1489:17: note: node (constant) 0x42653700 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1489:17: note: 	{ 32, 99 }
+proto_parser.c:1489:17: note: Cost model analysis: 
+proto_parser.c:1489:17: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1489:17: note: Basic block will be vectorized using SLP
+proto_parser.c:1494:17: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1494:17: note: Vectorizing SLP tree:
+proto_parser.c:1494:17: note: node 0x42653348 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1494:17: note: op template: *p_157 = 32;
+proto_parser.c:1494:17: note: 	stmt 0 *p_157 = 32;
+proto_parser.c:1494:17: note: 	stmt 1 MEM[(char *)p_157 + 1B] = 115;
+proto_parser.c:1494:17: note: 	children 0x426533d0
+proto_parser.c:1494:17: note: node (constant) 0x426533d0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1494:17: note: 	{ 32, 115 }
+proto_parser.c:1494:17: note: ------>vectorizing SLP node starting from: *p_157 = 32;
+proto_parser.c:1494:17: note: vect_is_simple_use: operand 115, type of def: constant
+proto_parser.c:1494:17: note: transform store. ncopies = 1
+proto_parser.c:1494:17: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_157
+proto_parser.c:1494:17: note: created vectp.328_115
+proto_parser.c:1494:17: note: add new stmt: MEM <vector(2) char> [(char *)vectp.328_115] = { 32, 115 };
+proto_parser.c:1494:17: note: vectorizing stmts using SLP.
+proto_parser.c:1486:17: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1486:17: note: Vectorizing SLP tree:
+proto_parser.c:1486:17: note: node 0x42653458 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1486:17: note: op template: *p_157 = 32;
+proto_parser.c:1486:17: note: 	stmt 0 *p_157 = 32;
+proto_parser.c:1486:17: note: 	stmt 1 MEM[(char *)p_157 + 1B] = 107;
+proto_parser.c:1486:17: note: 	children 0x426534e0
+proto_parser.c:1486:17: note: node (constant) 0x426534e0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1486:17: note: 	{ 32, 107 }
+proto_parser.c:1486:17: note: ------>vectorizing SLP node starting from: *p_157 = 32;
+proto_parser.c:1486:17: note: vect_is_simple_use: operand 107, type of def: constant
+proto_parser.c:1486:17: note: transform store. ncopies = 1
+proto_parser.c:1486:17: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_157
+proto_parser.c:1486:17: note: created vectp.330_116
+proto_parser.c:1486:17: note: add new stmt: MEM <vector(2) char> [(char *)vectp.330_116] = { 32, 107 };
+proto_parser.c:1486:17: note: vectorizing stmts using SLP.
+proto_parser.c:1486:17: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1486:17: note: Vectorizing SLP tree:
+proto_parser.c:1486:17: note: node 0x42653568 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1486:17: note: op template: *p_98 = 32;
+proto_parser.c:1486:17: note: 	stmt 0 *p_98 = 32;
+proto_parser.c:1486:17: note: 	stmt 1 MEM[(char *)p_98 + 1B] = 98;
+proto_parser.c:1486:17: note: 	children 0x426535f0
+proto_parser.c:1486:17: note: node (constant) 0x426535f0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1486:17: note: 	{ 32, 98 }
+proto_parser.c:1486:17: note: ------>vectorizing SLP node starting from: *p_98 = 32;
+proto_parser.c:1486:17: note: vect_is_simple_use: operand 98, type of def: constant
+proto_parser.c:1486:17: note: transform store. ncopies = 1
+proto_parser.c:1486:17: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_98
+proto_parser.c:1486:17: note: created vectp.332_117
+proto_parser.c:1486:17: note: add new stmt: MEM <vector(2) char> [(char *)vectp.332_117] = { 32, 98 };
+proto_parser.c:1486:17: note: vectorizing stmts using SLP.
+proto_parser.c:1489:17: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1489:17: note: Vectorizing SLP tree:
+proto_parser.c:1489:17: note: node 0x42653678 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1489:17: note: op template: *p_157 = 32;
+proto_parser.c:1489:17: note: 	stmt 0 *p_157 = 32;
+proto_parser.c:1489:17: note: 	stmt 1 MEM[(char *)p_157 + 1B] = 99;
+proto_parser.c:1489:17: note: 	children 0x42653700
+proto_parser.c:1489:17: note: node (constant) 0x42653700 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1489:17: note: 	{ 32, 99 }
+proto_parser.c:1489:17: note: ------>vectorizing SLP node starting from: *p_157 = 32;
+proto_parser.c:1489:17: note: vect_is_simple_use: operand 99, type of def: constant
+proto_parser.c:1489:17: note: transform store. ncopies = 1
+proto_parser.c:1489:17: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_157
+proto_parser.c:1489:17: note: created vectp.334_231
+proto_parser.c:1489:17: note: add new stmt: MEM <vector(2) char> [(char *)vectp.334_231] = { 32, 99 };
+proto_parser.c:1489:17: note: vectorizing stmts using SLP.
+proto_parser.c:1489:17: note: ***** The result for vector mode V32QI would be the same
+proto_parser.c:1545:32: missed: couldn't vectorize loop
+proto_parser.c:1545:32: missed: not vectorized: could not determine main exit from loop with multiple exits.
+proto_parser.c:428:17: missed: couldn't vectorize loop
+proto_parser.c:428:17: missed: not vectorized: number of iterations cannot be computed.
+proto_parser.c:1522:6: note: vectorized 0 loops in function.
+proto_parser.c:1529:5: missed: statement clobbers memory: __assert_fail ("t != NULL", "proto_parser.c", 1529, &__PRETTY_FUNCTION__);
+proto_parser.c:1536:9: missed: statement clobbers memory: _1 = _meta_flag_preparse.constprop (pr_128(D), 2, &of, &binkey, &errstr);
+proto_parser.c:1559:17: missed: statement clobbers memory: _179 = base64_encode (key_130, nkey_131, p_177, 512);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_177, key_130, nkey_131);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_188, _16, _12);
+proto_parser.c:1564:10: missed: statement clobbers memory: it_134 = item_get_locked (key_130, nkey_131, t_124(D), 0, &hv);
+proto_parser.c:1628:9: missed: statement clobbers memory: pthread_mutex_lock (_79);
+proto_parser.c:1630:9: missed: statement clobbers memory: pthread_mutex_unlock (_79);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_82, "NF", 2);
+proto_parser.c:1578:28: missed: statement clobbers memory: new_it_144 = item_alloc (key_130, nkey_131, _31, _30, 2);
+proto_parser.c:1650:9: missed: statement clobbers memory: do_item_remove (it_134);
+proto_parser.c:1651:9: missed: statement clobbers memory: item_unlock (hv.86_91);
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_126(D), prephitmp_290);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_45, "\r\n", 2);
+proto_parser.c:1581:21: missed: statement clobbers memory: _50 = do_store_item (new_it_144, 2, t_124(D), hv.81_49, 0B, 0B, iftmp.80_101, 0);
+proto_parser.c:1586:21: missed: statement clobbers memory: do_item_remove (new_it_144);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_51, "NS", 2);
+proto_parser.c:1583:21: missed: statement clobbers memory: do_item_remove (it_134);
+proto_parser.c:1613:13: missed: statement clobbers memory: pthread_mutex_lock (_63);
+proto_parser.c:1615:13: missed: statement clobbers memory: pthread_mutex_unlock (_63);
+proto_parser.c:1616:13: missed: statement clobbers memory: myl_158 = pthread_getspecific (logger_key.83_69);
+proto_parser.c:1616:13: missed: statement clobbers memory: logger_log (myl_99, 10, it_93, 2);
+proto_parser.c:1619:17: missed: statement clobbers memory: do_item_unlink (it_93, hv.84_74);
+proto_parser.c:1620:17: missed: statement clobbers memory: storage_delete (_75, it_93);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_78, "HD", 2);
+proto_parser.c:1607:13: missed: statement clobbers memory: iftmp.82_166 = get_cas_id ();
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_62, "HD", 2);
+proto_parser.c:1568:13: missed: statement clobbers memory: pthread_mutex_lock (_25);
+proto_parser.c:1570:13: missed: statement clobbers memory: pthread_mutex_unlock (_25);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_28, "EX", 2);
+proto_parser.c:1637:9: missed: statement clobbers memory: do_item_remove (it_185);
+proto_parser.c:1640:5: missed: statement clobbers memory: item_unlock (hv.85_83);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_88, "\r\n", 2);
+proto_parser.c:1644:5: missed: statement clobbers memory: resp_add_iov (resp_126(D), _84, _90);
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_126(D), errstr.78_2);
+proto_parser.c:1559:17: note: ***** Analysis succeeded with vector mode V8SI
+proto_parser.c:1559:17: note: SLPing BB part
+proto_parser.c:1559:17: note: Costing subgraph: 
+proto_parser.c:1559:17: note: node 0x429814b8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1559:17: note: op template: *p_208 = 32;
+proto_parser.c:1559:17: note: 	stmt 0 *p_208 = 32;
+proto_parser.c:1559:17: note: 	stmt 1 MEM[(char *)p_208 + 1B] = 107;
+proto_parser.c:1559:17: note: 	children 0x42981540
+proto_parser.c:1559:17: note: node (constant) 0x42981540 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1559:17: note: 	{ 32, 107 }
+proto_parser.c:1559:17: note: Cost model analysis: 
+proto_parser.c:1559:17: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1559:17: note: Costing subgraph: 
+proto_parser.c:1559:17: note: node 0x429815c8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1559:17: note: op template: *p_180 = 32;
+proto_parser.c:1559:17: note: 	stmt 0 *p_180 = 32;
+proto_parser.c:1559:17: note: 	stmt 1 MEM[(char *)p_180 + 1B] = 98;
+proto_parser.c:1559:17: note: 	children 0x42981650
+proto_parser.c:1559:17: note: node (constant) 0x42981650 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1559:17: note: 	{ 32, 98 }
+proto_parser.c:1559:17: note: Cost model analysis: 
+proto_parser.c:1559:17: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1559:17: note: Basic block will be vectorized using SLP
+proto_parser.c:1559:17: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1559:17: note: Vectorizing SLP tree:
+proto_parser.c:1559:17: note: node 0x429814b8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1559:17: note: op template: *p_208 = 32;
+proto_parser.c:1559:17: note: 	stmt 0 *p_208 = 32;
+proto_parser.c:1559:17: note: 	stmt 1 MEM[(char *)p_208 + 1B] = 107;
+proto_parser.c:1559:17: note: 	children 0x42981540
+proto_parser.c:1559:17: note: node (constant) 0x42981540 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1559:17: note: 	{ 32, 107 }
+proto_parser.c:1559:17: note: ------>vectorizing SLP node starting from: *p_208 = 32;
+proto_parser.c:1559:17: note: vect_is_simple_use: operand 107, type of def: constant
+proto_parser.c:1559:17: note: transform store. ncopies = 1
+proto_parser.c:1559:17: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_208
+proto_parser.c:1559:17: note: created vectp.358_279
+proto_parser.c:1559:17: note: add new stmt: MEM <vector(2) char> [(char *)vectp.358_279] = { 32, 107 };
+proto_parser.c:1559:17: note: vectorizing stmts using SLP.
+proto_parser.c:1559:17: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1559:17: note: Vectorizing SLP tree:
+proto_parser.c:1559:17: note: node 0x429815c8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1559:17: note: op template: *p_180 = 32;
+proto_parser.c:1559:17: note: 	stmt 0 *p_180 = 32;
+proto_parser.c:1559:17: note: 	stmt 1 MEM[(char *)p_180 + 1B] = 98;
+proto_parser.c:1559:17: note: 	children 0x42981650
+proto_parser.c:1559:17: note: node (constant) 0x42981650 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1559:17: note: 	{ 32, 98 }
+proto_parser.c:1559:17: note: ------>vectorizing SLP node starting from: *p_180 = 32;
+proto_parser.c:1559:17: note: vect_is_simple_use: operand 98, type of def: constant
+proto_parser.c:1559:17: note: transform store. ncopies = 1
+proto_parser.c:1559:17: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_180
+proto_parser.c:1559:17: note: created vectp.360_277
+proto_parser.c:1559:17: note: add new stmt: MEM <vector(2) char> [(char *)vectp.360_277] = { 32, 98 };
+proto_parser.c:1559:17: note: vectorizing stmts using SLP.
+proto_parser.c:1559:17: note: ***** The result for vector mode V32QI would be the same
+proto_parser.c:1789:36: missed: couldn't vectorize loop
+proto_parser.c:1789:36: missed: not vectorized: could not determine main exit from loop with multiple exits.
+proto_parser.c:428:17: missed: couldn't vectorize loop
+proto_parser.c:428:17: missed: not vectorized: number of iterations cannot be computed.
+proto_parser.c:1840:36: missed: couldn't vectorize loop
+proto_parser.c:1840:36: missed: not vectorized: could not determine main exit from loop with multiple exits.
+proto_parser.c:428:17: missed: couldn't vectorize loop
+proto_parser.c:428:17: missed: not vectorized: number of iterations cannot be computed.
+proto_parser.c:1656:6: note: vectorized 0 loops in function.
+proto_parser.c:1661:5: missed: statement clobbers memory: __assert_fail ("t != NULL", "proto_parser.c", 1661, &__PRETTY_FUNCTION__);
+proto_parser.c:1676:9: missed: statement clobbers memory: _1 = _meta_flag_preparse.constprop (pr_170(D), 2, &of, &binkey, &errstr);
+proto_parser.c:1705:10: missed: statement clobbers memory: hv_175 = hash.88_5 (key_172, nkey_173);
+proto_parser.c:1706:5: missed: statement clobbers memory: item_lock (hv_175);
+proto_parser.c:1714:12: missed: statement clobbers memory: _9 = do_add_delta (t_164(D), key_172, nkey_173, prephitmp_441, _7, &tmpbuf, &of.req_cas_id, hv_175, &it);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_167, "EX", 2);
+proto_parser.c:1757:13: missed: statement clobbers memory: pthread_mutex_lock (_61);
+proto_parser.c:1763:13: missed: statement clobbers memory: pthread_mutex_unlock (_61);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_167, "NF", 2);
+proto_parser.c:1736:13: missed: statement clobbers memory: itoa_u64 (_20, &tmpbuf);
+proto_parser.c:1737:24: missed: statement clobbers memory: _21 = strlen (&tmpbuf);
+proto_parser.c:1739:18: missed: statement clobbers memory: _23 = item_alloc (key_172, nkey_173, 0, 0, _22);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_38, &tmpbuf, _21);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_54, "\r\n", 2);
+proto_parser.c:1744:60: missed: statement clobbers memory: iftmp.103_191 = get_cas_id ();
+proto_parser.c:1743:21: missed: statement clobbers memory: _58 = do_store_item (it.104_57, 1, t_164(D), hv_175, 0B, &cas, iftmp.103_143, 0);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_167, "NS", 2);
+proto_parser.c:1868:9: missed: statement clobbers memory: do_item_remove (it.113_348);
+proto_parser.c:1868:9: missed: statement clobbers memory: do_item_remove (it.113_342);
+proto_parser.c:1853:21: missed: statement clobbers memory: _206 = base64_encode (key_172, nkey_173, p_204, 512);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_204, key_172, nkey_173);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_215, _115, _111);
+proto_parser.c:1868:9: missed: statement clobbers memory: do_item_remove (it.113_336);
+proto_parser.c:1780:23: missed: statement clobbers memory: vlen_219 = strlen (&tmpbuf);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_130, "HD", 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_130, "VA ", 3);
+proto_parser.c:1783:17: missed: statement clobbers memory: p_222 = itoa_u32 (_70, _69);
+proto_parser.c:1802:29: missed: not vectorized: volatile type: current_time.109_83 ={v} current_time;
+proto_parser.c:1802:29: missed: statement clobbers memory: p_233 = itoa_u32 (_84, p_231);
+proto_parser.c:1824:21: missed: statement clobbers memory: _241 = base64_encode (key_172, nkey_173, p_239, 512);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_239, key_172, nkey_173);
+proto_parser.c:1793:25: missed: statement clobbers memory: p_251 = itoa_u64 (cas.106_79, p_249);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_255, _94, _90);
+proto_parser.c:1868:9: missed: statement clobbers memory: do_item_remove (it.113_281);
+proto_parser.c:1870:9: missed: statement clobbers memory: item_unlock (hv_175);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_226, &tmpbuf, vlen_219);
+proto_parser.c:1837:9: missed: statement clobbers memory: do_item_remove (it.112_101);
+proto_parser.c:1859:5: missed: statement clobbers memory: item_unlock (hv_175);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_123, "\r\n", 2);
+proto_parser.c:1864:5: missed: statement clobbers memory: resp_add_iov (resp_166(D), p_167, _125);
+proto_parser.c:1868:9: missed: statement clobbers memory: do_item_remove (it.113_82);
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_166(D), prephitmp_533);
+proto_parser.c:410:5: missed: statement clobbers memory: pout_string (resp_166(D), "CLIENT_ERROR invalid or duplicate flag");
+proto_parser.c:1830:16: note: ***** Analysis succeeded with vector mode V4DI
+proto_parser.c:1830:16: note: SLPing BB part
+proto_parser.c:1853:21: note: Costing subgraph: 
+proto_parser.c:1853:21: note: node 0x42889dd8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1853:21: note: op template: *p_284 = 32;
+proto_parser.c:1853:21: note: 	stmt 0 *p_284 = 32;
+proto_parser.c:1853:21: note: 	stmt 1 MEM[(char *)p_284 + 1B] = 107;
+proto_parser.c:1853:21: note: 	children 0x42889e60
+proto_parser.c:1853:21: note: node (constant) 0x42889e60 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1853:21: note: 	{ 32, 107 }
+proto_parser.c:1853:21: note: Cost model analysis: 
+proto_parser.c:1853:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1853:21: note: Costing subgraph: 
+proto_parser.c:1853:21: note: node 0x42889ee8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1853:21: note: op template: *p_207 = 32;
+proto_parser.c:1853:21: note: 	stmt 0 *p_207 = 32;
+proto_parser.c:1853:21: note: 	stmt 1 MEM[(char *)p_207 + 1B] = 98;
+proto_parser.c:1853:21: note: 	children 0x42889f70
+proto_parser.c:1853:21: note: node (constant) 0x42889f70 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1853:21: note: 	{ 32, 98 }
+proto_parser.c:1853:21: note: Cost model analysis: 
+proto_parser.c:1853:21: note: Cost model analysis for part in loop 1:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1796:21: note: Costing subgraph: 
+proto_parser.c:1796:21: note: node 0x42889ff8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1796:21: note: op template: *p_282 = 32;
+proto_parser.c:1796:21: note: 	stmt 0 *p_282 = 32;
+proto_parser.c:1796:21: note: 	stmt 1 MEM[(char *)p_282 + 1B] = 116;
+proto_parser.c:1796:21: note: 	children 0x4288a080
+proto_parser.c:1796:21: note: node (constant) 0x4288a080 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1796:21: note: 	{ 32, 116 }
+proto_parser.c:1796:21: note: Cost model analysis: 
+proto_parser.c:1796:21: note: Cost model analysis for part in loop 2:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1798:28: note: Costing subgraph: 
+proto_parser.c:1798:28: note: node 0x4288a108 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1798:28: note: op template: MEM[(char *)p_282 + 2B] = 45;
+proto_parser.c:1798:28: note: 	stmt 0 MEM[(char *)p_282 + 2B] = 45;
+proto_parser.c:1798:28: note: 	stmt 1 MEM[(char *)p_282 + 3B] = 49;
+proto_parser.c:1798:28: note: 	children 0x4288a190
+proto_parser.c:1798:28: note: node (constant) 0x4288a190 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1798:28: note: 	{ 45, 49 }
+proto_parser.c:1798:28: note: Cost model analysis: 
+proto_parser.c:1798:28: note: Cost model analysis for part in loop 2:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1824:21: note: Costing subgraph: 
+proto_parser.c:1824:21: note: node 0x4288a218 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1824:21: note: op template: *p_282 = 32;
+proto_parser.c:1824:21: note: 	stmt 0 *p_282 = 32;
+proto_parser.c:1824:21: note: 	stmt 1 MEM[(char *)p_282 + 1B] = 107;
+proto_parser.c:1824:21: note: 	children 0x4288a2a0
+proto_parser.c:1824:21: note: node (constant) 0x4288a2a0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1824:21: note: 	{ 32, 107 }
+proto_parser.c:1824:21: note: Cost model analysis: 
+proto_parser.c:1824:21: note: Cost model analysis for part in loop 2:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1824:21: note: Costing subgraph: 
+proto_parser.c:1824:21: note: node 0x4288a328 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1824:21: note: op template: *p_242 = 32;
+proto_parser.c:1824:21: note: 	stmt 0 *p_242 = 32;
+proto_parser.c:1824:21: note: 	stmt 1 MEM[(char *)p_242 + 1B] = 98;
+proto_parser.c:1824:21: note: 	children 0x4288a3b0
+proto_parser.c:1824:21: note: node (constant) 0x4288a3b0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1824:21: note: 	{ 32, 98 }
+proto_parser.c:1824:21: note: Cost model analysis: 
+proto_parser.c:1824:21: note: Cost model analysis for part in loop 2:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1792:21: note: Costing subgraph: 
+proto_parser.c:1792:21: note: node 0x4288a438 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1792:21: note: op template: *p_282 = 32;
+proto_parser.c:1792:21: note: 	stmt 0 *p_282 = 32;
+proto_parser.c:1792:21: note: 	stmt 1 MEM[(char *)p_282 + 1B] = 99;
+proto_parser.c:1792:21: note: 	children 0x4288a4c0
+proto_parser.c:1792:21: note: node (constant) 0x4288a4c0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1792:21: note: 	{ 32, 99 }
+proto_parser.c:1792:21: note: Cost model analysis: 
+proto_parser.c:1792:21: note: Cost model analysis for part in loop 2:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1830:16: note: Costing subgraph: 
+proto_parser.c:1830:16: note: node 0x4288a548 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1830:16: note: op template: *p_283 = 13;
+proto_parser.c:1830:16: note: 	stmt 0 *p_283 = 13;
+proto_parser.c:1830:16: note: 	stmt 1 MEM[(char *)p_283 + 1B] = 10;
+proto_parser.c:1830:16: note: 	children 0x4288a5d0
+proto_parser.c:1830:16: note: node (constant) 0x4288a5d0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1830:16: note: 	{ 13, 10 }
+proto_parser.c:1830:16: note: Cost model analysis: 
+proto_parser.c:1830:16: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+proto_parser.c:1830:16: note: Basic block will be vectorized using SLP
+proto_parser.c:1853:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1853:21: note: Vectorizing SLP tree:
+proto_parser.c:1853:21: note: node 0x42889dd8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1853:21: note: op template: *p_284 = 32;
+proto_parser.c:1853:21: note: 	stmt 0 *p_284 = 32;
+proto_parser.c:1853:21: note: 	stmt 1 MEM[(char *)p_284 + 1B] = 107;
+proto_parser.c:1853:21: note: 	children 0x42889e60
+proto_parser.c:1853:21: note: node (constant) 0x42889e60 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1853:21: note: 	{ 32, 107 }
+proto_parser.c:1853:21: note: ------>vectorizing SLP node starting from: *p_284 = 32;
+proto_parser.c:1853:21: note: vect_is_simple_use: operand 107, type of def: constant
+proto_parser.c:1853:21: note: transform store. ncopies = 1
+proto_parser.c:1853:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_284
+proto_parser.c:1853:21: note: created vectp.386_497
+proto_parser.c:1853:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.386_497] = { 32, 107 };
+proto_parser.c:1853:21: note: vectorizing stmts using SLP.
+proto_parser.c:1853:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1853:21: note: Vectorizing SLP tree:
+proto_parser.c:1853:21: note: node 0x42889ee8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1853:21: note: op template: *p_207 = 32;
+proto_parser.c:1853:21: note: 	stmt 0 *p_207 = 32;
+proto_parser.c:1853:21: note: 	stmt 1 MEM[(char *)p_207 + 1B] = 98;
+proto_parser.c:1853:21: note: 	children 0x42889f70
+proto_parser.c:1853:21: note: node (constant) 0x42889f70 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1853:21: note: 	{ 32, 98 }
+proto_parser.c:1853:21: note: ------>vectorizing SLP node starting from: *p_207 = 32;
+proto_parser.c:1853:21: note: vect_is_simple_use: operand 98, type of def: constant
+proto_parser.c:1853:21: note: transform store. ncopies = 1
+proto_parser.c:1853:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_207
+proto_parser.c:1853:21: note: created vectp.388_495
+proto_parser.c:1853:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.388_495] = { 32, 98 };
+proto_parser.c:1853:21: note: vectorizing stmts using SLP.
+proto_parser.c:1796:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1796:21: note: Vectorizing SLP tree:
+proto_parser.c:1796:21: note: node 0x42889ff8 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1796:21: note: op template: *p_282 = 32;
+proto_parser.c:1796:21: note: 	stmt 0 *p_282 = 32;
+proto_parser.c:1796:21: note: 	stmt 1 MEM[(char *)p_282 + 1B] = 116;
+proto_parser.c:1796:21: note: 	children 0x4288a080
+proto_parser.c:1796:21: note: node (constant) 0x4288a080 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1796:21: note: 	{ 32, 116 }
+proto_parser.c:1796:21: note: ------>vectorizing SLP node starting from: *p_282 = 32;
+proto_parser.c:1796:21: note: vect_is_simple_use: operand 116, type of def: constant
+proto_parser.c:1796:21: note: transform store. ncopies = 1
+proto_parser.c:1796:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_282
+proto_parser.c:1796:21: note: created vectp.390_493
+proto_parser.c:1796:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.390_493] = { 32, 116 };
+proto_parser.c:1796:21: note: vectorizing stmts using SLP.
+proto_parser.c:1798:28: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1798:28: note: Vectorizing SLP tree:
+proto_parser.c:1798:28: note: node 0x4288a108 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1798:28: note: op template: MEM[(char *)p_282 + 2B] = 45;
+proto_parser.c:1798:28: note: 	stmt 0 MEM[(char *)p_282 + 2B] = 45;
+proto_parser.c:1798:28: note: 	stmt 1 MEM[(char *)p_282 + 3B] = 49;
+proto_parser.c:1798:28: note: 	children 0x4288a190
+proto_parser.c:1798:28: note: node (constant) 0x4288a190 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1798:28: note: 	{ 45, 49 }
+proto_parser.c:1798:28: note: ------>vectorizing SLP node starting from: MEM[(char *)p_282 + 2B] = 45;
+proto_parser.c:1798:28: note: vect_is_simple_use: operand 49, type of def: constant
+proto_parser.c:1798:28: note: transform store. ncopies = 1
+proto_parser.c:1798:28: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: MEM[(char *)p_282 + 2B]
+proto_parser.c:1798:28: note: created vectp.392_491
+proto_parser.c:1798:28: note: add new stmt: MEM <vector(2) char> [(char *)vectp.392_491] = { 45, 49 };
+proto_parser.c:1798:28: note: vectorizing stmts using SLP.
+proto_parser.c:1824:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1824:21: note: Vectorizing SLP tree:
+proto_parser.c:1824:21: note: node 0x4288a218 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1824:21: note: op template: *p_282 = 32;
+proto_parser.c:1824:21: note: 	stmt 0 *p_282 = 32;
+proto_parser.c:1824:21: note: 	stmt 1 MEM[(char *)p_282 + 1B] = 107;
+proto_parser.c:1824:21: note: 	children 0x4288a2a0
+proto_parser.c:1824:21: note: node (constant) 0x4288a2a0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1824:21: note: 	{ 32, 107 }
+proto_parser.c:1824:21: note: ------>vectorizing SLP node starting from: *p_282 = 32;
+proto_parser.c:1824:21: note: vect_is_simple_use: operand 107, type of def: constant
+proto_parser.c:1824:21: note: transform store. ncopies = 1
+proto_parser.c:1824:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_282
+proto_parser.c:1824:21: note: created vectp.394_489
+proto_parser.c:1824:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.394_489] = { 32, 107 };
+proto_parser.c:1824:21: note: vectorizing stmts using SLP.
+proto_parser.c:1824:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1824:21: note: Vectorizing SLP tree:
+proto_parser.c:1824:21: note: node 0x4288a328 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1824:21: note: op template: *p_242 = 32;
+proto_parser.c:1824:21: note: 	stmt 0 *p_242 = 32;
+proto_parser.c:1824:21: note: 	stmt 1 MEM[(char *)p_242 + 1B] = 98;
+proto_parser.c:1824:21: note: 	children 0x4288a3b0
+proto_parser.c:1824:21: note: node (constant) 0x4288a3b0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1824:21: note: 	{ 32, 98 }
+proto_parser.c:1824:21: note: ------>vectorizing SLP node starting from: *p_242 = 32;
+proto_parser.c:1824:21: note: vect_is_simple_use: operand 98, type of def: constant
+proto_parser.c:1824:21: note: transform store. ncopies = 1
+proto_parser.c:1824:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_242
+proto_parser.c:1824:21: note: created vectp.396_487
+proto_parser.c:1824:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.396_487] = { 32, 98 };
+proto_parser.c:1824:21: note: vectorizing stmts using SLP.
+proto_parser.c:1792:21: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1792:21: note: Vectorizing SLP tree:
+proto_parser.c:1792:21: note: node 0x4288a438 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1792:21: note: op template: *p_282 = 32;
+proto_parser.c:1792:21: note: 	stmt 0 *p_282 = 32;
+proto_parser.c:1792:21: note: 	stmt 1 MEM[(char *)p_282 + 1B] = 99;
+proto_parser.c:1792:21: note: 	children 0x4288a4c0
+proto_parser.c:1792:21: note: node (constant) 0x4288a4c0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1792:21: note: 	{ 32, 99 }
+proto_parser.c:1792:21: note: ------>vectorizing SLP node starting from: *p_282 = 32;
+proto_parser.c:1792:21: note: vect_is_simple_use: operand 99, type of def: constant
+proto_parser.c:1792:21: note: transform store. ncopies = 1
+proto_parser.c:1792:21: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_282
+proto_parser.c:1792:21: note: created vectp.398_485
+proto_parser.c:1792:21: note: add new stmt: MEM <vector(2) char> [(char *)vectp.398_485] = { 32, 99 };
+proto_parser.c:1792:21: note: vectorizing stmts using SLP.
+proto_parser.c:1830:16: optimized: basic block part vectorized using 2 byte vectors
+proto_parser.c:1830:16: note: Vectorizing SLP tree:
+proto_parser.c:1830:16: note: node 0x4288a548 (max_nunits=2, refcnt=1) vector(2) char
+proto_parser.c:1830:16: note: op template: *p_283 = 13;
+proto_parser.c:1830:16: note: 	stmt 0 *p_283 = 13;
+proto_parser.c:1830:16: note: 	stmt 1 MEM[(char *)p_283 + 1B] = 10;
+proto_parser.c:1830:16: note: 	children 0x4288a5d0
+proto_parser.c:1830:16: note: node (constant) 0x4288a5d0 (max_nunits=1, refcnt=1) vector(2) char
+proto_parser.c:1830:16: note: 	{ 13, 10 }
+proto_parser.c:1830:16: note: ------>vectorizing SLP node starting from: *p_283 = 13;
+proto_parser.c:1830:16: note: vect_is_simple_use: operand 10, type of def: constant
+proto_parser.c:1830:16: note: transform store. ncopies = 1
+proto_parser.c:1830:16: note: create vector_type-pointer variable to type: vector(2) char  vectorizing a pointer ref: *p_283
+proto_parser.c:1830:16: note: created vectp.400_483
+proto_parser.c:1830:16: note: add new stmt: MEM <vector(2) char> [(char *)vectp.400_483] = { 13, 10 };
+proto_parser.c:1830:16: note: vectorizing stmts using SLP.
+proto_parser.c:1830:16: note: ***** The result for vector mode V32QI would be the same

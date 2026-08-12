@@ -1,0 +1,11 @@
+murmur3_hash.c:86:25: missed: couldn't vectorize loop
+murmur3_hash.c:94:8: missed: not vectorized: unsupported use in stmt.
+murmur3_hash.c:71:10: note: vectorized 0 loops in function.
+murmur3_hash.c:62:5: note: ***** Analysis failed with vector mode V8SI
+murmur3_hash.c:62:5: note: ***** The result for vector mode V32QI would be the same
+murmur3_hash.c:62:5: note: ***** Re-trying analysis with vector mode V16QI
+murmur3_hash.c:62:5: note: ***** Analysis failed with vector mode V16QI
+murmur3_hash.c:62:5: note: ***** Re-trying analysis with vector mode V8QI
+murmur3_hash.c:62:5: note: ***** Analysis failed with vector mode V8QI
+murmur3_hash.c:62:5: note: ***** Re-trying analysis with vector mode V4QI
+murmur3_hash.c:62:5: note: ***** Analysis failed with vector mode V4QI

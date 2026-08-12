@@ -1,0 +1,49 @@
+cache.c:19:20: missed: statement clobbers memory: ret_13 = calloc (1, 88);
+cache.c:20:16: missed: statement clobbers memory: nm_16 = strdup (name_14(D));
+cache.c:22:9: missed: statement clobbers memory: _5 = pthread_mutex_init (_4, 0B);
+cache.c:36:5: missed: statement clobbers memory: __assert_fail ("ret->bufsize >= sizeof(struct cache_free_s)", "cache.c", 36, &__PRETTY_FUNCTION__);
+cache.c:23:9: missed: statement clobbers memory: free (ret_13);
+cache.c:24:9: missed: statement clobbers memory: free (nm_16);
+cache.c:21:21: note: ***** Analysis failed with vector mode V4DI
+cache.c:21:21: note: ***** The result for vector mode V32QI would be the same
+cache.c:21:21: note: ***** Re-trying analysis with vector mode V16QI
+cache.c:21:21: note: ***** Analysis failed with vector mode V16QI
+cache.c:21:21: note: ***** Re-trying analysis with vector mode V8QI
+cache.c:21:21: note: ***** Analysis failed with vector mode V8QI
+cache.c:21:21: note: ***** Re-trying analysis with vector mode V4QI
+cache.c:21:21: note: ***** Analysis failed with vector mode V4QI
+cache.c:42:5: missed: statement clobbers memory: pthread_mutex_lock (_1);
+cache.c:44:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+cache.c:45:1: note: ***** Analysis failed with vector mode V8SI
+cache.c:45:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+cache.c:57:12: missed: couldn't vectorize loop
+cache.c:57:12: missed: not vectorized: unsupported control flow in loop.
+cache.c:56:6: note: vectorized 0 loops in function.
+cache.c:60:9: missed: statement clobbers memory: free (_18);
+cache.c:62:5: missed: statement clobbers memory: free (_4);
+cache.c:63:5: missed: statement clobbers memory: pthread_mutex_destroy (_5);
+cache.c:64:5: missed: statement clobbers memory: free (cache_9(D));
+cache.c:65:1: note: ***** Analysis failed with vector mode V4DI
+cache.c:65:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+cache.c:69:5: missed: statement clobbers memory: pthread_mutex_lock (_1);
+cache.c:84:24: missed: statement clobbers memory: ret_17 = malloc (_16);
+cache.c:71:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+cache.c:72:12: note: ***** Analysis failed with vector mode V8SI
+cache.c:72:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+cache.c:84:24: missed: statement clobbers memory: ret_19 = malloc (_7);
+cache.c:105:12: note: ***** Analysis failed with vector mode V8SI
+cache.c:105:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+cache.c:109:5: missed: statement clobbers memory: pthread_mutex_lock (_1);
+cache.c:117:9: missed: statement clobbers memory: _11 = memcmp (_10, &redzone_pattern, 8);
+cache.c:133:9: missed: statement clobbers memory: free (pre_12);
+cache.c:126:9: missed: statement clobbers memory: raise (6);
+cache.c:119:9: missed: statement clobbers memory: raise (6);
+cache.c:111:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+cache.c:112:1: note: ***** Analysis failed with vector mode V4DI
+cache.c:112:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+cache.c:117:9: missed: statement clobbers memory: _4 = memcmp (_3, &redzone_pattern, 8);
+cache.c:133:9: missed: statement clobbers memory: free (pre_20);
+cache.c:126:9: missed: statement clobbers memory: raise (6);
+cache.c:119:9: missed: statement clobbers memory: raise (6);
+cache.c:120:21: note: ***** Analysis failed with vector mode V4DI
+cache.c:120:21: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI

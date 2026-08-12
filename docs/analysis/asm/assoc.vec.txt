@@ -1,0 +1,148 @@
+assoc.c:200:12: missed: couldn't vectorize loop
+assoc.c:200:12: missed: not vectorized: unsupported control flow in loop.
+assoc.c:200:12: missed: couldn't vectorize loop
+assoc.c:200:12: missed: not vectorized: could not determine main exit from loop with multiple exits.
+assoc.c:200:12: missed: couldn't vectorize loop
+assoc.c:200:12: missed: not vectorized: could not determine main exit from loop with multiple exits.
+assoc.c:204:42: missed: couldn't vectorize loop
+assoc.c:204:42: missed: not vectorized: could not determine main exit from loop with multiple exits.
+assoc.c:214:66: missed: couldn't vectorize loop
+assoc.c:214:66: missed: not vectorized: number of iterations cannot be computed.
+assoc.c:197:14: note: vectorized 0 loops in function.
+assoc.c:199:5: missed: statement clobbers memory: pthread_mutex_lock (&maintenance_lock);
+assoc.c:200:12: missed: not vectorized: volatile type: do_run_maintenance_thread.51_46 ={v} do_run_maintenance_thread;
+assoc.c:213:30: missed: statement clobbers memory: item_lock_58 = item_trylock (_2);
+assoc.c:236:17: missed: statement clobbers memory: usleep (9999);
+assoc.c:216:34: missed: statement clobbers memory: _16 = hash.35_7 (_15, _9);
+assoc.c:226:25: missed: statement clobbers memory: free (prephitmp_131);
+assoc.c:227:25: missed: statement clobbers memory: STATS_LOCK ();
+assoc.c:230:25: missed: statement clobbers memory: STATS_UNLOCK ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fwrite ("Hash table expansion done\n", 1, 26, stderr.46_40);
+assoc.c:240:17: missed: statement clobbers memory: item_trylock_unlock (item_lock_58);
+assoc.c:247:13: missed: statement clobbers memory: pthread_cond_wait (&maintenance_cond, &maintenance_lock);
+assoc.c:255:17: missed: not vectorized: volatile type: do_run_maintenance_thread.50_45 ={v} do_run_maintenance_thread;
+assoc.c:256:17: missed: statement clobbers memory: pause_threads (1);
+assoc.c:125:25: missed: statement clobbers memory: _85 = calloc (_84, 8);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fwrite ("Hash table expansion starting\n", 1, 30, stderr.55_87);
+assoc.c:132:9: missed: statement clobbers memory: STATS_LOCK ();
+assoc.c:136:9: missed: statement clobbers memory: STATS_UNLOCK ();
+assoc.c:258:17: missed: statement clobbers memory: pause_threads (2);
+assoc.c:262:5: missed: statement clobbers memory: pthread_mutex_unlock (&maintenance_lock);
+assoc.c:134:32: note: ***** Analysis failed with vector mode V8SI
+assoc.c:134:32: note: ***** The result for vector mode V32QI would be the same
+assoc.c:134:32: note: ***** Re-trying analysis with vector mode V16QI
+assoc.c:134:32: note: ***** Analysis failed with vector mode V16QI
+assoc.c:134:32: note: ***** Re-trying analysis with vector mode V8QI
+assoc.c:134:32: note: ***** Analysis failed with vector mode V8QI
+assoc.c:134:32: note: ***** Re-trying analysis with vector mode V4QI
+assoc.c:134:32: note: ***** Analysis failed with vector mode V4QI
+assoc.c:59:25: missed: statement clobbers memory: _4 = calloc (_3, 8);
+assoc.c:64:5: missed: statement clobbers memory: STATS_LOCK ();
+assoc.c:67:5: missed: statement clobbers memory: STATS_UNLOCK ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fwrite ("Failed to init hashtable.\n", 1, 26, stderr.3_5);
+assoc.c:62:9: missed: statement clobbers memory: exit (1);
+assoc.c:62:9: note: ***** Analysis failed with vector mode V8SI
+assoc.c:62:9: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+assoc.c:86:12: missed: couldn't vectorize loop
+assoc.c:86:12: missed: not vectorized: could not determine main exit from loop with multiple exits.
+assoc.c:70:7: note: vectorized 0 loops in function.
+assoc.c:87:36: missed: statement clobbers memory: _27 = memcmp (key_37(D), _26, nkey_36(D));
+assoc.c:79:35: note: ***** Analysis failed with vector mode V32QI
+assoc.c:79:35: note: ***** The result for vector mode V32QI would be the same
+assoc.c:79:35: note: ***** Re-trying analysis with vector mode V16QI
+assoc.c:79:35: note: ***** Analysis failed with vector mode V16QI
+assoc.c:79:35: note: ***** Re-trying analysis with vector mode V8QI
+assoc.c:79:35: note: ***** Analysis failed with vector mode V8QI
+assoc.c:79:35: note: ***** Re-trying analysis with vector mode V4QI
+assoc.c:79:35: note: ***** Analysis failed with vector mode V4QI
+assoc.c:144:9: missed: statement clobbers memory: _1 = pthread_mutex_trylock (&maintenance_lock);
+assoc.c:146:13: missed: statement clobbers memory: pthread_cond_signal (&maintenance_cond);
+assoc.c:148:9: missed: statement clobbers memory: pthread_mutex_unlock (&maintenance_lock);
+assoc.c:145:56: note: ***** Analysis failed with vector mode V8SI
+assoc.c:145:56: note: ***** The result for vector mode V32QI would be the same
+assoc.c:145:56: note: ***** Re-trying analysis with vector mode V16QI
+assoc.c:145:56: note: ***** Analysis failed with vector mode V16QI
+assoc.c:145:56: note: ***** Re-trying analysis with vector mode V8QI
+assoc.c:145:56: note: ***** Analysis failed with vector mode V8QI
+assoc.c:145:56: note: ***** Re-trying analysis with vector mode V4QI
+assoc.c:145:56: note: ***** Analysis failed with vector mode V4QI
+assoc.c:164:43: note: ***** Analysis failed with vector mode V32QI
+assoc.c:164:43: note: ***** The result for vector mode V32QI would be the same
+assoc.c:164:43: note: ***** Re-trying analysis with vector mode V16QI
+assoc.c:164:43: note: ***** Analysis failed with vector mode V16QI
+assoc.c:164:43: note: ***** Re-trying analysis with vector mode V8QI
+assoc.c:164:43: note: ***** Analysis failed with vector mode V8QI
+assoc.c:164:43: note: ***** Re-trying analysis with vector mode V4QI
+assoc.c:164:43: note: ***** Analysis failed with vector mode V4QI
+assoc.c:115:44: missed: couldn't vectorize loop
+assoc.c:115:44: missed: not vectorized: could not determine main exit from loop with multiple exits.
+assoc.c:172:6: note: vectorized 0 loops in function.
+assoc.c:115:47: missed: statement clobbers memory: _41 = memcmp (key_3(D), _40, nkey_4(D));
+assoc.c:188:5: missed: statement clobbers memory: __assert_fail ("*before != 0", "assoc.c", 188, &__PRETTY_FUNCTION__);
+assoc.c:112:37: note: ***** Analysis failed with vector mode V32QI
+assoc.c:112:37: note: ***** The result for vector mode V32QI would be the same
+assoc.c:112:37: note: ***** Re-trying analysis with vector mode V16QI
+assoc.c:112:37: note: ***** Analysis failed with vector mode V16QI
+assoc.c:112:37: note: ***** Re-trying analysis with vector mode V8QI
+assoc.c:112:37: note: ***** Analysis failed with vector mode V8QI
+assoc.c:112:37: note: ***** Re-trying analysis with vector mode V4QI
+assoc.c:112:37: note: ***** Analysis failed with vector mode V4QI
+assoc.c:270:17: missed: statement clobbers memory: env_9 = getenv ("MEMCACHED_HASH_BULK_MOVE");
+/usr/include/stdlib.h:487:16: missed: statement clobbers memory: _16 = strtol (env_9, 0B, 10);
+assoc.c:278:16: missed: statement clobbers memory: ret_13 = pthread_create (&maintenance_tid, 0B, assoc_maintenance_thread, 0B);
+assoc.c:283:5: missed: statement clobbers memory: thread_setname (maintenance_tid.31_3, "mc-assocmaint");
+assoc.c:280:9: missed: statement clobbers memory: _1 = strerror (ret_13);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __fprintf_chk (stderr.30_2, 2, "Can\'t create thread: %s\n", _1);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: note: ***** Analysis failed with vector mode V8SI
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+assoc.c:288:5: missed: statement clobbers memory: pthread_mutex_lock (&maintenance_lock);
+assoc.c:289:31: missed: not vectorized: volatile type: do_run_maintenance_thread ={v} 0;
+assoc.c:290:5: missed: statement clobbers memory: pthread_cond_signal (&maintenance_cond);
+assoc.c:291:5: missed: statement clobbers memory: pthread_mutex_unlock (&maintenance_lock);
+assoc.c:294:5: missed: statement clobbers memory: pthread_join (maintenance_tid.60_1, 0B);
+assoc.c:295:1: note: ***** Analysis failed with vector mode V4DI
+assoc.c:295:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+assoc.c:305:35: missed: statement clobbers memory: iter_6 = calloc (1, 32);
+assoc.c:310:9: missed: statement clobbers memory: _1 = pthread_mutex_trylock (&maintenance_lock);
+assoc.c:313:9: missed: statement clobbers memory: free (iter_6);
+assoc.c:313:9: note: ***** Analysis failed with vector mode VOID
+assoc.c:341:9: missed: statement clobbers memory: item_lock (_11);
+assoc.c:351:13: missed: statement clobbers memory: item_unlock (_18);
+assoc.c:329:13: missed: statement clobbers memory: item_unlock (_5);
+assoc.c:324:22: note: ***** Analysis succeeded with vector mode V4DI
+assoc.c:324:22: note: SLPing BB part
+assoc.c:324:22: note: Costing subgraph: 
+assoc.c:324:22: note: node 0x213ca5a8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+assoc.c:324:22: note: op template: MEM[(struct assoc_iterator *)iterp_25(D)].it = _2;
+assoc.c:324:22: note: 	stmt 0 MEM[(struct assoc_iterator *)iterp_25(D)].it = _2;
+assoc.c:324:22: note: 	stmt 1 MEM[(struct assoc_iterator *)iterp_25(D)].next = _3;
+assoc.c:324:22: note: 	children 0x213ca6b8
+assoc.c:324:22: note: node (external) 0x213ca6b8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+assoc.c:324:22: note: 	{ _2, _3 }
+assoc.c:324:22: note: Cost model analysis: 
+assoc.c:324:22: note: Cost model analysis for part in loop 0:
+  Vector cost: 20
+  Scalar cost: 32
+assoc.c:324:22: note: Basic block will be vectorized using SLP
+assoc.c:324:22: optimized: basic block part vectorized using 16 byte vectors
+assoc.c:324:22: note: Vectorizing SLP tree:
+assoc.c:324:22: note: node 0x213ca5a8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+assoc.c:324:22: note: op template: MEM[(struct assoc_iterator *)iterp_25(D)].it = _2;
+assoc.c:324:22: note: 	stmt 0 MEM[(struct assoc_iterator *)iterp_25(D)].it = _2;
+assoc.c:324:22: note: 	stmt 1 MEM[(struct assoc_iterator *)iterp_25(D)].next = _3;
+assoc.c:324:22: note: 	children 0x213ca6b8
+assoc.c:324:22: note: node (external) 0x213ca6b8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+assoc.c:324:22: note: 	{ _2, _3 }
+assoc.c:324:22: note: ------>vectorizing SLP node starting from: MEM[(struct assoc_iterator *)iterp_25(D)].it = _2;
+assoc.c:324:22: note: vect_is_simple_use: operand _2->h_next, type of def: internal
+assoc.c:324:22: note: transform store. ncopies = 1
+assoc.c:324:22: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: MEM[(struct assoc_iterator *)iterp_25(D)].it
+assoc.c:324:22: note: created vectp.116_45
+assoc.c:324:22: note: add new stmt: MEM <vector(2) long unsigned int> [(struct item * *)vectp.116_45] = _44;
+assoc.c:324:22: note: vectorizing stmts using SLP.
+assoc.c:324:22: note: ***** The result for vector mode V32QI would be the same
+assoc.c:365:9: missed: statement clobbers memory: item_unlock (_3);
+assoc.c:367:5: missed: statement clobbers memory: pthread_mutex_unlock (&maintenance_lock);
+assoc.c:368:5: missed: statement clobbers memory: free (iterp_5(D));
+assoc.c:369:1: note: ***** Analysis failed with vector mode V32QI
+assoc.c:369:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI

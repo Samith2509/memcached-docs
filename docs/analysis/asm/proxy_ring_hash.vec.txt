@@ -1,0 +1,543 @@
+proxy_ring_hash.c:67:39: note: ***** Analysis failed with vector mode V8SI
+proxy_ring_hash.c:67:39: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+proxy_ring_hash.c:116:12: missed: couldn't vectorize loop
+proxy_ring_hash.c:116:12: missed: not vectorized: could not determine main exit from loop with multiple exits.
+proxy_ring_hash.c:89:17: note: vectorized 0 loops in function.
+proxy_ring_hash.c:108:26: note: ***** Analysis failed with vector mode V8SI
+proxy_ring_hash.c:108:26: note: ***** The result for vector mode V32QI would be the same
+proxy_ring_hash.c:108:26: note: ***** Re-trying analysis with vector mode V16QI
+proxy_ring_hash.c:108:26: note: ***** Analysis failed with vector mode V16QI
+proxy_ring_hash.c:108:26: note: ***** Re-trying analysis with vector mode V8QI
+proxy_ring_hash.c:108:26: note: ***** Analysis failed with vector mode V8QI
+proxy_ring_hash.c:108:26: note: ***** Re-trying analysis with vector mode V4QI
+proxy_ring_hash.c:108:26: note: ***** Analysis failed with vector mode V4QI
+proxy_ring_hash.c:76:5: missed: statement clobbers memory: md5_init (&md5state);
+proxy_ring_hash.c:77:5: missed: statement clobbers memory: md5_append (&md5state, key_19(D), _1);
+proxy_ring_hash.c:78:5: missed: statement clobbers memory: md5_finish (&md5state, &digest);
+proxy_ring_hash.c:85:12: note: ***** Analysis failed with vector mode V8SI
+proxy_ring_hash.c:85:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+xxhash.h:4265:19: missed: couldn't vectorize loop
+xxhash.h:4256:19: missed: not vectorized: no vectype for stmt: _148 = MEM[(const xxh_u64 *)_147 + 8B];
+ scalar_type: const xxh_u64
+xxhash.h:4209:19: missed: couldn't vectorize loop
+/usr/lib/gcc/x86_64-linux-gnu/15/include/avxintrin.h:873:10: missed: not vectorized: no vectype for stmt: _224 = MEM[(const __m256i_u * {ref-all})in_68];
+ scalar_type: const __m256i_u
+xxhash.h:4233:19: missed: couldn't vectorize loop
+/usr/lib/gcc/x86_64-linux-gnu/15/include/avxintrin.h:873:10: missed: not vectorized: no vectype for stmt: _324 = MEM[(const __m256i_u * {ref-all})in_10];
+ scalar_type: const __m256i_u
+xxhash.h:4209:19: missed: couldn't vectorize loop
+/usr/lib/gcc/x86_64-linux-gnu/15/include/avxintrin.h:873:10: missed: not vectorized: no vectype for stmt: _324 = MEM[(const __m256i_u * {ref-all})in_10];
+ scalar_type: const __m256i_u
+xxhash.h:4326:1: note: vectorized 0 loops in function.
+xxhash.h:4326:1: note: ***** Analysis succeeded with vector mode V4DI
+xxhash.h:4326:1: note: SLPing BB part
+xxhash.h:4326:1: note: Costing subgraph: 
+xxhash.h:4326:1: note: node 0x292c66f8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+xxhash.h:4326:1: note: op template: _5 = n_13 * 1024;
+xxhash.h:4326:1: note: 	stmt 0 _5 = n_13 * 1024;
+xxhash.h:4326:1: note: 	stmt 1 _7 = n_196 * 64;
+xxhash.h:4326:1: note: 	children 0x292c6808 0x292c6890
+xxhash.h:4326:1: note: node (external) 0x292c6808 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+xxhash.h:4326:1: note: 	{ n_13, n_196 }
+xxhash.h:4326:1: note: node (constant) 0x292c6890 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+xxhash.h:4326:1: note: 	{ 1024, 64 }
+xxhash.h:4326:1: note: Cost model analysis: 
+xxhash.h:4326:1: note: Cost model analysis for part in loop 4:
+  Vector cost: 84
+  Scalar cost: 12
+xxhash.h:4326:1: missed: not vectorized: vectorization is not profitable.
+xxhash.h:4326:1: note: ***** The result for vector mode V32QI would be the same
+xxhash.h:4326:1: note: ***** Re-trying analysis with vector mode V16QI
+xxhash.h:4326:1: note: ***** Analysis succeeded with vector mode V16QI
+xxhash.h:4326:1: note: SLPing BB part
+xxhash.h:4326:1: note: Costing subgraph: 
+xxhash.h:4326:1: note: node 0x292c66f8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+xxhash.h:4326:1: note: op template: _5 = n_13 * 1024;
+xxhash.h:4326:1: note: 	stmt 0 _5 = n_13 * 1024;
+xxhash.h:4326:1: note: 	stmt 1 _7 = n_196 * 64;
+xxhash.h:4326:1: note: 	children 0x292c6808 0x292c6ab0
+xxhash.h:4326:1: note: node (external) 0x292c6808 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+xxhash.h:4326:1: note: 	{ n_13, n_196 }
+xxhash.h:4326:1: note: node (constant) 0x292c6ab0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+xxhash.h:4326:1: note: 	{ 1024, 64 }
+xxhash.h:4326:1: note: Cost model analysis: 
+xxhash.h:4326:1: note: Cost model analysis for part in loop 4:
+  Vector cost: 84
+  Scalar cost: 12
+xxhash.h:4326:1: missed: not vectorized: vectorization is not profitable.
+xxhash.h:4326:1: note: ***** Re-trying analysis with vector mode V8QI
+xxhash.h:3230:26: note: ***** Analysis failed with vector mode V8QI
+xxhash.h:3230:26: note: ***** Re-trying analysis with vector mode V4QI
+xxhash.h:3237:16: note: ***** Analysis failed with vector mode V4QI
+xxhash.h:3500:22: missed: couldn't vectorize loop
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: not vectorized: no vectype for stmt: _42 = MEM <unsigned long> [(char * {ref-all})_41];
+ scalar_type: unsigned long
+xxhash.h:3470:20: missed: couldn't vectorize loop
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: not vectorized: no vectype for stmt: _11 = MEM <unsigned long> [(char * {ref-all})_10];
+ scalar_type: unsigned long
+xxhash.h:3457:1: note: vectorized 0 loops in function.
+xxhash.h:3230:26: note: ***** Analysis failed with vector mode V4DI
+xxhash.h:3230:26: note: ***** The result for vector mode V32QI would be the same
+xxhash.h:3230:26: note: ***** Re-trying analysis with vector mode V16QI
+xxhash.h:3230:26: note: ***** Analysis failed with vector mode V16QI
+xxhash.h:3230:26: note: ***** Re-trying analysis with vector mode V8QI
+xxhash.h:3230:26: note: ***** Analysis failed with vector mode V8QI
+xxhash.h:3230:26: note: ***** Re-trying analysis with vector mode V4QI
+xxhash.h:3237:16: note: ***** Analysis failed with vector mode V4QI
+xxhash.h:4397:12: missed: statement clobbers memory: _191 = XXH3_hashLong_64b_default.constprop (input_2(D), len_3(D));
+xxhash.h:4396:16: missed: statement clobbers memory: _190 = XXH3_len_129to240_64b.constprop (input_2(D), len_3(D));
+xxhash.h:3230:26: note: ***** Analysis failed with vector mode V4DI
+xxhash.h:3230:26: note: ***** The result for vector mode V32QI would be the same
+xxhash.h:3230:26: note: ***** Re-trying analysis with vector mode V16QI
+xxhash.h:3230:26: note: ***** Analysis failed with vector mode V16QI
+xxhash.h:3230:26: note: ***** Re-trying analysis with vector mode V8QI
+xxhash.h:3230:26: note: ***** Analysis failed with vector mode V8QI
+xxhash.h:3230:26: note: ***** Re-trying analysis with vector mode V4QI
+xxhash.h:3237:16: note: ***** Analysis failed with vector mode V4QI
+proxy_ring_hash.c:298:27: missed: couldn't vectorize loop
+proxy_ring_hash.c:298:27: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+proxy_ring_hash.c:216:23: missed: couldn't vectorize loop
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: __builtin___snprintf_chk (hashstring_185, hashstring_size_86, 2, hashstring_size_86, "%s/%s:%s-%d", _14, _14, _15, k_492);
+proxy_ring_hash.c:134:23: missed: couldn't vectorize loop
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _99 = __builtin___snprintf_chk (hashstring_94, hashstring_size_85, 2, hashstring_size_85, "%s:%s-%d", _14, _15, k_438);
+proxy_ring_hash.c:148:23: missed: couldn't vectorize loop
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: __builtin___snprintf_chk (hashstring_110, hashstring_size_85, 2, hashstring_size_85, "%s:%s-%d", _14, _15, k_411);
+proxy_ring_hash.c:179:23: missed: couldn't vectorize loop
+proxy_ring_hash.c:179:23: missed: not vectorized: unsupported control flow in loop.
+proxy_ring_hash.c:244:12: note: vectorized 0 loops in function.
+proxy_ring_hash.c:251:5: missed: statement clobbers memory: luaL_checktype (L_36(D), 1, 5);
+proxy_ring_hash.c:254:26: missed: statement clobbers memory: total_39 = lua_rawlen (L_36(D), 1);
+proxy_ring_hash.c:257:16: missed: statement clobbers memory: argc_41 = lua_gettop (L_36(D));
+proxy_ring_hash.c:259:9: missed: statement clobbers memory: luaL_checktype (L_36(D), 2, 5);
+proxy_ring_hash.c:260:13: missed: statement clobbers memory: _1 = lua_getfield (L_36(D), 2, "omode");
+proxy_ring_hash.c:261:13: missed: statement clobbers memory: luaL_checktype (L_36(D), -1, 4);
+proxy_ring_hash.c:262:32: missed: statement clobbers memory: mode_46 = lua_tolstring (L_36(D), -1, 0B);
+proxy_ring_hash.c:263:17: missed: statement clobbers memory: _2 = strcmp (mode_46, "default");
+proxy_ring_hash.c:265:24: missed: statement clobbers memory: _3 = strcmp (mode_46, "ketama");
+proxy_ring_hash.c:267:24: missed: statement clobbers memory: _4 = strcmp (mode_46, "twemproxy");
+proxy_ring_hash.c:269:24: missed: statement clobbers memory: _5 = strcmp (mode_46, "evcache");
+proxy_ring_hash.c:272:17: missed: statement clobbers memory: lua_pushstring (L_36(D), "ring_hash: bad omode argument");
+proxy_ring_hash.c:273:17: missed: statement clobbers memory: lua_error (L_36(D));
+proxy_ring_hash.c:276:9: missed: statement clobbers memory: lua_settop (L_36(D), -2);
+proxy_ring_hash.c:278:13: missed: statement clobbers memory: _6 = lua_getfield (L_36(D), 2, "obuckets");
+proxy_ring_hash.c:280:25: missed: statement clobbers memory: bucket_size_53 = lua_tointegerx (L_36(D), -1, &success);
+proxy_ring_hash.c:282:15: missed: statement clobbers memory: lua_pushstring (L_36(D), "ring_hash: option argument must be a positive integer");
+proxy_ring_hash.c:283:15: missed: statement clobbers memory: lua_error (L_36(D));
+proxy_ring_hash.c:286:9: missed: statement clobbers memory: lua_settop (L_36(D), -2);
+proxy_ring_hash.c:291:20: missed: statement clobbers memory: kt_60 = lua_newuserdatauv (L_36(D), size_58, 0);
+proxy_ring_hash.c:297:5: missed: statement clobbers memory: lua_pushnil (L_36(D));
+proxy_ring_hash.c:298:12: missed: statement clobbers memory: _18 = lua_next (L_36(D), 1);
+proxy_ring_hash.c:304:9: missed: statement clobbers memory: lua_getfield (L_36(D), -1, "id");
+proxy_ring_hash.c:305:26: missed: statement clobbers memory: id_75 = lua_tointegerx (L_36(D), -1, 0B);
+proxy_ring_hash.c:306:9: missed: statement clobbers memory: lua_settop (L_36(D), -2);
+proxy_ring_hash.c:309:9: missed: statement clobbers memory: lua_getfield (L_36(D), -1, "addr");
+proxy_ring_hash.c:310:20: missed: statement clobbers memory: _14 = lua_tolstring (L_36(D), -1, &partlens[0]);
+proxy_ring_hash.c:311:9: missed: statement clobbers memory: lua_settop (L_36(D), -2);
+proxy_ring_hash.c:312:9: missed: statement clobbers memory: lua_getfield (L_36(D), -1, "port");
+proxy_ring_hash.c:313:20: missed: statement clobbers memory: _15 = lua_tolstring (L_36(D), -1, &partlens[1]);
+proxy_ring_hash.c:314:9: missed: statement clobbers memory: lua_settop (L_36(D), -2);
+proxy_ring_hash.c:177:24: missed: statement clobbers memory: hashstring_146 = malloc (hashstring_size_85);
+proxy_ring_hash.c:183:13: missed: statement clobbers memory: _148 = strcmp (_15, "11211");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: __builtin___snprintf_chk (hashstring_146, hashstring_size_85, 2, hashstring_size_85, "%s:%s-%d", _14, _15, k_177);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: __builtin___snprintf_chk (hashstring_146, hashstring_size_85, 2, hashstring_size_85, "%s-%d", _14, k_177);
+proxy_ring_hash.c:58:5: missed: statement clobbers memory: md5_init (&md5state);
+proxy_ring_hash.c:59:55: missed: statement clobbers memory: _183 = strlen (hashstring_146);
+proxy_ring_hash.c:59:5: missed: statement clobbers memory: md5_append (&md5state, hashstring_146, _184);
+proxy_ring_hash.c:60:5: missed: statement clobbers memory: md5_finish (&md5state, &digest);
+proxy_ring_hash.c:209:5: missed: statement clobbers memory: free (hashstring_146);
+proxy_ring_hash.c:146:24: missed: statement clobbers memory: hashstring_110 = malloc (hashstring_size_85);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: __builtin___snprintf_chk (hashstring_110, hashstring_size_85, 2, hashstring_size_85, "%s:%s-%d", _14, _15, k_411);
+proxy_ring_hash.c:58:5: missed: statement clobbers memory: md5_init (&md5state);
+proxy_ring_hash.c:59:55: missed: statement clobbers memory: _144 = strlen (hashstring_110);
+proxy_ring_hash.c:59:5: missed: statement clobbers memory: md5_append (&md5state, hashstring_110, _145);
+proxy_ring_hash.c:60:5: missed: statement clobbers memory: md5_finish (&md5state, &digest);
+proxy_ring_hash.c:172:5: missed: statement clobbers memory: free (hashstring_110);
+proxy_ring_hash.c:132:24: missed: statement clobbers memory: hashstring_94 = malloc (hashstring_size_85);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _99 = __builtin___snprintf_chk (hashstring_94, hashstring_size_85, 2, hashstring_size_85, "%s:%s-%d", _14, _15, k_438);
+proxy_ring_hash.c:136:53: missed: statement clobbers memory: _101 = XXH_INLINE_XXH3_64bits (hashstring_94, len_100);
+proxy_ring_hash.c:141:5: missed: statement clobbers memory: free (hashstring_94);
+proxy_ring_hash.c:214:24: missed: statement clobbers memory: hashstring_185 = malloc (hashstring_size_86);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: __builtin___snprintf_chk (hashstring_185, hashstring_size_86, 2, hashstring_size_86, "%s/%s:%s-%d", _14, _14, _15, k_492);
+proxy_ring_hash.c:58:5: missed: statement clobbers memory: md5_init (&md5state);
+proxy_ring_hash.c:59:55: missed: statement clobbers memory: _219 = strlen (hashstring_185);
+proxy_ring_hash.c:59:5: missed: statement clobbers memory: md5_append (&md5state, hashstring_185, _220);
+proxy_ring_hash.c:60:5: missed: statement clobbers memory: md5_finish (&md5state, &digest);
+proxy_ring_hash.c:239:5: missed: statement clobbers memory: free (hashstring_185);
+proxy_ring_hash.c:343:9: missed: statement clobbers memory: lua_settop (L_36(D), -2);
+proxy_ring_hash.c:347:5: missed: statement clobbers memory: qsort (_21, _20, 8, ketama_compare);
+proxy_ring_hash.c:354:5: missed: statement clobbers memory: lua_pushlightuserdata (L_36(D), _22);
+proxy_ring_hash.c:229:40: note: ***** Analysis succeeded with vector mode V8SI
+proxy_ring_hash.c:229:40: note: SLPing BB part
+proxy_ring_hash.c:199:40: note: Costing subgraph: 
+proxy_ring_hash.c:199:40: note: node 0x29458e28 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: op template: kt_60->continuum[cont_202].point = load_dst_562;
+proxy_ring_hash.c:199:40: note: 	stmt 0 kt_60->continuum[cont_202].point = load_dst_562;
+proxy_ring_hash.c:199:40: note: 	stmt 1 kt_60->continuum[cont_202].id = _156;
+proxy_ring_hash.c:199:40: note: 	children 0x29458f38
+proxy_ring_hash.c:199:40: note: node (external) 0x29458f38 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: 	{ load_dst_562, _156 }
+proxy_ring_hash.c:199:40: note: Cost model analysis: 
+proxy_ring_hash.c:199:40: note: Cost model analysis for part in loop 6:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:199:40: note: Costing subgraph: 
+proxy_ring_hash.c:199:40: note: node 0x29458fc0 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: op template: kt_60->continuum[_516].point = load_dst_535;
+proxy_ring_hash.c:199:40: note: 	stmt 0 kt_60->continuum[_516].point = load_dst_535;
+proxy_ring_hash.c:199:40: note: 	stmt 1 kt_60->continuum[_516].id = _156;
+proxy_ring_hash.c:199:40: note: 	children 0x294590d0
+proxy_ring_hash.c:199:40: note: node (external) 0x294590d0 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: 	{ load_dst_535, _156 }
+proxy_ring_hash.c:199:40: note: Cost model analysis: 
+proxy_ring_hash.c:199:40: note: Cost model analysis for part in loop 6:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:199:40: note: Costing subgraph: 
+proxy_ring_hash.c:199:40: note: node 0x29459158 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: op template: kt_60->continuum[_543].point = load_dst_508;
+proxy_ring_hash.c:199:40: note: 	stmt 0 kt_60->continuum[_543].point = load_dst_508;
+proxy_ring_hash.c:199:40: note: 	stmt 1 kt_60->continuum[_543].id = _156;
+proxy_ring_hash.c:199:40: note: 	children 0x29459268
+proxy_ring_hash.c:199:40: note: node (external) 0x29459268 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: 	{ load_dst_508, _156 }
+proxy_ring_hash.c:199:40: note: Cost model analysis: 
+proxy_ring_hash.c:199:40: note: Cost model analysis for part in loop 6:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:199:40: note: Costing subgraph: 
+proxy_ring_hash.c:199:40: note: node 0x294592f0 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: op template: kt_60->continuum[_570].point = load_dst_370;
+proxy_ring_hash.c:199:40: note: 	stmt 0 kt_60->continuum[_570].point = load_dst_370;
+proxy_ring_hash.c:199:40: note: 	stmt 1 kt_60->continuum[_570].id = _156;
+proxy_ring_hash.c:199:40: note: 	children 0x29459400
+proxy_ring_hash.c:199:40: note: node (external) 0x29459400 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: 	{ load_dst_370, _156 }
+proxy_ring_hash.c:199:40: note: Cost model analysis: 
+proxy_ring_hash.c:199:40: note: Cost model analysis for part in loop 6:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:162:40: note: Costing subgraph: 
+proxy_ring_hash.c:162:40: note: node 0x29459488 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: op template: kt_60->continuum[cont_200].point = load_dst_340;
+proxy_ring_hash.c:162:40: note: 	stmt 0 kt_60->continuum[cont_200].point = load_dst_340;
+proxy_ring_hash.c:162:40: note: 	stmt 1 kt_60->continuum[cont_200].id = _157;
+proxy_ring_hash.c:162:40: note: 	children 0x29459598
+proxy_ring_hash.c:162:40: note: node (external) 0x29459598 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: 	{ load_dst_340, _157 }
+proxy_ring_hash.c:162:40: note: Cost model analysis: 
+proxy_ring_hash.c:162:40: note: Cost model analysis for part in loop 4:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:162:40: note: Costing subgraph: 
+proxy_ring_hash.c:162:40: note: node 0x29459620 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: op template: kt_60->continuum[_408].point = load_dst_310;
+proxy_ring_hash.c:162:40: note: 	stmt 0 kt_60->continuum[_408].point = load_dst_310;
+proxy_ring_hash.c:162:40: note: 	stmt 1 kt_60->continuum[_408].id = _157;
+proxy_ring_hash.c:162:40: note: 	children 0x29459730
+proxy_ring_hash.c:162:40: note: node (external) 0x29459730 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: 	{ load_dst_310, _157 }
+proxy_ring_hash.c:162:40: note: Cost model analysis: 
+proxy_ring_hash.c:162:40: note: Cost model analysis for part in loop 4:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:162:40: note: Costing subgraph: 
+proxy_ring_hash.c:162:40: note: node 0x294597b8 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: op template: kt_60->continuum[_435].point = load_dst_87;
+proxy_ring_hash.c:162:40: note: 	stmt 0 kt_60->continuum[_435].point = load_dst_87;
+proxy_ring_hash.c:162:40: note: 	stmt 1 kt_60->continuum[_435].id = _157;
+proxy_ring_hash.c:162:40: note: 	children 0x294598c8
+proxy_ring_hash.c:162:40: note: node (external) 0x294598c8 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: 	{ load_dst_87, _157 }
+proxy_ring_hash.c:162:40: note: Cost model analysis: 
+proxy_ring_hash.c:162:40: note: Cost model analysis for part in loop 4:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:162:40: note: Costing subgraph: 
+proxy_ring_hash.c:162:40: note: node 0x29459950 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: op template: kt_60->continuum[_462].point = load_dst_266;
+proxy_ring_hash.c:162:40: note: 	stmt 0 kt_60->continuum[_462].point = load_dst_266;
+proxy_ring_hash.c:162:40: note: 	stmt 1 kt_60->continuum[_462].id = _157;
+proxy_ring_hash.c:162:40: note: 	children 0x29459a60
+proxy_ring_hash.c:162:40: note: node (external) 0x29459a60 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: 	{ load_dst_266, _157 }
+proxy_ring_hash.c:162:40: note: Cost model analysis: 
+proxy_ring_hash.c:162:40: note: Cost model analysis for part in loop 4:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:136:36: note: Costing subgraph: 
+proxy_ring_hash.c:136:36: note: node 0x29459ae8 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:136:36: note: op template: kt_60->continuum[cont_198].point = _103;
+proxy_ring_hash.c:136:36: note: 	stmt 0 kt_60->continuum[cont_198].point = _103;
+proxy_ring_hash.c:136:36: note: 	stmt 1 kt_60->continuum[cont_198].id = _158;
+proxy_ring_hash.c:136:36: note: 	children 0x29459bf8
+proxy_ring_hash.c:136:36: note: node (external) 0x29459bf8 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:136:36: note: 	{ _103, _158 }
+proxy_ring_hash.c:136:36: note: Cost model analysis: 
+proxy_ring_hash.c:136:36: note: Cost model analysis for part in loop 3:
+  Vector cost: 32
+  Scalar cost: 32
+proxy_ring_hash.c:229:40: note: Costing subgraph: 
+proxy_ring_hash.c:229:40: note: node 0x29459c80 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: op template: kt_60->continuum[cont_204].point = load_dst_454;
+proxy_ring_hash.c:229:40: note: 	stmt 0 kt_60->continuum[cont_204].point = load_dst_454;
+proxy_ring_hash.c:229:40: note: 	stmt 1 kt_60->continuum[cont_204].id = _159;
+proxy_ring_hash.c:229:40: note: 	children 0x29459d90
+proxy_ring_hash.c:229:40: note: node (external) 0x29459d90 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: 	{ load_dst_454, _159 }
+proxy_ring_hash.c:229:40: note: Cost model analysis: 
+proxy_ring_hash.c:229:40: note: Cost model analysis for part in loop 8:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:229:40: note: Costing subgraph: 
+proxy_ring_hash.c:229:40: note: node 0x29459e18 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: op template: kt_60->continuum[_291].point = load_dst_427;
+proxy_ring_hash.c:229:40: note: 	stmt 0 kt_60->continuum[_291].point = load_dst_427;
+proxy_ring_hash.c:229:40: note: 	stmt 1 kt_60->continuum[_291].id = _159;
+proxy_ring_hash.c:229:40: note: 	children 0x29459f28
+proxy_ring_hash.c:229:40: note: node (external) 0x29459f28 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: 	{ load_dst_427, _159 }
+proxy_ring_hash.c:229:40: note: Cost model analysis: 
+proxy_ring_hash.c:229:40: note: Cost model analysis for part in loop 8:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:229:40: note: Costing subgraph: 
+proxy_ring_hash.c:229:40: note: node 0x29459fb0 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: op template: kt_60->continuum[_321].point = load_dst_400;
+proxy_ring_hash.c:229:40: note: 	stmt 0 kt_60->continuum[_321].point = load_dst_400;
+proxy_ring_hash.c:229:40: note: 	stmt 1 kt_60->continuum[_321].id = _159;
+proxy_ring_hash.c:229:40: note: 	children 0x2945a0c0
+proxy_ring_hash.c:229:40: note: node (external) 0x2945a0c0 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: 	{ load_dst_400, _159 }
+proxy_ring_hash.c:229:40: note: Cost model analysis: 
+proxy_ring_hash.c:229:40: note: Cost model analysis for part in loop 8:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:229:40: note: Costing subgraph: 
+proxy_ring_hash.c:229:40: note: node 0x2945a148 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: op template: kt_60->continuum[_351].point = load_dst_589;
+proxy_ring_hash.c:229:40: note: 	stmt 0 kt_60->continuum[_351].point = load_dst_589;
+proxy_ring_hash.c:229:40: note: 	stmt 1 kt_60->continuum[_351].id = _159;
+proxy_ring_hash.c:229:40: note: 	children 0x2945a258
+proxy_ring_hash.c:229:40: note: node (external) 0x2945a258 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: 	{ load_dst_589, _159 }
+proxy_ring_hash.c:229:40: note: Cost model analysis: 
+proxy_ring_hash.c:229:40: note: Cost model analysis for part in loop 8:
+  Vector cost: 26
+  Scalar cost: 32
+proxy_ring_hash.c:229:40: note: Basic block will be vectorized using SLP
+proxy_ring_hash.c:199:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:199:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:199:40: note: node 0x29458e28 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: op template: kt_60->continuum[cont_202].point = load_dst_562;
+proxy_ring_hash.c:199:40: note: 	stmt 0 kt_60->continuum[cont_202].point = load_dst_562;
+proxy_ring_hash.c:199:40: note: 	stmt 1 kt_60->continuum[cont_202].id = _156;
+proxy_ring_hash.c:199:40: note: 	children 0x29458f38
+proxy_ring_hash.c:199:40: note: node (external) 0x29458f38 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: 	{ load_dst_562, _156 }
+proxy_ring_hash.c:199:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[cont_202].point = load_dst_562;
+proxy_ring_hash.c:199:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:199:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:199:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[cont_202].point
+proxy_ring_hash.c:199:40: note: created vectp.160_398
+proxy_ring_hash.c:199:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.160_398] = _397;
+proxy_ring_hash.c:199:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:199:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:199:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:199:40: note: node 0x29458fc0 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: op template: kt_60->continuum[_516].point = load_dst_535;
+proxy_ring_hash.c:199:40: note: 	stmt 0 kt_60->continuum[_516].point = load_dst_535;
+proxy_ring_hash.c:199:40: note: 	stmt 1 kt_60->continuum[_516].id = _156;
+proxy_ring_hash.c:199:40: note: 	children 0x294590d0
+proxy_ring_hash.c:199:40: note: node (external) 0x294590d0 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: 	{ load_dst_535, _156 }
+proxy_ring_hash.c:199:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[_516].point = load_dst_535;
+proxy_ring_hash.c:199:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:199:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:199:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[_516].point
+proxy_ring_hash.c:199:40: note: created vectp.162_402
+proxy_ring_hash.c:199:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.162_402] = _401;
+proxy_ring_hash.c:199:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:199:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:199:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:199:40: note: node 0x29459158 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: op template: kt_60->continuum[_543].point = load_dst_508;
+proxy_ring_hash.c:199:40: note: 	stmt 0 kt_60->continuum[_543].point = load_dst_508;
+proxy_ring_hash.c:199:40: note: 	stmt 1 kt_60->continuum[_543].id = _156;
+proxy_ring_hash.c:199:40: note: 	children 0x29459268
+proxy_ring_hash.c:199:40: note: node (external) 0x29459268 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: 	{ load_dst_508, _156 }
+proxy_ring_hash.c:199:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[_543].point = load_dst_508;
+proxy_ring_hash.c:199:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:199:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:199:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[_543].point
+proxy_ring_hash.c:199:40: note: created vectp.164_415
+proxy_ring_hash.c:199:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.164_415] = _430;
+proxy_ring_hash.c:199:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:199:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:199:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:199:40: note: node 0x294592f0 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: op template: kt_60->continuum[_570].point = load_dst_370;
+proxy_ring_hash.c:199:40: note: 	stmt 0 kt_60->continuum[_570].point = load_dst_370;
+proxy_ring_hash.c:199:40: note: 	stmt 1 kt_60->continuum[_570].id = _156;
+proxy_ring_hash.c:199:40: note: 	children 0x29459400
+proxy_ring_hash.c:199:40: note: node (external) 0x29459400 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:199:40: note: 	{ load_dst_370, _156 }
+proxy_ring_hash.c:199:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[_570].point = load_dst_370;
+proxy_ring_hash.c:199:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:199:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:199:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[_570].point
+proxy_ring_hash.c:199:40: note: created vectp.166_419
+proxy_ring_hash.c:199:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.166_419] = _417;
+proxy_ring_hash.c:199:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:162:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:162:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:162:40: note: node 0x29459488 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: op template: kt_60->continuum[cont_200].point = load_dst_340;
+proxy_ring_hash.c:162:40: note: 	stmt 0 kt_60->continuum[cont_200].point = load_dst_340;
+proxy_ring_hash.c:162:40: note: 	stmt 1 kt_60->continuum[cont_200].id = _157;
+proxy_ring_hash.c:162:40: note: 	children 0x29459598
+proxy_ring_hash.c:162:40: note: node (external) 0x29459598 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: 	{ load_dst_340, _157 }
+proxy_ring_hash.c:162:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[cont_200].point = load_dst_340;
+proxy_ring_hash.c:162:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:162:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:162:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[cont_200].point
+proxy_ring_hash.c:162:40: note: created vectp.168_422
+proxy_ring_hash.c:162:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.168_422] = _421;
+proxy_ring_hash.c:162:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:162:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:162:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:162:40: note: node 0x29459620 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: op template: kt_60->continuum[_408].point = load_dst_310;
+proxy_ring_hash.c:162:40: note: 	stmt 0 kt_60->continuum[_408].point = load_dst_310;
+proxy_ring_hash.c:162:40: note: 	stmt 1 kt_60->continuum[_408].id = _157;
+proxy_ring_hash.c:162:40: note: 	children 0x29459730
+proxy_ring_hash.c:162:40: note: node (external) 0x29459730 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: 	{ load_dst_310, _157 }
+proxy_ring_hash.c:162:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[_408].point = load_dst_310;
+proxy_ring_hash.c:162:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:162:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:162:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[_408].point
+proxy_ring_hash.c:162:40: note: created vectp.170_426
+proxy_ring_hash.c:162:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.170_426] = _425;
+proxy_ring_hash.c:162:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:162:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:162:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:162:40: note: node 0x294597b8 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: op template: kt_60->continuum[_435].point = load_dst_87;
+proxy_ring_hash.c:162:40: note: 	stmt 0 kt_60->continuum[_435].point = load_dst_87;
+proxy_ring_hash.c:162:40: note: 	stmt 1 kt_60->continuum[_435].id = _157;
+proxy_ring_hash.c:162:40: note: 	children 0x294598c8
+proxy_ring_hash.c:162:40: note: node (external) 0x294598c8 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: 	{ load_dst_87, _157 }
+proxy_ring_hash.c:162:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[_435].point = load_dst_87;
+proxy_ring_hash.c:162:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:162:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:162:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[_435].point
+proxy_ring_hash.c:162:40: note: created vectp.172_143
+proxy_ring_hash.c:162:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.172_143] = _429;
+proxy_ring_hash.c:162:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:162:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:162:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:162:40: note: node 0x29459950 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: op template: kt_60->continuum[_462].point = load_dst_266;
+proxy_ring_hash.c:162:40: note: 	stmt 0 kt_60->continuum[_462].point = load_dst_266;
+proxy_ring_hash.c:162:40: note: 	stmt 1 kt_60->continuum[_462].id = _157;
+proxy_ring_hash.c:162:40: note: 	children 0x29459a60
+proxy_ring_hash.c:162:40: note: node (external) 0x29459a60 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:162:40: note: 	{ load_dst_266, _157 }
+proxy_ring_hash.c:162:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[_462].point = load_dst_266;
+proxy_ring_hash.c:162:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:162:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:162:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[_462].point
+proxy_ring_hash.c:162:40: note: created vectp.174_443
+proxy_ring_hash.c:162:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.174_443] = _442;
+proxy_ring_hash.c:162:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:136:36: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:136:36: note: Vectorizing SLP tree:
+proxy_ring_hash.c:136:36: note: node 0x29459ae8 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:136:36: note: op template: kt_60->continuum[cont_198].point = _103;
+proxy_ring_hash.c:136:36: note: 	stmt 0 kt_60->continuum[cont_198].point = _103;
+proxy_ring_hash.c:136:36: note: 	stmt 1 kt_60->continuum[cont_198].id = _158;
+proxy_ring_hash.c:136:36: note: 	children 0x29459bf8
+proxy_ring_hash.c:136:36: note: node (external) 0x29459bf8 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:136:36: note: 	{ _103, _158 }
+proxy_ring_hash.c:136:36: note: ------>vectorizing SLP node starting from: kt_60->continuum[cont_198].point = _103;
+proxy_ring_hash.c:136:36: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:136:36: note: transform store. ncopies = 1
+proxy_ring_hash.c:136:36: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[cont_198].point
+proxy_ring_hash.c:136:36: note: created vectp.176_447
+proxy_ring_hash.c:136:36: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.176_447] = _446;
+proxy_ring_hash.c:136:36: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:229:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:229:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:229:40: note: node 0x29459c80 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: op template: kt_60->continuum[cont_204].point = load_dst_454;
+proxy_ring_hash.c:229:40: note: 	stmt 0 kt_60->continuum[cont_204].point = load_dst_454;
+proxy_ring_hash.c:229:40: note: 	stmt 1 kt_60->continuum[cont_204].id = _159;
+proxy_ring_hash.c:229:40: note: 	children 0x29459d90
+proxy_ring_hash.c:229:40: note: node (external) 0x29459d90 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: 	{ load_dst_454, _159 }
+proxy_ring_hash.c:229:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[cont_204].point = load_dst_454;
+proxy_ring_hash.c:229:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:229:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:229:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[cont_204].point
+proxy_ring_hash.c:229:40: note: created vectp.178_451
+proxy_ring_hash.c:229:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.178_451] = _449;
+proxy_ring_hash.c:229:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:229:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:229:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:229:40: note: node 0x29459e18 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: op template: kt_60->continuum[_291].point = load_dst_427;
+proxy_ring_hash.c:229:40: note: 	stmt 0 kt_60->continuum[_291].point = load_dst_427;
+proxy_ring_hash.c:229:40: note: 	stmt 1 kt_60->continuum[_291].id = _159;
+proxy_ring_hash.c:229:40: note: 	children 0x29459f28
+proxy_ring_hash.c:229:40: note: node (external) 0x29459f28 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: 	{ load_dst_427, _159 }
+proxy_ring_hash.c:229:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[_291].point = load_dst_427;
+proxy_ring_hash.c:229:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:229:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:229:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[_291].point
+proxy_ring_hash.c:229:40: note: created vectp.180_455
+proxy_ring_hash.c:229:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.180_455] = _453;
+proxy_ring_hash.c:229:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:229:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:229:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:229:40: note: node 0x29459fb0 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: op template: kt_60->continuum[_321].point = load_dst_400;
+proxy_ring_hash.c:229:40: note: 	stmt 0 kt_60->continuum[_321].point = load_dst_400;
+proxy_ring_hash.c:229:40: note: 	stmt 1 kt_60->continuum[_321].id = _159;
+proxy_ring_hash.c:229:40: note: 	children 0x2945a0c0
+proxy_ring_hash.c:229:40: note: node (external) 0x2945a0c0 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: 	{ load_dst_400, _159 }
+proxy_ring_hash.c:229:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[_321].point = load_dst_400;
+proxy_ring_hash.c:229:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:229:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:229:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[_321].point
+proxy_ring_hash.c:229:40: note: created vectp.182_484
+proxy_ring_hash.c:229:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.182_484] = _182;
+proxy_ring_hash.c:229:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:229:40: optimized: basic block part vectorized using 8 byte vectors
+proxy_ring_hash.c:229:40: note: Vectorizing SLP tree:
+proxy_ring_hash.c:229:40: note: node 0x2945a148 (max_nunits=2, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: op template: kt_60->continuum[_351].point = load_dst_589;
+proxy_ring_hash.c:229:40: note: 	stmt 0 kt_60->continuum[_351].point = load_dst_589;
+proxy_ring_hash.c:229:40: note: 	stmt 1 kt_60->continuum[_351].id = _159;
+proxy_ring_hash.c:229:40: note: 	children 0x2945a258
+proxy_ring_hash.c:229:40: note: node (external) 0x2945a258 (max_nunits=1, refcnt=1) vector(2) unsigned int
+proxy_ring_hash.c:229:40: note: 	{ load_dst_589, _159 }
+proxy_ring_hash.c:229:40: note: ------>vectorizing SLP node starting from: kt_60->continuum[_351].point = load_dst_589;
+proxy_ring_hash.c:229:40: note: vect_is_simple_use: operand (unsigned int) id_75, type of def: internal
+proxy_ring_hash.c:229:40: note: transform store. ncopies = 1
+proxy_ring_hash.c:229:40: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: kt_60->continuum[_351].point
+proxy_ring_hash.c:229:40: note: created vectp.184_471
+proxy_ring_hash.c:229:40: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.184_471] = _470;
+proxy_ring_hash.c:229:40: note: vectorizing stmts using SLP.
+proxy_ring_hash.c:229:40: note: ***** The result for vector mode V32QI would be the same
+proxy_ring_hash.c:365:5: missed: statement clobbers memory: luaL_checkversion_ (L_6(D), 5.04e+2, 136);
+proxy_ring_hash.c:365:5: missed: statement clobbers memory: lua_createtable (L_6(D), 0, 1);
+proxy_ring_hash.c:365:5: missed: statement clobbers memory: luaL_setfuncs (L_6(D), &ketama_f, 0);
+proxy_ring_hash.c:366:5: missed: statement clobbers memory: lua_pushlightuserdata (L_6(D), &ketama_key_hash);
+proxy_ring_hash.c:367:5: missed: statement clobbers memory: lua_setfield (L_6(D), -2, "hash");
+proxy_ring_hash.c:369:12: note: ***** Analysis failed with vector mode V4DI
+proxy_ring_hash.c:369:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI

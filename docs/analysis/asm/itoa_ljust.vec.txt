@@ -1,0 +1,21 @@
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_216(D), _134, 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_96, _139, 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_106, _144, 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_116, _149, 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (p_125, _154, 2);
+itoa_ljust.c:116:12: note: ***** Analysis failed with vector mode V32QI
+itoa_ljust.c:116:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+itoa_ljust.c:125:12: missed: statement clobbers memory: _12 = itoa_u32 (u_2, p_1);
+itoa_ljust.c:125:12: note: ***** Analysis failed with vector mode V32QI
+itoa_ljust.c:125:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+itoa_ljust.c:135:9: missed: statement clobbers memory: p_15 = itoa_u64 (upper_11, p_13(D));
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_72, _75, 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_77, _80, 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_82, _85, 2);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_87, _90, 2);
+itoa_ljust.c:132:28: missed: statement clobbers memory: _23 = itoa_u32 (lower_10, p_13(D));
+itoa_ljust.c:132:28: note: ***** Analysis failed with vector mode V32QI
+itoa_ljust.c:132:28: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+itoa_ljust.c:148:12: missed: statement clobbers memory: _12 = itoa_u64 (u_2, p_1);
+itoa_ljust.c:148:12: note: ***** Analysis failed with vector mode V32QI
+itoa_ljust.c:148:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI

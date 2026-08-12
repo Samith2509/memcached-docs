@@ -1,0 +1,15 @@
+jenkins_hash.c:144:19: missed: couldn't vectorize loop
+jenkins_hash.c:148:9: missed: not vectorized: unsupported use in stmt.
+jenkins_hash.c:210:19: missed: couldn't vectorize loop
+jenkins_hash.c:126:10: missed: not vectorized: unsupported use in stmt.
+jenkins_hash.c:256:19: missed: couldn't vectorize loop
+jenkins_hash.c:266:9: missed: not vectorized: unsupported use in stmt.
+jenkins_hash.c:126:10: note: vectorized 0 loops in function.
+jenkins_hash.c:295:3: note: ***** Analysis failed with vector mode V32QI
+jenkins_hash.c:295:3: note: ***** The result for vector mode V32QI would be the same
+jenkins_hash.c:295:3: note: ***** Re-trying analysis with vector mode V16QI
+jenkins_hash.c:295:3: note: ***** Analysis failed with vector mode V16QI
+jenkins_hash.c:295:3: note: ***** Re-trying analysis with vector mode V8QI
+jenkins_hash.c:295:3: note: ***** Analysis failed with vector mode V8QI
+jenkins_hash.c:295:3: note: ***** Re-trying analysis with vector mode V4QI
+jenkins_hash.c:295:3: note: ***** Analysis failed with vector mode V4QI

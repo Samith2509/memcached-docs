@@ -1,0 +1,131 @@
+bipbuffer.c:27:28: note: ***** Analysis failed with vector mode V8SI
+bipbuffer.c:27:28: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+bipbuffer.c:34:14: note: ***** Analysis failed with vector mode V4DI
+bipbuffer.c:34:14: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+bipbuffer.c:39:38: note: ***** Analysis failed with vector mode V8SI
+bipbuffer.c:39:38: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+bipbuffer.c:44:17: note: ***** Analysis succeeded with vector mode V8SI
+bipbuffer.c:44:17: note: SLPing BB part
+bipbuffer.c:44:17: note: Costing subgraph: 
+bipbuffer.c:44:17: note: node 0x55f2b20 (max_nunits=2, refcnt=1) vector(2) unsigned int
+bipbuffer.c:44:17: note: op template: me_3(D)->a_start = 0;
+bipbuffer.c:44:17: note: 	stmt 0 me_3(D)->a_start = 0;
+bipbuffer.c:44:17: note: 	stmt 1 me_3(D)->a_end = 0;
+bipbuffer.c:44:17: note: 	children 0x55f2ba8
+bipbuffer.c:44:17: note: node (constant) 0x55f2ba8 (max_nunits=1, refcnt=1) vector(2) unsigned int
+bipbuffer.c:44:17: note: 	{ 0, 0 }
+bipbuffer.c:44:17: note: Cost model analysis: 
+bipbuffer.c:44:17: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+bipbuffer.c:44:17: note: Basic block will be vectorized using SLP
+bipbuffer.c:44:17: optimized: basic block part vectorized using 8 byte vectors
+bipbuffer.c:44:17: note: Vectorizing SLP tree:
+bipbuffer.c:44:17: note: node 0x55f2b20 (max_nunits=2, refcnt=1) vector(2) unsigned int
+bipbuffer.c:44:17: note: op template: me_3(D)->a_start = 0;
+bipbuffer.c:44:17: note: 	stmt 0 me_3(D)->a_start = 0;
+bipbuffer.c:44:17: note: 	stmt 1 me_3(D)->a_end = 0;
+bipbuffer.c:44:17: note: 	children 0x55f2ba8
+bipbuffer.c:44:17: note: node (constant) 0x55f2ba8 (max_nunits=1, refcnt=1) vector(2) unsigned int
+bipbuffer.c:44:17: note: 	{ 0, 0 }
+bipbuffer.c:44:17: note: ------>vectorizing SLP node starting from: me_3(D)->a_start = 0;
+bipbuffer.c:44:17: note: vect_is_simple_use: operand 0, type of def: constant
+bipbuffer.c:44:17: note: transform store. ncopies = 1
+bipbuffer.c:44:17: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: me_3(D)->a_start
+bipbuffer.c:44:17: note: created vectp.32_10
+bipbuffer.c:44:17: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.32_10] = { 0, 0 };
+bipbuffer.c:44:17: note: vectorizing stmts using SLP.
+bipbuffer.c:44:17: note: ***** The result for vector mode V32QI would be the same
+bipbuffer.c:51:20: missed: statement clobbers memory: me_6 = malloc (_7);
+bipbuffer.c:44:17: note: ***** Analysis succeeded with vector mode V8SI
+bipbuffer.c:44:17: note: SLPing BB part
+bipbuffer.c:44:17: note: Costing subgraph: 
+bipbuffer.c:44:17: note: node 0x5602b30 (max_nunits=2, refcnt=1) vector(2) unsigned int
+bipbuffer.c:44:17: note: op template: me_6->a_start = 0;
+bipbuffer.c:44:17: note: 	stmt 0 me_6->a_start = 0;
+bipbuffer.c:44:17: note: 	stmt 1 me_6->a_end = 0;
+bipbuffer.c:44:17: note: 	children 0x5602bb8
+bipbuffer.c:44:17: note: node (constant) 0x5602bb8 (max_nunits=1, refcnt=1) vector(2) unsigned int
+bipbuffer.c:44:17: note: 	{ 0, 0 }
+bipbuffer.c:44:17: note: Cost model analysis: 
+bipbuffer.c:44:17: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+bipbuffer.c:44:17: note: Basic block will be vectorized using SLP
+bipbuffer.c:44:17: optimized: basic block part vectorized using 8 byte vectors
+bipbuffer.c:44:17: note: Vectorizing SLP tree:
+bipbuffer.c:44:17: note: node 0x5602b30 (max_nunits=2, refcnt=1) vector(2) unsigned int
+bipbuffer.c:44:17: note: op template: me_6->a_start = 0;
+bipbuffer.c:44:17: note: 	stmt 0 me_6->a_start = 0;
+bipbuffer.c:44:17: note: 	stmt 1 me_6->a_end = 0;
+bipbuffer.c:44:17: note: 	children 0x5602bb8
+bipbuffer.c:44:17: note: node (constant) 0x5602bb8 (max_nunits=1, refcnt=1) vector(2) unsigned int
+bipbuffer.c:44:17: note: 	{ 0, 0 }
+bipbuffer.c:44:17: note: ------>vectorizing SLP node starting from: me_6->a_start = 0;
+bipbuffer.c:44:17: note: vect_is_simple_use: operand 0, type of def: constant
+bipbuffer.c:44:17: note: transform store. ncopies = 1
+bipbuffer.c:44:17: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: me_6->a_start
+bipbuffer.c:44:17: note: created vectp.37_13
+bipbuffer.c:44:17: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.37_13] = { 0, 0 };
+bipbuffer.c:44:17: note: vectorizing stmts using SLP.
+bipbuffer.c:44:17: note: ***** The result for vector mode V32QI would be the same
+bipbuffer.c:60:5: missed: statement clobbers memory: free (me_2(D));
+bipbuffer.c:61:1: note: ***** Analysis failed with vector mode VOID
+bipbuffer.c:65:24: note: ***** Analysis failed with vector mode V8SI
+bipbuffer.c:65:24: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+bipbuffer.c:83:42: note: ***** Analysis failed with vector mode V8SI
+bipbuffer.c:83:42: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+bipbuffer.c:98:19: note: ***** Analysis failed with vector mode V8SI
+bipbuffer.c:98:19: note: ***** The result for vector mode V32QI would be the same
+bipbuffer.c:98:19: note: ***** Re-trying analysis with vector mode V16QI
+bipbuffer.c:98:19: note: ***** Analysis failed with vector mode V16QI
+bipbuffer.c:98:19: note: ***** Re-trying analysis with vector mode V8QI
+bipbuffer.c:98:19: note: ***** Analysis failed with vector mode V8QI
+bipbuffer.c:98:19: note: ***** Re-trying analysis with vector mode V4QI
+bipbuffer.c:98:19: note: ***** Analysis failed with vector mode V4QI
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_13, data_24(D), _9);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_5, data_24(D), _1);
+bipbuffer.c:118:19: note: ***** Analysis failed with vector mode V8SI
+bipbuffer.c:118:19: note: ***** The result for vector mode V32QI would be the same
+bipbuffer.c:118:19: note: ***** Re-trying analysis with vector mode V16QI
+bipbuffer.c:118:19: note: ***** Analysis failed with vector mode V16QI
+bipbuffer.c:118:19: note: ***** Re-trying analysis with vector mode V8QI
+bipbuffer.c:118:19: note: ***** Analysis failed with vector mode V8QI
+bipbuffer.c:118:19: note: ***** Re-trying analysis with vector mode V4QI
+bipbuffer.c:118:19: note: ***** Analysis failed with vector mode V4QI
+bipbuffer.c:139:38: note: ***** Analysis failed with vector mode V4DI
+bipbuffer.c:139:38: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+bipbuffer.c:148:37: note: ***** Analysis failed with vector mode V8SI
+bipbuffer.c:148:37: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+bipbuffer.c:175:25: note: ***** Analysis succeeded with vector mode V8SI
+bipbuffer.c:175:25: note: SLPing BB part
+bipbuffer.c:175:25: note: Costing subgraph: 
+bipbuffer.c:175:25: note: node 0x5742798 (max_nunits=2, refcnt=1) vector(2) unsigned int
+bipbuffer.c:175:25: note: op template: me_13(D)->a_start = 0;
+bipbuffer.c:175:25: note: 	stmt 0 me_13(D)->a_start = 0;
+bipbuffer.c:175:25: note: 	stmt 1 me_13(D)->a_end = 0;
+bipbuffer.c:175:25: note: 	children 0x5742820
+bipbuffer.c:175:25: note: node (constant) 0x5742820 (max_nunits=1, refcnt=1) vector(2) unsigned int
+bipbuffer.c:175:25: note: 	{ 0, 0 }
+bipbuffer.c:175:25: note: Cost model analysis: 
+bipbuffer.c:175:25: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+bipbuffer.c:175:25: note: Basic block will be vectorized using SLP
+bipbuffer.c:175:25: optimized: basic block part vectorized using 8 byte vectors
+bipbuffer.c:175:25: note: Vectorizing SLP tree:
+bipbuffer.c:175:25: note: node 0x5742798 (max_nunits=2, refcnt=1) vector(2) unsigned int
+bipbuffer.c:175:25: note: op template: me_13(D)->a_start = 0;
+bipbuffer.c:175:25: note: 	stmt 0 me_13(D)->a_start = 0;
+bipbuffer.c:175:25: note: 	stmt 1 me_13(D)->a_end = 0;
+bipbuffer.c:175:25: note: 	children 0x5742820
+bipbuffer.c:175:25: note: node (constant) 0x5742820 (max_nunits=1, refcnt=1) vector(2) unsigned int
+bipbuffer.c:175:25: note: 	{ 0, 0 }
+bipbuffer.c:175:25: note: ------>vectorizing SLP node starting from: me_13(D)->a_start = 0;
+bipbuffer.c:175:25: note: vect_is_simple_use: operand 0, type of def: constant
+bipbuffer.c:175:25: note: transform store. ncopies = 1
+bipbuffer.c:175:25: note: create vector_type-pointer variable to type: vector(2) unsigned int  vectorizing a pointer ref: me_13(D)->a_start
+bipbuffer.c:175:25: note: created vectp.63_36
+bipbuffer.c:175:25: note: add new stmt: MEM <vector(2) unsigned int> [(unsigned int *)vectp.63_36] = { 0, 0 };
+bipbuffer.c:175:25: note: vectorizing stmts using SLP.
+bipbuffer.c:175:25: note: ***** The result for vector mode V32QI would be the same

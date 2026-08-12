@@ -1,0 +1,1442 @@
+items.c:409:5: missed: statement clobbers memory: __assert_fail ("(it->it_flags & ITEM_SLABBED) == 0", "items.c", 409, &__PRETTY_FUNCTION__);
+items.c:413:5: missed: statement clobbers memory: __assert_fail ("it != *head", "items.c", 413, &__PRETTY_FUNCTION__);
+items.c:414:5: missed: statement clobbers memory: __assert_fail ("(*head && *tail) || (*head == 0 && *tail == 0)", "items.c", 414, &__PRETTY_FUNCTION__);
+items.c:416:14: note: ***** Analysis succeeded with vector mode V16HI
+items.c:416:14: note: SLPing BB part
+items.c:416:14: note: Costing subgraph: 
+items.c:416:14: note: node 0x2e4aef48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:416:14: note: op template: it_54(D)->next = 0B;
+items.c:416:14: note: 	stmt 0 it_54(D)->next = 0B;
+items.c:416:14: note: 	stmt 1 it_54(D)->prev = 0B;
+items.c:416:14: note: 	children 0x2e4aefd0
+items.c:416:14: note: node (constant) 0x2e4aefd0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:416:14: note: 	{ 0B, 0B }
+items.c:416:14: note: Cost model analysis: 
+items.c:416:14: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+items.c:416:14: note: Basic block will be vectorized using SLP
+items.c:416:14: optimized: basic block part vectorized using 16 byte vectors
+items.c:416:14: note: Vectorizing SLP tree:
+items.c:416:14: note: node 0x2e4aef48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:416:14: note: op template: it_54(D)->next = 0B;
+items.c:416:14: note: 	stmt 0 it_54(D)->next = 0B;
+items.c:416:14: note: 	stmt 1 it_54(D)->prev = 0B;
+items.c:416:14: note: 	children 0x2e4aefd0
+items.c:416:14: note: node (constant) 0x2e4aefd0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:416:14: note: 	{ 0B, 0B }
+items.c:416:14: note: ------>vectorizing SLP node starting from: it_54(D)->next = 0B;
+items.c:416:14: note: vect_is_simple_use: operand 0B, type of def: constant
+items.c:416:14: note: transform store. ncopies = 1
+items.c:416:14: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: it_54(D)->next
+items.c:416:14: note: created vectp.180_79
+items.c:416:14: note: add new stmt: MEM <vector(2) long unsigned int> [(struct _stritem * *)vectp.180_79] = { 0, 0 };
+items.c:416:14: note: vectorizing stmts using SLP.
+items.c:416:14: note: ***** The result for vector mode V32QI would be the same
+items.c:453:9: missed: statement clobbers memory: __assert_fail ("it->prev == 0", "items.c", 453, &__PRETTY_FUNCTION__);
+items.c:460:5: missed: statement clobbers memory: __assert_fail ("it->next != it", "items.c", 460, &__PRETTY_FUNCTION__);
+items.c:457:9: missed: statement clobbers memory: __assert_fail ("it->next == 0", "items.c", 457, &__PRETTY_FUNCTION__);
+items.c:461:5: missed: statement clobbers memory: __assert_fail ("it->prev != it", "items.c", 461, &__PRETTY_FUNCTION__);
+items.c:476:5: note: ***** Analysis failed with vector mode V32QI
+items.c:476:5: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+items.c:541:5: missed: statement clobbers memory: __assert_fail ("it->refcount > 0", "items.c", 541, &__PRETTY_FUNCTION__);
+items.c:541:5: note: ***** Analysis failed with vector mode VOID
+items.c:65:19: missed: couldn't vectorize loop
+items.c:66:9: missed: statement clobbers memory: pthread_mutex_lock (_1);
+items.c:63:6: note: vectorized 0 loops in function.
+items.c:66:9: missed: statement clobbers memory: pthread_mutex_lock (_1);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:59:10: missed: statement clobbers memory: __builtin_memset (_2, 0, 168);
+items.c:68:9: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:70:1: note: ***** Analysis failed with vector mode VOID
+items.c:75:36: note: ***** Analysis succeeded with vector mode V4DI
+items.c:75:36: note: SLPing BB part
+items.c:75:36: note: Costing subgraph: 
+items.c:75:36: note: node 0x2e396a28 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:75:36: note: op template: itemstats[i_8(D)].crawler_reclaimed = _2;
+items.c:75:36: note: 	stmt 0 itemstats[i_8(D)].crawler_reclaimed = _2;
+items.c:75:36: note: 	stmt 1 itemstats[i_8(D)].crawler_items_checked = _6;
+items.c:75:36: note: 	children 0x2e396ab0
+items.c:75:36: note: node 0x2e396ab0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:75:36: note: op template: _2 = _1 + reclaimed_9(D);
+items.c:75:36: note: 	stmt 0 _2 = _1 + reclaimed_9(D);
+items.c:75:36: note: 	stmt 1 _6 = _5 + checked_13(D);
+items.c:75:36: note: 	children 0x2e396b38 0x2e396bc0
+items.c:75:36: note: node 0x2e396b38 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:75:36: note: op template: _1 = itemstats[i_8(D)].crawler_reclaimed;
+items.c:75:36: note: 	stmt 0 _1 = itemstats[i_8(D)].crawler_reclaimed;
+items.c:75:36: note: 	stmt 1 _5 = itemstats[i_8(D)].crawler_items_checked;
+items.c:75:36: note: node (external) 0x2e396bc0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:75:36: note: 	{ reclaimed_9(D), checked_13(D) }
+items.c:75:36: note: Cost model analysis: 
+items.c:75:36: note: Cost model analysis for part in loop 0:
+  Vector cost: 48
+  Scalar cost: 64
+items.c:75:36: note: Basic block will be vectorized using SLP
+items.c:75:36: optimized: basic block part vectorized using 16 byte vectors
+items.c:75:36: note: Vectorizing SLP tree:
+items.c:75:36: note: node 0x2e396a28 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:75:36: note: op template: itemstats[i_8(D)].crawler_reclaimed = _2;
+items.c:75:36: note: 	stmt 0 itemstats[i_8(D)].crawler_reclaimed = _2;
+items.c:75:36: note: 	stmt 1 itemstats[i_8(D)].crawler_items_checked = _6;
+items.c:75:36: note: 	children 0x2e396ab0
+items.c:75:36: note: node 0x2e396ab0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:75:36: note: op template: _2 = _1 + reclaimed_9(D);
+items.c:75:36: note: 	stmt 0 _2 = _1 + reclaimed_9(D);
+items.c:75:36: note: 	stmt 1 _6 = _5 + checked_13(D);
+items.c:75:36: note: 	children 0x2e396b38 0x2e396bc0
+items.c:75:36: note: node 0x2e396b38 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:75:36: note: op template: _1 = itemstats[i_8(D)].crawler_reclaimed;
+items.c:75:36: note: 	stmt 0 _1 = itemstats[i_8(D)].crawler_reclaimed;
+items.c:75:36: note: 	stmt 1 _5 = itemstats[i_8(D)].crawler_items_checked;
+items.c:75:36: note: node (external) 0x2e396bc0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:75:36: note: 	{ reclaimed_9(D), checked_13(D) }
+items.c:75:36: note: ------>vectorizing SLP node starting from: _1 = itemstats[i_8(D)].crawler_reclaimed;
+items.c:75:36: note: transform load. ncopies = 1
+items.c:75:36: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: itemstats[i_8(D)].crawler_reclaimed
+items.c:75:36: note: created vectp.204_15
+items.c:75:36: note: add new stmt: vect__1.205_16 = MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.204_15];
+items.c:75:36: note: add new stmt: vectp.204_17 = vectp.204_15 + 24;
+items.c:75:36: note: ------>vectorizing SLP node starting from: _2 = _1 + reclaimed_9(D);
+items.c:75:36: note: vect_is_simple_use: operand itemstats[i_8(D)].crawler_reclaimed, type of def: internal
+items.c:75:36: note: transform binary/unary operation.
+items.c:75:36: note: add new stmt: vect__2.206_19 = vect__1.205_16 + _18;
+items.c:75:36: note: ------>vectorizing SLP node starting from: itemstats[i_8(D)].crawler_reclaimed = _2;
+items.c:75:36: note: vect_is_simple_use: operand _1 + reclaimed_9(D), type of def: internal
+items.c:75:36: note: vect_is_simple_use: operand _5 + checked_13(D), type of def: internal
+items.c:75:36: note: transform store. ncopies = 1
+items.c:75:36: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: itemstats[i_8(D)].crawler_reclaimed
+items.c:75:36: note: created vectp.208_20
+items.c:75:36: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.208_20] = vect__2.206_19;
+items.c:75:36: note: vectorizing stmts using SLP.
+items.c:75:36: note: ***** The result for vector mode V32QI would be the same
+items.c:105:5: missed: statement clobbers memory: pthread_mutex_lock (&cas_id_lock);
+items.c:107:5: missed: statement clobbers memory: pthread_mutex_unlock (&cas_id_lock);
+items.c:108:12: note: ***** Analysis failed with vector mode V4DI
+items.c:108:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+items.c:112:5: missed: statement clobbers memory: pthread_mutex_lock (&cas_id_lock);
+items.c:114:5: missed: statement clobbers memory: pthread_mutex_unlock (&cas_id_lock);
+items.c:115:1: note: ***** Analysis failed with vector mode V4DI
+items.c:115:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+items.c:119:48: missed: not vectorized: volatile type: current_time.1_2 ={v} current_time;
+items.c:119:33: note: ***** Analysis failed with vector mode V8SI
+items.c:119:33: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+items.c:127:17: note: ***** Analysis failed with vector mode V8SI
+items.c:127:17: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+items.c:352:5: missed: statement clobbers memory: __assert_fail ("(it->it_flags & ITEM_LINKED) == 0", "items.c", 352, &__PRETTY_FUNCTION__);
+items.c:353:5: missed: statement clobbers memory: __assert_fail ("it != heads[it->slabs_clsid]", "items.c", 353, &__PRETTY_FUNCTION__);
+items.c:354:5: missed: statement clobbers memory: __assert_fail ("it != tails[it->slabs_clsid]", "items.c", 354, &__PRETTY_FUNCTION__);
+items.c:355:5: missed: statement clobbers memory: __assert_fail ("it->refcount == 0", "items.c", 355, &__PRETTY_FUNCTION__);
+items.c:360:5: missed: statement clobbers memory: slabs_free (it_10(D), clsid_14);
+items.c:361:1: note: ***** Analysis failed with vector mode V16HI
+items.c:361:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V16HI
+items.c:379:12: missed: statement clobbers memory: _4 = slabs_clsid (ntotal_5);
+items.c:159:43: note: ***** Analysis failed with vector mode V32QI
+items.c:159:43: note: ***** The result for vector mode V32QI would be the same
+items.c:159:43: note: ***** Re-trying analysis with vector mode V16QI
+items.c:159:43: note: ***** Analysis failed with vector mode V16QI
+items.c:159:43: note: ***** Re-trying analysis with vector mode V8QI
+items.c:159:43: note: ***** Analysis failed with vector mode V8QI
+items.c:159:43: note: ***** Re-trying analysis with vector mode V4QI
+items.c:159:43: note: ***** Analysis failed with vector mode V4QI
+items.c:386:19: missed: statement clobbers memory: hv_50 = hash.13_16 (_22, _17);
+items.c:387:5: missed: statement clobbers memory: assoc_insert (it_47(D), hv_50);
+items.c:396:5: missed: statement clobbers memory: STATS_LOCK ();
+items.c:400:5: missed: statement clobbers memory: STATS_UNLOCK ();
+items.c:398:28: note: ***** Analysis succeeded with vector mode V32QI
+items.c:398:28: note: SLPing BB part
+items.c:398:28: note: Costing subgraph: 
+items.c:398:28: note: node 0x2e5eb0b8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:398:28: note: op template: stats_state.curr_items = _41;
+items.c:398:28: note: 	stmt 0 stats_state.curr_items = _41;
+items.c:398:28: note: 	stmt 1 stats_state.curr_bytes = _39;
+items.c:398:28: note: 	children 0x2e5eb2d8
+items.c:398:28: note: node (external) 0x2e5eb2d8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:398:28: note: 	{ _41, _39 }
+items.c:398:28: note: Cost model analysis: 
+items.c:398:28: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+items.c:398:28: note: Basic block will be vectorized using SLP
+items.c:398:28: optimized: basic block part vectorized using 16 byte vectors
+items.c:398:28: note: Vectorizing SLP tree:
+items.c:398:28: note: node 0x2e5eb0b8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:398:28: note: op template: stats_state.curr_items = _41;
+items.c:398:28: note: 	stmt 0 stats_state.curr_items = _41;
+items.c:398:28: note: 	stmt 1 stats_state.curr_bytes = _39;
+items.c:398:28: note: 	children 0x2e5eb2d8
+items.c:398:28: note: node (external) 0x2e5eb2d8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:398:28: note: 	{ _41, _39 }
+items.c:398:28: note: ------>vectorizing SLP node starting from: stats_state.curr_items = _41;
+items.c:398:28: note: vect_is_simple_use: operand _36 + _38, type of def: internal
+items.c:398:28: note: transform store. ncopies = 1
+items.c:398:28: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: stats_state.curr_items
+items.c:398:28: note: created &stats_state
+items.c:398:28: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&stats_state] = _33;
+items.c:398:28: note: vectorizing stmts using SLP.
+items.c:398:28: note: ***** The result for vector mode V32QI would be the same
+items.c:487:5: missed: statement clobbers memory: __assert_fail ("(it->it_flags & (ITEM_LINKED|ITEM_SLABBED)) == 0", "items.c", 487, &__PRETTY_FUNCTION__);
+items.c:489:14: missed: not vectorized: volatile type: current_time.14_3 ={v} current_time;
+items.c:491:5: missed: statement clobbers memory: STATS_LOCK ();
+items.c:495:5: missed: statement clobbers memory: STATS_UNLOCK ();
+items.c:499:5: missed: statement clobbers memory: assoc_insert (it_30(D), hv_41(D));
+items.c:435:5: missed: statement clobbers memory: pthread_mutex_lock (_79);
+items.c:436:5: missed: statement clobbers memory: do_item_link_q (it_30(D));
+items.c:437:5: missed: statement clobbers memory: pthread_mutex_unlock (_82);
+items.c:493:28: note: ***** Analysis succeeded with vector mode V16HI
+items.c:493:28: note: SLPing BB part
+items.c:493:28: note: Costing subgraph: 
+items.c:493:28: note: node 0x2e5997e8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:493:28: note: op template: stats_state.curr_items = _22;
+items.c:493:28: note: 	stmt 0 stats_state.curr_items = _22;
+items.c:493:28: note: 	stmt 1 stats_state.curr_bytes = _20;
+items.c:493:28: note: 	children 0x2e599a08
+items.c:493:28: note: node (external) 0x2e599a08 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:493:28: note: 	{ _22, _20 }
+items.c:493:28: note: Cost model analysis: 
+items.c:493:28: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+items.c:493:28: note: Basic block will be vectorized using SLP
+items.c:493:28: optimized: basic block part vectorized using 16 byte vectors
+items.c:493:28: note: Vectorizing SLP tree:
+items.c:493:28: note: node 0x2e5997e8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:493:28: note: op template: stats_state.curr_items = _22;
+items.c:493:28: note: 	stmt 0 stats_state.curr_items = _22;
+items.c:493:28: note: 	stmt 1 stats_state.curr_bytes = _20;
+items.c:493:28: note: 	children 0x2e599a08
+items.c:493:28: note: node (external) 0x2e599a08 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:493:28: note: 	{ _22, _20 }
+items.c:493:28: note: ------>vectorizing SLP node starting from: stats_state.curr_items = _22;
+items.c:493:28: note: vect_is_simple_use: operand _13 + _89, type of def: internal
+items.c:493:28: note: transform store. ncopies = 1
+items.c:493:28: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: stats_state.curr_items
+items.c:493:28: note: created &stats_state
+items.c:493:28: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&stats_state] = _100;
+items.c:493:28: note: vectorizing stmts using SLP.
+items.c:493:28: note: ***** The result for vector mode V32QI would be the same
+items.c:540:5: missed: statement clobbers memory: __assert_fail ("(it->it_flags & ITEM_SLABBED) == 0", "items.c", 540, &__PRETTY_FUNCTION__);
+items.c:538:6: missed: statement clobbers memory: do_item_remove.part.0 ();
+items.c:352:5: missed: statement clobbers memory: __assert_fail ("(it->it_flags & ITEM_LINKED) == 0", "items.c", 352, &__PRETTY_FUNCTION__);
+items.c:353:5: missed: statement clobbers memory: __assert_fail ("it != heads[it->slabs_clsid]", "items.c", 353, &__PRETTY_FUNCTION__);
+items.c:354:5: missed: statement clobbers memory: __assert_fail ("it != tails[it->slabs_clsid]", "items.c", 354, &__PRETTY_FUNCTION__);
+items.c:360:5: missed: statement clobbers memory: slabs_free (it_7(D), clsid_20);
+items.c:546:1: note: ***** Analysis failed with vector mode V16HI
+items.c:546:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V16HI
+items.c:511:9: missed: statement clobbers memory: STATS_LOCK ();
+items.c:514:9: missed: statement clobbers memory: STATS_UNLOCK ();
+items.c:516:9: missed: statement clobbers memory: assoc_delete (_29, _23, hv_39(D));
+items.c:480:5: missed: statement clobbers memory: pthread_mutex_lock (_47);
+items.c:481:5: missed: statement clobbers memory: do_item_unlink_q (it_32(D));
+items.c:482:5: missed: statement clobbers memory: pthread_mutex_unlock (_50);
+items.c:518:9: missed: statement clobbers memory: do_item_remove (it_32(D));
+items.c:513:32: note: ***** Analysis succeeded with vector mode V16HI
+items.c:513:32: note: SLPing BB part
+items.c:513:32: note: Costing subgraph: 
+items.c:513:32: note: node 0x2e62b0f8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:513:32: note: op template: stats_state.curr_items = _21;
+items.c:513:32: note: 	stmt 0 stats_state.curr_items = _21;
+items.c:513:32: note: 	stmt 1 stats_state.curr_bytes = _19;
+items.c:513:32: note: 	children 0x2e62b318
+items.c:513:32: note: node (external) 0x2e62b318 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:513:32: note: 	{ _21, _19 }
+items.c:513:32: note: Cost model analysis: 
+items.c:513:32: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+items.c:513:32: note: Basic block will be vectorized using SLP
+items.c:513:32: optimized: basic block part vectorized using 16 byte vectors
+items.c:513:32: note: Vectorizing SLP tree:
+items.c:513:32: note: node 0x2e62b0f8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:513:32: note: op template: stats_state.curr_items = _21;
+items.c:513:32: note: 	stmt 0 stats_state.curr_items = _21;
+items.c:513:32: note: 	stmt 1 stats_state.curr_bytes = _19;
+items.c:513:32: note: 	children 0x2e62b318
+items.c:513:32: note: node (external) 0x2e62b318 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:513:32: note: 	{ _21, _19 }
+items.c:513:32: note: ------>vectorizing SLP node starting from: stats_state.curr_items = _21;
+items.c:513:32: note: vect_is_simple_use: operand _92 - _12, type of def: internal
+items.c:513:32: note: transform store. ncopies = 1
+items.c:513:32: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: stats_state.curr_items
+items.c:513:32: note: created &stats_state
+items.c:513:32: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&stats_state] = _57;
+items.c:513:32: note: vectorizing stmts using SLP.
+items.c:513:32: note: ***** The result for vector mode V32QI would be the same
+items.c:527:9: missed: statement clobbers memory: STATS_LOCK ();
+items.c:530:9: missed: statement clobbers memory: STATS_UNLOCK ();
+items.c:532:9: missed: statement clobbers memory: assoc_delete (_29, _23, hv_39(D));
+items.c:533:9: missed: statement clobbers memory: do_item_unlink_q (it_32(D));
+items.c:534:9: missed: statement clobbers memory: do_item_remove (it_32(D));
+items.c:529:32: note: ***** Analysis succeeded with vector mode V16HI
+items.c:529:32: note: SLPing BB part
+items.c:529:32: note: Costing subgraph: 
+items.c:529:32: note: node 0x2e61b0e8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:529:32: note: op template: stats_state.curr_items = _21;
+items.c:529:32: note: 	stmt 0 stats_state.curr_items = _21;
+items.c:529:32: note: 	stmt 1 stats_state.curr_bytes = _19;
+items.c:529:32: note: 	children 0x2e61b308
+items.c:529:32: note: node (external) 0x2e61b308 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:529:32: note: 	{ _21, _19 }
+items.c:529:32: note: Cost model analysis: 
+items.c:529:32: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+items.c:529:32: note: Basic block will be vectorized using SLP
+items.c:529:32: optimized: basic block part vectorized using 16 byte vectors
+items.c:529:32: note: Vectorizing SLP tree:
+items.c:529:32: note: node 0x2e61b0e8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:529:32: note: op template: stats_state.curr_items = _21;
+items.c:529:32: note: 	stmt 0 stats_state.curr_items = _21;
+items.c:529:32: note: 	stmt 1 stats_state.curr_bytes = _19;
+items.c:529:32: note: 	children 0x2e61b308
+items.c:529:32: note: node (external) 0x2e61b308 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:529:32: note: 	{ _21, _19 }
+items.c:529:32: note: ------>vectorizing SLP node starting from: stats_state.curr_items = _21;
+items.c:529:32: note: vect_is_simple_use: operand _84 - _12, type of def: internal
+items.c:529:32: note: transform store. ncopies = 1
+items.c:529:32: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: stats_state.curr_items
+items.c:529:32: note: created &stats_state
+items.c:529:32: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&stats_state] = _56;
+items.c:529:32: note: vectorizing stmts using SLP.
+items.c:529:32: note: ***** The result for vector mode V32QI would be the same
+items.c:1093:22: missed: couldn't vectorize loop
+items.c:1093:22: missed: not vectorized: could not determine main exit from loop with multiple exits.
+items.c:1093:22: missed: couldn't vectorize loop
+items.c:1093:22: missed: not vectorized: could not determine main exit from loop with multiple exits.
+items.c:1072:5: note: vectorized 0 loops in function.
+items.c:1090:5: missed: statement clobbers memory: pthread_mutex_lock (_3);
+items.c:1105:23: missed: statement clobbers memory: hv_23 = hash.87_14 (_22, _16);
+items.c:1108:26: missed: statement clobbers memory: hold_lock_24 = item_trylock (hv_23);
+items.c:1118:62: missed: not vectorized: volatile type: current_time.88_33 ={v} current_time;
+items.c:1130:54: missed: not vectorized: volatile type: current_time.90_38 ={v} current_time;
+items.c:119:48: missed: not vectorized: volatile type: current_time.1_41 ={v} current_time;
+items.c:1137:13: missed: statement clobbers memory: do_item_unlink_nolock (search_65, hv_23);
+items.c:1138:13: missed: statement clobbers memory: storage_delete (ext_storage.91_48, search_65);
+items.c:1140:13: missed: statement clobbers memory: do_item_remove (search_65);
+items.c:1141:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_24);
+items.c:1122:17: missed: statement clobbers memory: storage_delete (ext_storage.89_36, search_65);
+items.c:1123:17: missed: statement clobbers memory: do_item_unlink_nolock (search_65, hv_23);
+items.c:1124:17: missed: statement clobbers memory: item_trylock_unlock (hold_lock_24);
+items.c:1099:17: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:1105:23: missed: statement clobbers memory: hv_70 = hash.87_120 (_18, _8);
+items.c:1108:26: missed: statement clobbers memory: hold_lock_228 = item_trylock (hv_70);
+items.c:1118:62: missed: not vectorized: volatile type: current_time.88_239 ={v} current_time;
+items.c:1130:54: missed: not vectorized: volatile type: current_time.90_171 ={v} current_time;
+items.c:119:48: missed: not vectorized: volatile type: current_time.1_174 ={v} current_time;
+items.c:1137:13: missed: statement clobbers memory: do_item_unlink_nolock (search_119, hv_70);
+items.c:1138:13: missed: statement clobbers memory: storage_delete (ext_storage.91_251, search_119);
+items.c:1140:13: missed: statement clobbers memory: do_item_remove (search_119);
+items.c:1141:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_228);
+items.c:1122:17: missed: statement clobbers memory: storage_delete (ext_storage.89_214, search_119);
+items.c:1123:17: missed: statement clobbers memory: do_item_unlink_nolock (search_119, hv_70);
+items.c:1124:17: missed: statement clobbers memory: item_trylock_unlock (hold_lock_228);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:1220:21: missed: statement clobbers memory: do_item_unlink_q (search_127);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:435:5: missed: statement clobbers memory: pthread_mutex_lock (_203);
+items.c:436:5: missed: statement clobbers memory: do_item_link_q (search_127);
+items.c:437:5: missed: statement clobbers memory: pthread_mutex_unlock (_206);
+items.c:1241:13: missed: statement clobbers memory: do_item_remove (search_127);
+items.c:1242:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_137);
+items.c:1213:32: missed: not vectorized: volatile type: MEM[(struct lru_pull_tail_return *)0B].it ={v} search_127;
+items.c:1072:5: missed: statement clobbers memory: __builtin_trap ();
+items.c:1195:63: missed: not vectorized: volatile type: current_time.93_80 ={v} current_time;
+items.c:1204:21: missed: statement clobbers memory: myl_92 = pthread_getspecific (logger_key.94_91);
+items.c:1204:21: missed: statement clobbers memory: logger_log (myl_92, 1, search_127);
+items.c:1205:21: missed: statement clobbers memory: storage_delete (ext_storage.95_95, search_127);
+items.c:1206:21: missed: statement clobbers memory: do_item_unlink_nolock (search_127, hv_147);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:1241:13: missed: statement clobbers memory: do_item_remove (search_127);
+items.c:1242:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_137);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:1247:9: missed: statement clobbers memory: slabs_reassign (_121, -1, orig_id_1(D), 1);
+items.c:1093:22: note: ***** Analysis failed with vector mode V4DI
+items.c:1093:22: note: ***** The result for vector mode V32QI would be the same
+items.c:1093:22: note: ***** Re-trying analysis with vector mode V16QI
+items.c:1093:22: note: ***** Analysis failed with vector mode V16QI
+items.c:1093:22: note: ***** Re-trying analysis with vector mode V8QI
+items.c:1093:22: note: ***** Analysis failed with vector mode V8QI
+items.c:1093:22: note: ***** Re-trying analysis with vector mode V4QI
+items.c:1093:22: note: ***** Analysis failed with vector mode V4QI
+items.c:1093:22: missed: couldn't vectorize loop
+items.c:1093:22: missed: not vectorized: could not determine main exit from loop with multiple exits.
+items.c:1093:22: missed: couldn't vectorize loop
+items.c:1093:22: missed: not vectorized: could not determine main exit from loop with multiple exits.
+items.c:1072:5: note: vectorized 0 loops in function.
+items.c:1090:5: missed: statement clobbers memory: pthread_mutex_lock (_3);
+items.c:1105:23: missed: statement clobbers memory: hv_23 = hash.87_14 (_22, _16);
+items.c:1108:26: missed: statement clobbers memory: hold_lock_24 = item_trylock (hv_23);
+items.c:1118:62: missed: not vectorized: volatile type: current_time.88_33 ={v} current_time;
+items.c:1130:54: missed: not vectorized: volatile type: current_time.90_38 ={v} current_time;
+items.c:119:48: missed: not vectorized: volatile type: current_time.1_41 ={v} current_time;
+items.c:1137:13: missed: statement clobbers memory: do_item_unlink_nolock (search_134, hv_23);
+items.c:1138:13: missed: statement clobbers memory: storage_delete (ext_storage.91_48, search_134);
+items.c:1140:13: missed: statement clobbers memory: do_item_remove (search_134);
+items.c:1141:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_24);
+items.c:1122:17: missed: statement clobbers memory: storage_delete (ext_storage.89_36, search_134);
+items.c:1123:17: missed: statement clobbers memory: do_item_unlink_nolock (search_134, hv_23);
+items.c:1124:17: missed: statement clobbers memory: item_trylock_unlock (hold_lock_24);
+items.c:1099:17: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:1105:23: missed: statement clobbers memory: hv_90 = hash.87_102 (_92, _97);
+items.c:1108:26: missed: statement clobbers memory: hold_lock_87 = item_trylock (hv_90);
+items.c:1118:62: missed: not vectorized: volatile type: current_time.88_215 ={v} current_time;
+items.c:1130:54: missed: not vectorized: volatile type: current_time.90_171 ={v} current_time;
+items.c:119:48: missed: not vectorized: volatile type: current_time.1_181 ={v} current_time;
+items.c:1137:13: missed: statement clobbers memory: do_item_unlink_nolock (search_120, hv_90);
+items.c:1138:13: missed: statement clobbers memory: storage_delete (ext_storage.91_110, search_120);
+items.c:1140:13: missed: statement clobbers memory: do_item_remove (search_120);
+items.c:1141:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_87);
+items.c:1122:17: missed: statement clobbers memory: storage_delete (ext_storage.89_220, search_120);
+items.c:1123:17: missed: statement clobbers memory: do_item_unlink_nolock (search_120, hv_90);
+items.c:1124:17: missed: statement clobbers memory: item_trylock_unlock (hold_lock_87);
+items.c:1175:41: missed: not vectorized: volatile type: current_time.92_71 ={v} current_time;
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:1178:21: missed: statement clobbers memory: do_item_unlink_q (search_122);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:1171:25: missed: statement clobbers memory: do_item_unlink_q (search_122);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:435:5: missed: statement clobbers memory: pthread_mutex_lock (_204);
+items.c:436:5: missed: statement clobbers memory: do_item_link_q (search_122);
+items.c:437:5: missed: statement clobbers memory: pthread_mutex_unlock (_207);
+items.c:1241:13: missed: statement clobbers memory: do_item_remove (search_122);
+items.c:1242:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_136);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:1237:29: note: ***** Analysis failed with vector mode V4DI
+items.c:1237:29: note: ***** The result for vector mode V32QI would be the same
+items.c:1237:29: note: ***** Re-trying analysis with vector mode V16QI
+items.c:1237:29: note: ***** Analysis failed with vector mode V16QI
+items.c:1237:29: note: ***** Re-trying analysis with vector mode V8QI
+items.c:1237:29: note: ***** Analysis failed with vector mode V8QI
+items.c:1237:29: note: ***** Re-trying analysis with vector mode V4QI
+items.c:1237:29: note: ***** Analysis failed with vector mode V4QI
+items.c:171:19: missed: couldn't vectorize loop
+items.c:171:19: missed: not vectorized: unsupported control flow in loop.
+items.c:162:7: note: vectorized 0 loops in function.
+items.c:174:13: missed: statement clobbers memory: lru_pull_tail.constprop (id.2_2, 0, 0);
+items.c:176:14: missed: statement clobbers memory: it_22 = slabs_alloc (id_19(D), 0);
+items.c:182:17: missed: statement clobbers memory: _4 = lru_pull_tail.constprop (id.3_3, 0, 1);
+items.c:184:21: missed: statement clobbers memory: lru_pull_tail.constprop (id.3_3, 0, 0, 0);
+items.c:195:9: missed: statement clobbers memory: pthread_mutex_lock (_7);
+items.c:197:9: missed: statement clobbers memory: pthread_mutex_unlock (_7);
+items.c:196:39: note: ***** Analysis failed with vector mode V32QI
+items.c:196:39: note: ***** The result for vector mode V32QI would be the same
+items.c:196:39: note: ***** Re-trying analysis with vector mode V16QI
+items.c:196:39: note: ***** Analysis failed with vector mode V16QI
+items.c:196:39: note: ***** Re-trying analysis with vector mode V8QI
+items.c:196:39: note: ***** Analysis failed with vector mode V8QI
+items.c:196:39: note: ***** Re-trying analysis with vector mode V4QI
+items.c:196:39: note: ***** Analysis failed with vector mode V4QI
+items.c:213:23: missed: statement clobbers memory: id_24 = slabs_clsid (_22);
+items.c:215:38: missed: statement clobbers memory: nch_26 = do_item_alloc_pull (_22, id_24);
+items.c:226:18: missed: statement clobbers memory: id_28 = slabs_clsid (_5);
+items.c:227:34: missed: statement clobbers memory: nch_30 = do_item_alloc_pull (_5, id_28);
+items.c:236:5: missed: statement clobbers memory: slabs_mlock ();
+items.c:245:5: missed: statement clobbers memory: slabs_munlock ();
+items.c:240:15: note: ***** Analysis succeeded with vector mode V8SI
+items.c:240:15: note: SLPing BB part
+items.c:240:15: note: Costing subgraph: 
+items.c:240:15: note: node 0x2e63b218 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:240:15: note: op template: nch_15->next = 0B;
+items.c:240:15: note: 	stmt 0 nch_15->next = 0B;
+items.c:240:15: note: 	stmt 1 nch_15->prev = ch_32(D);
+items.c:240:15: note: 	children 0x2e63b2a0
+items.c:240:15: note: node (external) 0x2e63b2a0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:240:15: note: 	{ 0B, ch_32(D) }
+items.c:240:15: note: Cost model analysis: 
+items.c:240:15: note: Cost model analysis for part in loop 0:
+  Vector cost: 26
+  Scalar cost: 32
+items.c:240:15: note: Basic block will be vectorized using SLP
+items.c:240:15: optimized: basic block part vectorized using 16 byte vectors
+items.c:240:15: note: Vectorizing SLP tree:
+items.c:240:15: note: node 0x2e63b218 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:240:15: note: op template: nch_15->next = 0B;
+items.c:240:15: note: 	stmt 0 nch_15->next = 0B;
+items.c:240:15: note: 	stmt 1 nch_15->prev = ch_32(D);
+items.c:240:15: note: 	children 0x2e63b2a0
+items.c:240:15: note: node (external) 0x2e63b2a0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:240:15: note: 	{ 0B, ch_32(D) }
+items.c:240:15: note: ------>vectorizing SLP node starting from: nch_15->next = 0B;
+items.c:240:15: note: vect_is_simple_use: operand ch_32(D), type of def: external
+items.c:240:15: note: transform store. ncopies = 1
+items.c:240:15: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: nch_15->next
+items.c:240:15: note: created vectp.280_42
+items.c:240:15: note: add new stmt: MEM <vector(2) long unsigned int> [(struct _strchunk * *)vectp.280_42] = _43;
+items.c:240:15: note: vectorizing stmts using SLP.
+items.c:240:15: note: ***** The result for vector mode V32QI would be the same
+items.c:263:23: missed: statement clobbers memory: id_77 = slabs_clsid (ntotal_63);
+items.c:293:14: missed: statement clobbers memory: it_79 = do_item_alloc_pull (ntotal_63, id_77);
+items.c:287:18: missed: statement clobbers memory: hdr_id_83 = slabs_clsid (_14);
+items.c:288:14: missed: statement clobbers memory: it_85 = do_item_alloc_pull (_14, hdr_id_83);
+items.c:297:9: missed: statement clobbers memory: pthread_mutex_lock (_17);
+items.c:299:9: missed: statement clobbers memory: pthread_mutex_unlock (_17);
+items.c:303:5: missed: statement clobbers memory: __assert_fail ("it->it_flags == 0 || it->it_flags == ITEM_CHUNKED", "items.c", 303, &__PRETTY_FUNCTION__);
+items.c:313:21: missed: not vectorized: volatile type: current_time.8_24 ={v} current_time;
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin_memcpy (_40, key_99(D), nkey_74(D));
+items.c:338:21: note: ***** Analysis succeeded with vector mode V32QI
+items.c:338:21: note: SLPing BB part
+items.c:307:14: note: Costing subgraph: 
+items.c:307:14: note: node 0x2e62b0f8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:307:14: note: op template: it_34->next = 0B;
+items.c:307:14: note: 	stmt 0 it_34->next = 0B;
+items.c:307:14: note: 	stmt 1 it_34->prev = 0B;
+items.c:307:14: note: 	children 0x2e62b180
+items.c:307:14: note: node (constant) 0x2e62b180 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:307:14: note: 	{ 0B, 0B }
+items.c:307:14: note: Cost model analysis: 
+items.c:307:14: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+items.c:321:21: note: Costing subgraph: 
+items.c:321:21: note: node 0x2e62b208 (max_nunits=2, refcnt=1) vector(2) unsigned char
+items.c:321:21: note: op template: it_34->slabs_clsid = _28;
+items.c:321:21: note: 	stmt 0 it_34->slabs_clsid = _28;
+items.c:321:21: note: 	stmt 1 it_34->nkey = _2;
+items.c:321:21: note: 	children 0x2e62b318
+items.c:321:21: note: node (external) 0x2e62b318 (max_nunits=1, refcnt=1) vector(2) unsigned char
+items.c:321:21: note: 	{ _28, _2 }
+items.c:321:21: note: Cost model analysis: 
+items.c:321:21: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+items.c:341:21: note: Costing subgraph: 
+items.c:341:21: note: node 0x2e62b3a0 (max_nunits=2, refcnt=1) vector(2) int
+items.c:341:21: note: op template: chunk_101->size = 0;
+items.c:341:21: note: 	stmt 0 chunk_101->size = 0;
+items.c:341:21: note: 	stmt 1 chunk_101->used = 0;
+items.c:341:21: note: 	children 0x2e62b428
+items.c:341:21: note: node (constant) 0x2e62b428 (max_nunits=1, refcnt=1) vector(2) int
+items.c:341:21: note: 	{ 0, 0 }
+items.c:341:21: note: Cost model analysis: 
+items.c:341:21: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+items.c:338:21: note: Costing subgraph: 
+items.c:338:21: note: node 0x2e62b538 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:338:21: note: op template: chunk_101->next = 0B;
+items.c:338:21: note: 	stmt 0 chunk_101->next = 0B;
+items.c:338:21: note: 	stmt 1 chunk_101->prev = 0B;
+items.c:338:21: note: 	children 0x2e62b5c0
+items.c:338:21: note: node (constant) 0x2e62b5c0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:338:21: note: 	{ 0B, 0B }
+items.c:338:21: note: Cost model analysis: 
+items.c:338:21: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+items.c:338:21: note: Basic block will be vectorized using SLP
+items.c:307:14: optimized: basic block part vectorized using 16 byte vectors
+items.c:307:14: note: Vectorizing SLP tree:
+items.c:307:14: note: node 0x2e62b0f8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:307:14: note: op template: it_34->next = 0B;
+items.c:307:14: note: 	stmt 0 it_34->next = 0B;
+items.c:307:14: note: 	stmt 1 it_34->prev = 0B;
+items.c:307:14: note: 	children 0x2e62b180
+items.c:307:14: note: node (constant) 0x2e62b180 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:307:14: note: 	{ 0B, 0B }
+items.c:307:14: note: ------>vectorizing SLP node starting from: it_34->next = 0B;
+items.c:307:14: note: vect_is_simple_use: operand 0B, type of def: constant
+items.c:307:14: note: transform store. ncopies = 1
+items.c:307:14: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: it_34->next
+items.c:307:14: note: created vectp.285_138
+items.c:307:14: note: add new stmt: MEM <vector(2) long unsigned int> [(struct _stritem * *)vectp.285_138] = { 0, 0 };
+items.c:307:14: note: vectorizing stmts using SLP.
+items.c:321:21: optimized: basic block part vectorized using 2 byte vectors
+items.c:321:21: note: Vectorizing SLP tree:
+items.c:321:21: note: node 0x2e62b208 (max_nunits=2, refcnt=1) vector(2) unsigned char
+items.c:321:21: note: op template: it_34->slabs_clsid = _28;
+items.c:321:21: note: 	stmt 0 it_34->slabs_clsid = _28;
+items.c:321:21: note: 	stmt 1 it_34->nkey = _2;
+items.c:321:21: note: 	children 0x2e62b318
+items.c:321:21: note: node (external) 0x2e62b318 (max_nunits=1, refcnt=1) vector(2) unsigned char
+items.c:321:21: note: 	{ _28, _2 }
+items.c:321:21: note: ------>vectorizing SLP node starting from: it_34->slabs_clsid = _28;
+items.c:321:21: note: vect_is_simple_use: operand (unsigned char) nkey_74(D), type of def: internal
+items.c:321:21: note: transform store. ncopies = 1
+items.c:321:21: note: create vector_type-pointer variable to type: vector(2) unsigned char  vectorizing a pointer ref: it_34->slabs_clsid
+items.c:321:21: note: created vectp.287_127
+items.c:321:21: note: add new stmt: MEM <vector(2) unsigned char> [(unsigned char *)vectp.287_127] = _136;
+items.c:321:21: note: vectorizing stmts using SLP.
+items.c:341:21: optimized: basic block part vectorized using 8 byte vectors
+items.c:341:21: note: Vectorizing SLP tree:
+items.c:341:21: note: node 0x2e62b3a0 (max_nunits=2, refcnt=1) vector(2) int
+items.c:341:21: note: op template: chunk_101->size = 0;
+items.c:341:21: note: 	stmt 0 chunk_101->size = 0;
+items.c:341:21: note: 	stmt 1 chunk_101->used = 0;
+items.c:341:21: note: 	children 0x2e62b428
+items.c:341:21: note: node (constant) 0x2e62b428 (max_nunits=1, refcnt=1) vector(2) int
+items.c:341:21: note: 	{ 0, 0 }
+items.c:341:21: note: ------>vectorizing SLP node starting from: chunk_101->size = 0;
+items.c:341:21: note: vect_is_simple_use: operand 0, type of def: constant
+items.c:341:21: note: transform store. ncopies = 1
+items.c:341:21: note: create vector_type-pointer variable to type: vector(2) int  vectorizing a pointer ref: chunk_101->size
+items.c:341:21: note: created vectp.289_116
+items.c:341:21: note: add new stmt: MEM <vector(2) int> [(int *)vectp.289_116] = { 0, 0 };
+items.c:341:21: note: vectorizing stmts using SLP.
+items.c:338:21: optimized: basic block part vectorized using 16 byte vectors
+items.c:338:21: note: Vectorizing SLP tree:
+items.c:338:21: note: node 0x2e62b538 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:338:21: note: op template: chunk_101->next = 0B;
+items.c:338:21: note: 	stmt 0 chunk_101->next = 0B;
+items.c:338:21: note: 	stmt 1 chunk_101->prev = 0B;
+items.c:338:21: note: 	children 0x2e62b5c0
+items.c:338:21: note: node (constant) 0x2e62b5c0 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:338:21: note: 	{ 0B, 0B }
+items.c:338:21: note: ------>vectorizing SLP node starting from: chunk_101->next = 0B;
+items.c:338:21: note: vect_is_simple_use: operand 0B, type of def: constant
+items.c:338:21: note: transform store. ncopies = 1
+items.c:338:21: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: chunk_101->next
+items.c:338:21: note: created vectp.291_95
+items.c:338:21: note: add new stmt: MEM <vector(2) long unsigned int> [(struct _strchunk * *)vectp.291_95] = { 0, 0 };
+items.c:338:21: note: vectorizing stmts using SLP.
+items.c:338:21: note: ***** The result for vector mode V32QI would be the same
+items.c:567:40: missed: not vectorized: volatile type: current_time.17_3 ={v} current_time;
+items.c:568:9: missed: statement clobbers memory: __assert_fail ("(it->it_flags & ITEM_SLABBED) == 0", "items.c", 568, &__PRETTY_FUNCTION__);
+items.c:571:22: missed: not vectorized: volatile type: current_time.18_7 ={v} current_time;
+items.c:480:5: missed: statement clobbers memory: pthread_mutex_lock (_52);
+items.c:481:5: missed: statement clobbers memory: do_item_unlink_q (it_9(D));
+items.c:482:5: missed: statement clobbers memory: pthread_mutex_unlock (_55);
+items.c:435:5: missed: statement clobbers memory: pthread_mutex_lock (_46);
+items.c:436:5: missed: statement clobbers memory: do_item_link_q (it_9(D));
+items.c:437:5: missed: statement clobbers memory: pthread_mutex_unlock (_49);
+items.c:554:9: missed: statement clobbers memory: __assert_fail ("(it->it_flags & ITEM_SLABBED) == 0", "items.c", 554, &__PRETTY_FUNCTION__);
+items.c:564:26: missed: not vectorized: volatile type: current_time.16_29 ={v} current_time;
+items.c:557:26: missed: not vectorized: volatile type: current_time.15_23 ={v} current_time;
+items.c:480:5: missed: statement clobbers memory: pthread_mutex_lock (_40);
+items.c:481:5: missed: statement clobbers memory: do_item_unlink_q (it_9(D));
+items.c:482:5: missed: statement clobbers memory: pthread_mutex_unlock (_43);
+items.c:441:5: missed: statement clobbers memory: pthread_mutex_lock (_32);
+items.c:442:5: missed: statement clobbers memory: do_item_link_q (it_9(D));
+items.c:444:5: missed: statement clobbers memory: pthread_mutex_unlock (_37);
+items.c:576:1: note: ***** Analysis failed with vector mode V32QI
+items.c:576:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+items.c:581:5: missed: statement clobbers memory: __assert_fail ("(it->it_flags & ITEM_SLABBED) == 0", "items.c", 581, &__PRETTY_FUNCTION__);
+items.c:511:9: missed: statement clobbers memory: STATS_LOCK ();
+items.c:514:9: missed: statement clobbers memory: STATS_UNLOCK ();
+items.c:516:9: missed: statement clobbers memory: assoc_delete (_41, _35, hv_5(D));
+items.c:480:5: missed: statement clobbers memory: pthread_mutex_lock (_44);
+items.c:481:5: missed: statement clobbers memory: do_item_unlink_q (it_3(D));
+items.c:482:5: missed: statement clobbers memory: pthread_mutex_unlock (_47);
+items.c:518:9: missed: statement clobbers memory: do_item_remove (it_3(D));
+items.c:584:12: missed: statement clobbers memory: do_item_link (new_it_7(D), hv_5(D), cas_8(D));
+items.c:513:32: note: ***** Analysis succeeded with vector mode V16HI
+items.c:513:32: note: SLPing BB part
+items.c:513:32: note: Costing subgraph: 
+items.c:513:32: note: node 0x2e60b0d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:513:32: note: op template: stats_state.curr_items = _33;
+items.c:513:32: note: 	stmt 0 stats_state.curr_items = _33;
+items.c:513:32: note: 	stmt 1 stats_state.curr_bytes = _31;
+items.c:513:32: note: 	children 0x2e60b2f8
+items.c:513:32: note: node (external) 0x2e60b2f8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:513:32: note: 	{ _33, _31 }
+items.c:513:32: note: Cost model analysis: 
+items.c:513:32: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+items.c:513:32: note: Basic block will be vectorized using SLP
+items.c:513:32: optimized: basic block part vectorized using 16 byte vectors
+items.c:513:32: note: Vectorizing SLP tree:
+items.c:513:32: note: node 0x2e60b0d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:513:32: note: op template: stats_state.curr_items = _33;
+items.c:513:32: note: 	stmt 0 stats_state.curr_items = _33;
+items.c:513:32: note: 	stmt 1 stats_state.curr_bytes = _31;
+items.c:513:32: note: 	children 0x2e60b2f8
+items.c:513:32: note: node (external) 0x2e60b2f8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:513:32: note: 	{ _33, _31 }
+items.c:513:32: note: ------>vectorizing SLP node starting from: stats_state.curr_items = _33;
+items.c:513:32: note: vect_is_simple_use: operand _97 - _24, type of def: internal
+items.c:513:32: note: transform store. ncopies = 1
+items.c:513:32: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: stats_state.curr_items
+items.c:513:32: note: created &stats_state
+items.c:513:32: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&stats_state] = _54;
+items.c:513:32: note: vectorizing stmts using SLP.
+items.c:513:32: note: ***** The result for vector mode V32QI would be the same
+items.c:592:19: missed: couldn't vectorize loop
+items.c:592:19: missed: not vectorized: unsupported control flow in loop.
+items.c:599:36: missed: couldn't vectorize loop
+items.c:599:36: missed: not vectorized: could not determine main exit from loop with multiple exits.
+items.c:587:6: note: vectorized 0 loops in function.
+items.c:598:9: missed: statement clobbers memory: pthread_mutex_lock (_2);
+items.c:605:27: missed: statement clobbers memory: hv_41 = hash.19_6 (_14, _8);
+items.c:608:30: missed: statement clobbers memory: hold_lock_43 = item_trylock (hv_41);
+items.c:617:21: missed: statement clobbers memory: storage_delete (ext_storage.20_18, iter_58);
+items.c:619:49: missed: statement clobbers memory: _28 = hash.21_19 (_27, _21);
+items.c:619:21: missed: statement clobbers memory: do_item_unlink_nolock (iter_58, _28);
+items.c:621:17: missed: statement clobbers memory: item_trylock_unlock (hold_lock_43);
+items.c:624:17: missed: statement clobbers memory: item_trylock_unlock (hold_lock_75);
+items.c:628:9: missed: statement clobbers memory: pthread_mutex_unlock (_2);
+items.c:592:19: note: ***** Analysis failed with vector mode V8SI
+items.c:592:19: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+items.c:661:23: missed: couldn't vectorize loop
+items.c:661:23: missed: not vectorized: could not determine main exit from loop with multiple exits.
+items.c:639:7: note: vectorized 0 loops in function.
+items.c:651:5: missed: statement clobbers memory: pthread_mutex_lock (_1);
+items.c:654:14: missed: statement clobbers memory: buffer_42 = malloc (2097152);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:112:10: missed: statement clobbers memory: __builtin_strncpy (&key_temp, _13, _7);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _60 = __builtin___snprintf_chk (&temp, 512, 2, 512, "ITEM %s [%d b; %llu s]\r\n", &key_temp, _21, iftmp.22_32);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin___memcpy_chk (_114, &temp, _24, _116);
+items.c:662:9: missed: statement clobbers memory: __assert_fail ("it->nkey <= KEY_MAX_LENGTH", "items.c", 662, &__PRETTY_FUNCTION__);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10: missed: statement clobbers memory: __builtin___memcpy_chk (prephitmp_100, "END\r\n", 6, prephitmp_112);
+items.c:687:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:656:9: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:675:21: note: ***** Analysis failed with vector mode V4DI
+items.c:675:21: note: ***** The result for vector mode V32QI would be the same
+items.c:675:21: note: ***** Re-trying analysis with vector mode V16QI
+items.c:675:21: note: ***** Analysis failed with vector mode V16QI
+items.c:675:21: note: ***** Re-trying analysis with vector mode V8QI
+items.c:675:21: note: ***** Analysis failed with vector mode V8QI
+items.c:675:21: note: ***** Re-trying analysis with vector mode V4QI
+items.c:675:21: note: ***** Analysis failed with vector mode V4QI
+items.c:696:19: missed: couldn't vectorize loop
+items.c:696:19: missed: not vectorized: unsupported control flow in loop.
+items.c:694:6: note: vectorized 0 loops in function.
+items.c:701:9: missed: statement clobbers memory: pthread_mutex_lock (_3);
+items.c:703:9: missed: statement clobbers memory: pthread_mutex_unlock (_3);
+items.c:707:9: missed: statement clobbers memory: pthread_mutex_lock (_6);
+items.c:719:37: missed: not vectorized: volatile type: current_time.26_17 ={v} current_time;
+items.c:714:40: missed: not vectorized: volatile type: current_time.25_14 ={v} current_time;
+items.c:721:9: missed: statement clobbers memory: pthread_mutex_unlock (_6);
+items.c:723:1: note: ***** Analysis failed with vector mode V4DI
+items.c:723:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+items.c:1354:31: missed: couldn't vectorize loop
+items.c:1354:31: missed: not vectorized: number of iterations cannot be computed.
+items.c:729:19: missed: couldn't vectorize loop
+items.c:734:13: missed: statement clobbers memory: pthread_mutex_lock (_2);
+items.c:732:23: missed: couldn't vectorize loop
+items.c:734:13: missed: statement clobbers memory: pthread_mutex_lock (_2);
+items.c:725:6: note: vectorized 0 loops in function.
+items.c:734:13: missed: statement clobbers memory: pthread_mutex_lock (_2);
+items.c:747:13: missed: statement clobbers memory: pthread_mutex_unlock (_2);
+items.c:750:5: missed: statement clobbers memory: append_stat ("expired_unfetched", add_stats_61(D), c_62(D), "%llu", _146);
+items.c:752:5: missed: statement clobbers memory: append_stat ("evicted_unfetched", add_stats_61(D), c_62(D), "%llu", _150);
+items.c:755:9: missed: statement clobbers memory: append_stat ("evicted_active", add_stats_61(D), c_62(D), "%llu", _154);
+items.c:758:5: missed: statement clobbers memory: append_stat ("evictions", add_stats_61(D), c_62(D), "%llu", _138);
+items.c:760:5: missed: statement clobbers memory: append_stat ("reclaimed", add_stats_61(D), c_62(D), "%llu", _142);
+items.c:762:5: missed: statement clobbers memory: append_stat ("crawler_reclaimed", add_stats_61(D), c_62(D), "%llu", _158);
+items.c:764:5: missed: statement clobbers memory: append_stat ("crawler_items_checked", add_stats_61(D), c_62(D), "%llu", _180);
+items.c:766:5: missed: statement clobbers memory: append_stat ("lrutail_reflocked", add_stats_61(D), c_62(D), "%llu", _178);
+items.c:769:9: missed: statement clobbers memory: append_stat ("moves_to_cold", add_stats_61(D), c_62(D), "%llu", _176);
+items.c:771:9: missed: statement clobbers memory: append_stat ("moves_to_warm", add_stats_61(D), c_62(D), "%llu", _174);
+items.c:773:9: missed: statement clobbers memory: append_stat ("moves_within_lru", add_stats_61(D), c_62(D), "%llu", _172);
+items.c:775:9: missed: statement clobbers memory: append_stat ("direct_reclaims", add_stats_61(D), c_62(D), "%llu", _50);
+items.c:1353:5: missed: statement clobbers memory: pthread_mutex_lock (&bump_buf_lock);
+items.c:1355:9: missed: statement clobbers memory: pthread_mutex_lock (_99);
+items.c:1357:9: missed: statement clobbers memory: pthread_mutex_unlock (_99);
+items.c:1359:5: missed: statement clobbers memory: pthread_mutex_unlock (&bump_buf_lock);
+items.c:777:9: missed: statement clobbers memory: append_stat ("lru_bumps_dropped", add_stats_61(D), c_62(D), "%llu", total_122);
+items.c:1356:15: note: ***** Analysis failed with vector mode V8SI
+items.c:1356:15: note: ***** The result for vector mode V32QI would be the same
+items.c:1356:15: note: ***** Re-trying analysis with vector mode V16QI
+items.c:1356:15: note: ***** Analysis failed with vector mode V16QI
+items.c:1356:15: note: ***** Re-trying analysis with vector mode V8QI
+items.c:1356:15: note: ***** Analysis failed with vector mode V8QI
+items.c:1356:15: note: ***** Re-trying analysis with vector mode V4QI
+items.c:1356:15: note: ***** Analysis failed with vector mode V4QI
+items.c:787:19: missed: couldn't vectorize loop
+items.c:787:19: missed: not vectorized: unsupported control flow in loop.
+items.c:800:23: missed: couldn't vectorize loop
+items.c:800:23: missed: not vectorized: unsupported control flow in loop.
+items.c:782:6: note: vectorized 0 loops in function.
+items.c:784:5: missed: statement clobbers memory: threadlocal_stats_aggregate (&thread_stats);
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:59:10: missed: statement clobbers memory: __builtin_memset (&totals, 0, 168);
+items.c:802:13: missed: statement clobbers memory: pthread_mutex_lock (_2);
+items.c:826:41: missed: not vectorized: volatile type: current_time.31_125 ={v} current_time;
+items.c:824:40: missed: not vectorized: volatile type: current_time.30_57 ={v} current_time;
+items.c:822:36: missed: not vectorized: volatile type: current_time.29_54 ={v} current_time;
+items.c:844:13: missed: statement clobbers memory: pthread_mutex_unlock (_2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _217 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "number");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _216 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%u", size_393);
+items.c:848:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _362, &val_str, vlen.32_67, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _223 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "number_hot");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _222 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%u", _69);
+items.c:850:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _360, &val_str, vlen.33_70, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _221 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "number_warm");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _220 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%u", _71);
+items.c:851:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _358, &val_str, vlen.34_72, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _219 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "number_cold");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _218 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%u", _73);
+items.c:852:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _356, &val_str, vlen.35_74, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _225 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "number_temp");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _224 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%u", _76);
+items.c:854:17: missed: statement clobbers memory: add_stats_145(D) (&key_str, _354, &val_str, vlen.36_77, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _229 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "age_hot");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _228 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%u", age_hot_374);
+items.c:856:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _352, &val_str, vlen.37_78, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _227 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "age_warm");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _226 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%u", age_warm_368);
+items.c:857:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _350, &val_str, vlen.38_79, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _249 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "age");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _248 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%u", age_386);
+items.c:859:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _348, &val_str, vlen.39_80, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _247 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "mem_requested");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _246 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _81);
+items.c:860:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _346, &val_str, vlen.40_82, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _245 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "evicted");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _244 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _83);
+items.c:861:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _344, &val_str, vlen.41_84, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _243 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "evicted_nonzero");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _242 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _85);
+items.c:863:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _342, &val_str, vlen.42_86, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _241 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "evicted_time");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _240 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%u", _87);
+items.c:865:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _340, &val_str, vlen.43_88, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _239 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "outofmemory");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _238 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _89);
+items.c:867:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _338, &val_str, vlen.44_90, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _237 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "tailrepairs");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _236 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _91);
+items.c:869:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _336, &val_str, vlen.45_92, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _235 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "reclaimed");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _234 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _93);
+items.c:871:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _334, &val_str, vlen.46_94, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _233 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "expired_unfetched");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _232 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _95);
+items.c:873:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _332, &val_str, vlen.47_96, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _231 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "evicted_unfetched");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _230 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _97);
+items.c:875:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _330, &val_str, vlen.48_98, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _251 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "evicted_active");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _250 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _100);
+items.c:878:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _328, &val_str, vlen.49_101, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _257 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "crawler_reclaimed");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _256 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _102);
+items.c:881:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _326, &val_str, vlen.50_103, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _255 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "crawler_items_checked");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _254 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _104);
+items.c:883:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _324, &val_str, vlen.51_105, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _253 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "lrutail_reflocked");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _252 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _106);
+items.c:885:9: missed: statement clobbers memory: add_stats_145(D) (&key_str, _322, &val_str, vlen.52_107, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _273 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "moves_to_cold");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _272 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _109);
+items.c:888:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _320, &val_str, vlen.53_110, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _271 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "moves_to_warm");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _270 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _111);
+items.c:890:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _318, &val_str, vlen.54_112, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _269 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "moves_within_lru");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _268 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _113);
+items.c:892:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _316, &val_str, vlen.55_114, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _267 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "direct_reclaims");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _266 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _115);
+items.c:894:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _314, &val_str, vlen.56_116, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _265 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "hits_to_hot");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _264 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _117);
+items.c:896:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _312, &val_str, vlen.57_118, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _263 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "hits_to_warm");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _262 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _119);
+items.c:899:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _310, &val_str, vlen.58_120, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _261 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "hits_to_cold");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _260 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _121);
+items.c:902:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _308, &val_str, vlen.59_122, c_146(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _259 = __builtin___snprintf_chk (&key_str, 128, 2, 128, "items:%d:%s", n_130, "hits_to_temp");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: _258 = __builtin___snprintf_chk (&val_str, 128, 2, 128, "%llu", _123);
+items.c:905:13: missed: statement clobbers memory: add_stats_145(D) (&key_str, _306, &val_str, vlen.60_124, c_146(D));
+items.c:912:5: missed: statement clobbers memory: add_stats_145(D) (0B, 0, 0B, 0, c_146(D));
+items.c:815:34: note: ***** Analysis succeeded with vector mode V8SI
+items.c:815:34: note: SLPing BB part
+items.c:803:28: note: Costing subgraph: 
+items.c:803:28: note: node 0x2e61b170 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+items.c:803:28: note: op template: totals.evicted = _5;
+items.c:803:28: note: 	stmt 0 totals.evicted = _5;
+items.c:803:28: note: 	stmt 1 totals.evicted_nonzero = _8;
+items.c:803:28: note: 	stmt 2 totals.reclaimed = _11;
+items.c:803:28: note: 	stmt 3 totals.outofmemory = _14;
+items.c:803:28: note: 	stmt 4 totals.tailrepairs = _17;
+items.c:803:28: note: 	stmt 5 totals.expired_unfetched = _20;
+items.c:803:28: note: 	stmt 6 totals.evicted_unfetched = _23;
+items.c:803:28: note: 	stmt 7 totals.evicted_active = _26;
+items.c:803:28: note: 	stmt 8 totals.crawler_reclaimed = _29;
+items.c:803:28: note: 	stmt 9 totals.crawler_items_checked = _32;
+items.c:803:28: note: 	stmt 10 totals.lrutail_reflocked = _35;
+items.c:803:28: note: 	stmt 11 totals.moves_to_cold = _38;
+items.c:803:28: note: 	children 0x2e61b1f8
+items.c:803:28: note: node 0x2e61b1f8 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+items.c:803:28: note: op template: _5 = _3 + _4;
+items.c:803:28: note: 	stmt 0 _5 = _3 + _4;
+items.c:803:28: note: 	stmt 1 _8 = _6 + _7;
+items.c:803:28: note: 	stmt 2 _11 = _9 + _10;
+items.c:803:28: note: 	stmt 3 _14 = _12 + _13;
+items.c:803:28: note: 	stmt 4 _17 = _15 + _16;
+items.c:803:28: note: 	stmt 5 _20 = _18 + _19;
+items.c:803:28: note: 	stmt 6 _23 = _21 + _22;
+items.c:803:28: note: 	stmt 7 _26 = _24 + _25;
+items.c:803:28: note: 	stmt 8 _29 = _27 + _28;
+items.c:803:28: note: 	stmt 9 _32 = _30 + _31;
+items.c:803:28: note: 	stmt 10 _35 = _33 + _34;
+items.c:803:28: note: 	stmt 11 _38 = _36 + _37;
+items.c:803:28: note: 	children 0x2e61b280 0x2e61b308
+items.c:803:28: note: node 0x2e61b280 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+items.c:803:28: note: op template: _3 = totals.evicted;
+items.c:803:28: note: 	stmt 0 _3 = totals.evicted;
+items.c:803:28: note: 	stmt 1 _6 = totals.evicted_nonzero;
+items.c:803:28: note: 	stmt 2 _9 = totals.reclaimed;
+items.c:803:28: note: 	stmt 3 _12 = totals.outofmemory;
+items.c:803:28: note: 	stmt 4 _15 = totals.tailrepairs;
+items.c:803:28: note: 	stmt 5 _18 = totals.expired_unfetched;
+items.c:803:28: note: 	stmt 6 _21 = totals.evicted_unfetched;
+items.c:803:28: note: 	stmt 7 _24 = totals.evicted_active;
+items.c:803:28: note: 	stmt 8 _27 = totals.crawler_reclaimed;
+items.c:803:28: note: 	stmt 9 _30 = totals.crawler_items_checked;
+items.c:803:28: note: 	stmt 10 _33 = totals.lrutail_reflocked;
+items.c:803:28: note: 	stmt 11 _36 = totals.moves_to_cold;
+items.c:803:28: note: node 0x2e61b308 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+items.c:803:28: note: op template: _4 = itemstats[i_186].evicted;
+items.c:803:28: note: 	stmt 0 _4 = itemstats[i_186].evicted;
+items.c:803:28: note: 	stmt 1 _7 = itemstats[i_186].evicted_nonzero;
+items.c:803:28: note: 	stmt 2 _10 = itemstats[i_186].reclaimed;
+items.c:803:28: note: 	stmt 3 _13 = itemstats[i_186].outofmemory;
+items.c:803:28: note: 	stmt 4 _16 = itemstats[i_186].tailrepairs;
+items.c:803:28: note: 	stmt 5 _19 = itemstats[i_186].expired_unfetched;
+items.c:803:28: note: 	stmt 6 _22 = itemstats[i_186].evicted_unfetched;
+items.c:803:28: note: 	stmt 7 _25 = itemstats[i_186].evicted_active;
+items.c:803:28: note: 	stmt 8 _28 = itemstats[i_186].crawler_reclaimed;
+items.c:803:28: note: 	stmt 9 _31 = itemstats[i_186].crawler_items_checked;
+items.c:803:28: note: 	stmt 10 _34 = itemstats[i_186].lrutail_reflocked;
+items.c:803:28: note: 	stmt 11 _37 = itemstats[i_186].moves_to_cold;
+items.c:803:28: note: Cost model analysis: 
+items.c:803:28: note: Cost model analysis for part in loop 2:
+  Vector cost: 132
+  Scalar cost: 528
+items.c:815:34: note: Costing subgraph: 
+items.c:815:34: note: node 0x2e61b418 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:815:34: note: op template: totals.moves_to_warm = _41;
+items.c:815:34: note: 	stmt 0 totals.moves_to_warm = _41;
+items.c:815:34: note: 	stmt 1 totals.moves_within_lru = _44;
+items.c:815:34: note: 	children 0x2e61b4a0
+items.c:815:34: note: node 0x2e61b4a0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:815:34: note: op template: _41 = _39 + _40;
+items.c:815:34: note: 	stmt 0 _41 = _39 + _40;
+items.c:815:34: note: 	stmt 1 _44 = _42 + _43;
+items.c:815:34: note: 	children 0x2e61b528 0x2e61b5b0
+items.c:815:34: note: node 0x2e61b528 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:815:34: note: op template: _39 = totals.moves_to_warm;
+items.c:815:34: note: 	stmt 0 _39 = totals.moves_to_warm;
+items.c:815:34: note: 	stmt 1 _42 = totals.moves_within_lru;
+items.c:815:34: note: node 0x2e61b5b0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:815:34: note: op template: _40 = itemstats[i_186].moves_to_warm;
+items.c:815:34: note: 	stmt 0 _40 = itemstats[i_186].moves_to_warm;
+items.c:815:34: note: 	stmt 1 _43 = itemstats[i_186].moves_within_lru;
+items.c:815:34: note: Cost model analysis: 
+items.c:815:34: note: Cost model analysis for part in loop 2:
+  Vector cost: 44
+  Scalar cost: 88
+items.c:815:34: note: Basic block will be vectorized using SLP
+items.c:803:28: optimized: basic block part vectorized using 32 byte vectors
+items.c:803:28: note: Vectorizing SLP tree:
+items.c:803:28: note: node 0x2e61b170 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+items.c:803:28: note: op template: totals.evicted = _5;
+items.c:803:28: note: 	stmt 0 totals.evicted = _5;
+items.c:803:28: note: 	stmt 1 totals.evicted_nonzero = _8;
+items.c:803:28: note: 	stmt 2 totals.reclaimed = _11;
+items.c:803:28: note: 	stmt 3 totals.outofmemory = _14;
+items.c:803:28: note: 	stmt 4 totals.tailrepairs = _17;
+items.c:803:28: note: 	stmt 5 totals.expired_unfetched = _20;
+items.c:803:28: note: 	stmt 6 totals.evicted_unfetched = _23;
+items.c:803:28: note: 	stmt 7 totals.evicted_active = _26;
+items.c:803:28: note: 	stmt 8 totals.crawler_reclaimed = _29;
+items.c:803:28: note: 	stmt 9 totals.crawler_items_checked = _32;
+items.c:803:28: note: 	stmt 10 totals.lrutail_reflocked = _35;
+items.c:803:28: note: 	stmt 11 totals.moves_to_cold = _38;
+items.c:803:28: note: 	children 0x2e61b1f8
+items.c:803:28: note: node 0x2e61b1f8 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+items.c:803:28: note: op template: _5 = _3 + _4;
+items.c:803:28: note: 	stmt 0 _5 = _3 + _4;
+items.c:803:28: note: 	stmt 1 _8 = _6 + _7;
+items.c:803:28: note: 	stmt 2 _11 = _9 + _10;
+items.c:803:28: note: 	stmt 3 _14 = _12 + _13;
+items.c:803:28: note: 	stmt 4 _17 = _15 + _16;
+items.c:803:28: note: 	stmt 5 _20 = _18 + _19;
+items.c:803:28: note: 	stmt 6 _23 = _21 + _22;
+items.c:803:28: note: 	stmt 7 _26 = _24 + _25;
+items.c:803:28: note: 	stmt 8 _29 = _27 + _28;
+items.c:803:28: note: 	stmt 9 _32 = _30 + _31;
+items.c:803:28: note: 	stmt 10 _35 = _33 + _34;
+items.c:803:28: note: 	stmt 11 _38 = _36 + _37;
+items.c:803:28: note: 	children 0x2e61b280 0x2e61b308
+items.c:803:28: note: node 0x2e61b280 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+items.c:803:28: note: op template: _3 = totals.evicted;
+items.c:803:28: note: 	stmt 0 _3 = totals.evicted;
+items.c:803:28: note: 	stmt 1 _6 = totals.evicted_nonzero;
+items.c:803:28: note: 	stmt 2 _9 = totals.reclaimed;
+items.c:803:28: note: 	stmt 3 _12 = totals.outofmemory;
+items.c:803:28: note: 	stmt 4 _15 = totals.tailrepairs;
+items.c:803:28: note: 	stmt 5 _18 = totals.expired_unfetched;
+items.c:803:28: note: 	stmt 6 _21 = totals.evicted_unfetched;
+items.c:803:28: note: 	stmt 7 _24 = totals.evicted_active;
+items.c:803:28: note: 	stmt 8 _27 = totals.crawler_reclaimed;
+items.c:803:28: note: 	stmt 9 _30 = totals.crawler_items_checked;
+items.c:803:28: note: 	stmt 10 _33 = totals.lrutail_reflocked;
+items.c:803:28: note: 	stmt 11 _36 = totals.moves_to_cold;
+items.c:803:28: note: node 0x2e61b308 (max_nunits=4, refcnt=1) vector(4) long unsigned int
+items.c:803:28: note: op template: _4 = itemstats[i_186].evicted;
+items.c:803:28: note: 	stmt 0 _4 = itemstats[i_186].evicted;
+items.c:803:28: note: 	stmt 1 _7 = itemstats[i_186].evicted_nonzero;
+items.c:803:28: note: 	stmt 2 _10 = itemstats[i_186].reclaimed;
+items.c:803:28: note: 	stmt 3 _13 = itemstats[i_186].outofmemory;
+items.c:803:28: note: 	stmt 4 _16 = itemstats[i_186].tailrepairs;
+items.c:803:28: note: 	stmt 5 _19 = itemstats[i_186].expired_unfetched;
+items.c:803:28: note: 	stmt 6 _22 = itemstats[i_186].evicted_unfetched;
+items.c:803:28: note: 	stmt 7 _25 = itemstats[i_186].evicted_active;
+items.c:803:28: note: 	stmt 8 _28 = itemstats[i_186].crawler_reclaimed;
+items.c:803:28: note: 	stmt 9 _31 = itemstats[i_186].crawler_items_checked;
+items.c:803:28: note: 	stmt 10 _34 = itemstats[i_186].lrutail_reflocked;
+items.c:803:28: note: 	stmt 11 _37 = itemstats[i_186].moves_to_cold;
+items.c:803:28: note: ------>vectorizing SLP node starting from: _3 = totals.evicted;
+items.c:803:28: note: transform load. ncopies = 1
+items.c:803:28: note: create vector_type-pointer variable to type: vector(4) long unsigned int  vectorizing a pointer ref: totals.evicted
+items.c:803:28: note: created &totals
+items.c:803:28: note: add new stmt: vect__3.369_60 = MEM <vector(4) long unsigned int> [(long unsigned int *)&totals];
+items.c:803:28: note: add new stmt: vect__3.370_140 = MEM <vector(4) long unsigned int> [(long unsigned int *)&totals + 32B];
+items.c:803:28: note: add new stmt: vect__3.371_179 = MEM <vector(4) long unsigned int> [(long unsigned int *)&totals + 64B];
+items.c:803:28: note: ------>vectorizing SLP node starting from: _4 = itemstats[i_186].evicted;
+items.c:803:28: note: transform load. ncopies = 1
+items.c:803:28: note: create vector_type-pointer variable to type: vector(4) long unsigned int  vectorizing a pointer ref: itemstats[i_186].evicted
+items.c:803:28: note: created vectp.373_180
+items.c:803:28: note: add new stmt: vect__4.374_181 = MEM <vector(4) long unsigned int> [(long unsigned int *)vectp.373_180];
+items.c:803:28: note: add new stmt: vectp.373_59 = vectp.373_180 + 32;
+items.c:803:28: note: add new stmt: vect__4.375_131 = MEM <vector(4) long unsigned int> [(long unsigned int *)vectp.373_59];
+items.c:803:28: note: add new stmt: vectp.373_376 = vectp.373_59 + 32;
+items.c:803:28: note: add new stmt: vect__4.376_397 = MEM <vector(4) long unsigned int> [(long unsigned int *)vectp.373_376];
+items.c:803:28: note: add new stmt: vectp.373_372 = vectp.373_376 + 24;
+items.c:803:28: note: ------>vectorizing SLP node starting from: _5 = _3 + _4;
+items.c:803:28: note: vect_is_simple_use: operand totals.evicted, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand itemstats[i_186].evicted, type of def: internal
+items.c:803:28: note: transform binary/unary operation.
+items.c:803:28: note: add new stmt: vect__5.377_398 = vect__3.369_60 + vect__4.374_181;
+items.c:803:28: note: add new stmt: vect__5.377_381 = vect__3.370_140 + vect__4.375_131;
+items.c:803:28: note: add new stmt: vect__5.377_375 = vect__3.371_179 + vect__4.376_397;
+items.c:803:28: note: ------>vectorizing SLP node starting from: totals.evicted = _5;
+items.c:803:28: note: vect_is_simple_use: operand _3 + _4, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _6 + _7, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _9 + _10, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _12 + _13, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _15 + _16, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _18 + _19, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _21 + _22, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _24 + _25, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _27 + _28, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _30 + _31, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _33 + _34, type of def: internal
+items.c:803:28: note: vect_is_simple_use: operand _36 + _37, type of def: internal
+items.c:803:28: note: transform store. ncopies = 1
+items.c:803:28: note: create vector_type-pointer variable to type: vector(4) long unsigned int  vectorizing a pointer ref: totals.evicted
+items.c:803:28: note: created &totals
+items.c:803:28: note: add new stmt: MEM <vector(4) long unsigned int> [(long unsigned int *)&totals] = vect__5.377_398;
+items.c:803:28: note: add new stmt: MEM <vector(4) long unsigned int> [(long unsigned int *)&totals + 32B] = vect__5.377_381;
+items.c:803:28: note: add new stmt: MEM <vector(4) long unsigned int> [(long unsigned int *)&totals + 64B] = vect__5.377_375;
+items.c:803:28: note: vectorizing stmts using SLP.
+items.c:815:34: optimized: basic block part vectorized using 16 byte vectors
+items.c:815:34: note: Vectorizing SLP tree:
+items.c:815:34: note: node 0x2e61b418 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:815:34: note: op template: totals.moves_to_warm = _41;
+items.c:815:34: note: 	stmt 0 totals.moves_to_warm = _41;
+items.c:815:34: note: 	stmt 1 totals.moves_within_lru = _44;
+items.c:815:34: note: 	children 0x2e61b4a0
+items.c:815:34: note: node 0x2e61b4a0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:815:34: note: op template: _41 = _39 + _40;
+items.c:815:34: note: 	stmt 0 _41 = _39 + _40;
+items.c:815:34: note: 	stmt 1 _44 = _42 + _43;
+items.c:815:34: note: 	children 0x2e61b528 0x2e61b5b0
+items.c:815:34: note: node 0x2e61b528 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:815:34: note: op template: _39 = totals.moves_to_warm;
+items.c:815:34: note: 	stmt 0 _39 = totals.moves_to_warm;
+items.c:815:34: note: 	stmt 1 _42 = totals.moves_within_lru;
+items.c:815:34: note: node 0x2e61b5b0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:815:34: note: op template: _40 = itemstats[i_186].moves_to_warm;
+items.c:815:34: note: 	stmt 0 _40 = itemstats[i_186].moves_to_warm;
+items.c:815:34: note: 	stmt 1 _43 = itemstats[i_186].moves_within_lru;
+items.c:815:34: note: ------>vectorizing SLP node starting from: _39 = totals.moves_to_warm;
+items.c:815:34: note: transform load. ncopies = 1
+items.c:815:34: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: totals.moves_to_warm
+items.c:815:34: note: created &totals.moves_to_warm
+items.c:815:34: note: add new stmt: vect__39.382_52 = MEM <vector(2) long unsigned int> [(long unsigned int *)&totals + 96B];
+items.c:815:34: note: ------>vectorizing SLP node starting from: _40 = itemstats[i_186].moves_to_warm;
+items.c:815:34: note: transform load. ncopies = 1
+items.c:815:34: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: itemstats[i_186].moves_to_warm
+items.c:815:34: note: created vectp.384_383
+items.c:815:34: note: add new stmt: vect__40.385_367 = MEM <vector(2) long unsigned int> [(long unsigned int *)vectp.384_383];
+items.c:815:34: note: add new stmt: vectp.384_402 = vectp.384_383 + 104;
+items.c:815:34: note: ------>vectorizing SLP node starting from: _41 = _39 + _40;
+items.c:815:34: note: vect_is_simple_use: operand totals.moves_to_warm, type of def: internal
+items.c:815:34: note: vect_is_simple_use: operand itemstats[i_186].moves_to_warm, type of def: internal
+items.c:815:34: note: transform binary/unary operation.
+items.c:815:34: note: add new stmt: vect__41.386_403 = vect__39.382_52 + vect__40.385_367;
+items.c:815:34: note: ------>vectorizing SLP node starting from: totals.moves_to_warm = _41;
+items.c:815:34: note: vect_is_simple_use: operand _39 + _40, type of def: internal
+items.c:815:34: note: vect_is_simple_use: operand _42 + _43, type of def: internal
+items.c:815:34: note: transform store. ncopies = 1
+items.c:815:34: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: totals.moves_to_warm
+items.c:815:34: note: created &totals.moves_to_warm
+items.c:815:34: note: add new stmt: MEM <vector(2) long unsigned int> [(long unsigned int *)&totals + 96B] = vect__41.386_403;
+items.c:815:34: note: vectorizing stmts using SLP.
+items.c:815:34: note: ***** The result for vector mode V32QI would be the same
+items.c:919:12: note: ***** Analysis failed with vector mode V4DI
+items.c:919:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+items.c:926:24: missed: statement clobbers memory: _6 = calloc (_5, 4);
+items.c:926:22: note: ***** Analysis failed with vector mode V4DI
+items.c:926:22: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+items.c:932:18: note: ***** Analysis failed with vector mode V4DI
+items.c:932:18: note: ***** The result for vector mode V32QI would be the same
+items.c:932:18: note: ***** Re-trying analysis with vector mode V16QI
+items.c:932:18: note: ***** Analysis failed with vector mode V16QI
+items.c:932:18: note: ***** Re-trying analysis with vector mode V8QI
+items.c:932:18: note: ***** Analysis failed with vector mode V8QI
+items.c:932:18: note: ***** Re-trying analysis with vector mode V4QI
+items.c:932:18: note: ***** Analysis failed with vector mode V4QI
+items.c:944:18: note: ***** Analysis failed with vector mode V4DI
+items.c:944:18: note: ***** The result for vector mode V32QI would be the same
+items.c:944:18: note: ***** Re-trying analysis with vector mode V16QI
+items.c:944:18: note: ***** Analysis failed with vector mode V16QI
+items.c:944:18: note: ***** Re-trying analysis with vector mode V8QI
+items.c:944:18: note: ***** Analysis failed with vector mode V8QI
+items.c:944:18: note: ***** Re-trying analysis with vector mode V4QI
+items.c:944:18: note: ***** Analysis failed with vector mode V4QI
+items.c:959:23: missed: couldn't vectorize loop
+items.c:959:23: missed: not vectorized: unsupported control flow in loop.
+items.c:956:6: note: vectorized 0 loops in function.
+items.c:967:9: missed: statement clobbers memory: append_stat ("sizes_status", add_stats_17(D), c_18(D), "disabled", "");
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: missed: statement clobbers memory: __builtin___snprintf_chk (&key, 12, 2, 12, "%d", _7);
+items.c:963:17: missed: statement clobbers memory: append_stat (&key, add_stats_17(D), c_18(D), "%u", _10);
+items.c:970:5: missed: statement clobbers memory: add_stats_17(D) (0B, 0, 0B, 0, c_18(D));
+items.c:971:1: note: ***** Analysis failed with vector mode V4DI
+items.c:971:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+items.c:567:40: missed: not vectorized: volatile type: current_time.17_44 ={v} current_time;
+items.c:568:9: missed: statement clobbers memory: __assert_fail ("(it->it_flags & ITEM_SLABBED) == 0", "items.c", 568, &__PRETTY_FUNCTION__);
+items.c:571:22: missed: not vectorized: volatile type: current_time.18_49 ={v} current_time;
+items.c:480:5: missed: statement clobbers memory: pthread_mutex_lock (_85);
+items.c:481:5: missed: statement clobbers memory: do_item_unlink_q (it_14(D));
+items.c:482:5: missed: statement clobbers memory: pthread_mutex_unlock (_88);
+items.c:435:5: missed: statement clobbers memory: pthread_mutex_lock (_79);
+items.c:436:5: missed: statement clobbers memory: do_item_link_q (it_14(D));
+items.c:437:5: missed: statement clobbers memory: pthread_mutex_unlock (_82);
+items.c:1289:5: missed: statement clobbers memory: pthread_mutex_lock (_28);
+items.c:1290:45: missed: statement clobbers memory: be_30 = bipbuf_request (_29, 16);
+items.c:1294:13: missed: statement clobbers memory: _32 = bipbuf_push (_31, 16);
+items.c:1305:5: missed: statement clobbers memory: pthread_mutex_unlock (_28);
+items.c:1305:5: missed: statement clobbers memory: pthread_mutex_unlock (_28);
+items.c:1046:30: missed: not vectorized: volatile type: current_time.86_8 ={v} current_time;
+items.c:1057:1: note: ***** Analysis failed with vector mode V32QI
+items.c:1057:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+items.c:1011:29: missed: couldn't vectorize loop
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fputc (_17, stderr.79_18);
+items.c:974:7: note: vectorized 0 loops in function.
+items.c:975:16: missed: statement clobbers memory: it_45 = assoc_find (key_41(D), nkey_42(D), hv_43(D));
+items.c:119:48: missed: not vectorized: volatile type: current_time.1_73 ={v} current_time;
+items.c:992:52: missed: not vectorized: volatile type: current_time.76_8 ={v} current_time;
+items.c:1003:17: missed: statement clobbers memory: do_item_bump (t_48(D), it_45, hv_43(D));
+items.c:993:13: missed: statement clobbers memory: do_item_unlink (it_45, hv_43(D));
+items.c:994:13: missed: statement clobbers memory: storage_delete (_9, it_45);
+items.c:995:13: missed: statement clobbers memory: do_item_remove (it_45);
+items.c:997:13: missed: statement clobbers memory: pthread_mutex_lock (_10);
+items.c:999:13: missed: statement clobbers memory: pthread_mutex_unlock (_10);
+items.c:984:13: missed: statement clobbers memory: do_item_unlink (it_45, hv_43(D));
+items.c:985:13: missed: statement clobbers memory: storage_delete (_3, it_45);
+items.c:986:13: missed: statement clobbers memory: do_item_remove (it_45);
+items.c:988:13: missed: statement clobbers memory: pthread_mutex_lock (_4);
+items.c:990:13: missed: statement clobbers memory: pthread_mutex_unlock (_4);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __fprintf_chk (stderr.78_14, 2, "> %s ", iftmp.77_32);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fputc (_17, stderr.79_18);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fwrite (" -removed by expire", 1, 19, pretmp_95);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fwrite (" -removed by flush", 1, 18, pretmp_95);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fputc (10, stderr.82_22);
+items.c:1023:5: missed: statement clobbers memory: myl_66 = pthread_getspecific (logger_key.83_23);
+items.c:1023:5: missed: statement clobbers memory: logger_log (myl_31, 2, 0B, was_found_102, key_41(D), nkey_42(D), iftmp.85_33, iftmp.84_62, _25);
+items.c:1026:12: note: ***** Analysis failed with vector mode V8SI
+items.c:1026:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+items.c:1061:16: missed: statement clobbers memory: it_8 = do_item_get (key_3(D), nkey_4(D), hv_5(D), t_6(D), 1);
+items.c:1065:12: note: ***** Analysis failed with vector mode V8SI
+items.c:1065:12: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SI
+items.c:1093:22: missed: couldn't vectorize loop
+items.c:1093:22: missed: not vectorized: could not determine main exit from loop with multiple exits.
+items.c:1093:22: missed: couldn't vectorize loop
+items.c:1093:22: missed: not vectorized: could not determine main exit from loop with multiple exits.
+items.c:1072:5: note: vectorized 0 loops in function.
+items.c:1090:5: missed: statement clobbers memory: pthread_mutex_lock (_1);
+items.c:1105:23: missed: statement clobbers memory: hv_133 = hash.87_5 (_13, _7);
+items.c:1108:26: missed: statement clobbers memory: hold_lock_135 = item_trylock (hv_133);
+items.c:1118:62: missed: not vectorized: volatile type: current_time.88_22 ={v} current_time;
+items.c:1130:54: missed: not vectorized: volatile type: current_time.90_27 ={v} current_time;
+items.c:119:48: missed: not vectorized: volatile type: current_time.1_203 ={v} current_time;
+items.c:1137:13: missed: statement clobbers memory: do_item_unlink_nolock (search_260, hv_133);
+items.c:1138:13: missed: statement clobbers memory: storage_delete (ext_storage.91_33, search_260);
+items.c:1140:13: missed: statement clobbers memory: do_item_remove (search_260);
+items.c:1141:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_135);
+items.c:1122:17: missed: statement clobbers memory: storage_delete (ext_storage.89_25, search_260);
+items.c:1123:17: missed: statement clobbers memory: do_item_unlink_nolock (search_260, hv_133);
+items.c:1124:17: missed: statement clobbers memory: item_trylock_unlock (hold_lock_135);
+items.c:1105:23: missed: statement clobbers memory: hv_103 = hash.87_221 (_113, _218);
+items.c:1108:26: missed: statement clobbers memory: hold_lock_101 = item_trylock (hv_103);
+items.c:1118:62: missed: not vectorized: volatile type: current_time.88_352 ={v} current_time;
+items.c:1130:54: missed: not vectorized: volatile type: current_time.90_344 ={v} current_time;
+items.c:119:48: missed: not vectorized: volatile type: current_time.1_343 ={v} current_time;
+items.c:1163:25: missed: statement clobbers memory: do_item_unlink_q (search_234);
+items.c:1164:25: missed: statement clobbers memory: do_item_link_q (search_234);
+items.c:1165:25: missed: statement clobbers memory: do_item_remove (search_234);
+items.c:1166:25: missed: statement clobbers memory: item_trylock_unlock (hold_lock_101);
+items.c:1137:13: missed: statement clobbers memory: do_item_unlink_nolock (search_234, hv_103);
+items.c:1138:13: missed: statement clobbers memory: storage_delete (ext_storage.91_4, search_234);
+items.c:1140:13: missed: statement clobbers memory: do_item_remove (search_234);
+items.c:1141:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_101);
+items.c:1122:17: missed: statement clobbers memory: storage_delete (ext_storage.89_357, search_234);
+items.c:1123:17: missed: statement clobbers memory: do_item_unlink_nolock (search_234, hv_103);
+items.c:1124:17: missed: statement clobbers memory: item_trylock_unlock (hold_lock_101);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:1220:21: missed: statement clobbers memory: do_item_unlink_q (search_246);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:1195:63: missed: not vectorized: volatile type: current_time.93_55 ={v} current_time;
+items.c:1204:21: missed: statement clobbers memory: myl_158 = pthread_getspecific (logger_key.94_64);
+items.c:1204:21: missed: statement clobbers memory: logger_log (myl_158, 1, search_246);
+items.c:1205:21: missed: statement clobbers memory: storage_delete (ext_storage.95_66, search_246);
+items.c:1206:21: missed: statement clobbers memory: do_item_unlink_nolock (search_246, hv_295);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:1175:41: missed: not vectorized: volatile type: current_time.92_47 ={v} current_time;
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:1178:21: missed: statement clobbers memory: do_item_unlink_q (search_250);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:1171:25: missed: statement clobbers memory: do_item_unlink_q (search_251);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:435:5: missed: statement clobbers memory: pthread_mutex_lock (_206);
+items.c:436:5: missed: statement clobbers memory: do_item_link_q (search_239);
+items.c:437:5: missed: statement clobbers memory: pthread_mutex_unlock (_209);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:1241:13: missed: statement clobbers memory: do_item_remove (it_204);
+items.c:1242:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_215);
+items.c:1247:9: missed: statement clobbers memory: slabs_reassign (_80, -1, orig_id_120(D), 1);
+items.c:1099:17: missed: statement clobbers memory: pthread_mutex_unlock (_1);
+items.c:1237:29: note: ***** Analysis failed with vector mode V4DI
+items.c:1237:29: note: ***** The result for vector mode V32QI would be the same
+items.c:1237:29: note: ***** Re-trying analysis with vector mode V16QI
+items.c:1237:29: note: ***** Analysis failed with vector mode V16QI
+items.c:1237:29: note: ***** Re-trying analysis with vector mode V8QI
+items.c:1237:29: note: ***** Analysis failed with vector mode V8QI
+items.c:1237:29: note: ***** Re-trying analysis with vector mode V4QI
+items.c:1237:29: note: ***** Analysis failed with vector mode V4QI
+items.c:1571:12: missed: couldn't vectorize loop
+items.c:1571:12: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+items.c:1458:32: missed: couldn't vectorize loop
+items.c:1458:32: missed: not vectorized: unsupported control flow in loop.
+items.c:1474:27: missed: couldn't vectorize loop
+items.c:1475:36: missed: not vectorized: unsupported use in stmt.
+items.c:1322:31: missed: couldn't vectorize loop
+items.c:1322:31: missed: not vectorized: could not determine main exit from loop with multiple exits.
+items.c:1333:16: missed: couldn't vectorize loop
+items.c:1333:16: missed: not vectorized: unsupported control flow in loop.
+items.c:1585:36: missed: couldn't vectorize loop
+items.c:1585:36: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+items.c:1418:19: missed: couldn't vectorize loop
+items.c:1418:19: missed: not vectorized: unsupported control flow in loop.
+items.c:1382:23: missed: couldn't vectorize loop
+items.c:1382:23: missed: not vectorized: unsupported control flow in loop.
+items.c:1093:22: missed: couldn't vectorize loop
+items.c:1093:22: missed: not vectorized: could not determine main exit from loop with multiple exits.
+items.c:1547:14: note: vectorized 0 loops in function.
+items.c:1555:9: missed: statement clobbers memory: cdata_45 = calloc (1, 137272);
+items.c:1560:5: missed: statement clobbers memory: pthread_mutex_init (_2, 0B);
+items.c:1562:17: missed: statement clobbers memory: l_49 = logger_create ();
+items.c:1568:5: missed: statement clobbers memory: pthread_mutex_lock (&lru_maintainer_lock);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fwrite ("Starting LRU maintainer background thread\n", 1, 42, stderr.105_5);
+items.c:1571:12: missed: not vectorized: volatile type: do_run_lru_maintainer_thread.108_253 ={v} do_run_lru_maintainer_thread;
+items.c:1572:9: missed: statement clobbers memory: pthread_mutex_unlock (&lru_maintainer_lock);
+items.c:1574:13: missed: statement clobbers memory: usleep (to_sleep_238);
+items.c:1575:9: missed: statement clobbers memory: pthread_mutex_lock (&lru_maintainer_lock);
+items.c:1580:9: missed: statement clobbers memory: STATS_LOCK ();
+items.c:1582:9: missed: statement clobbers memory: STATS_UNLOCK ();
+items.c:1378:5: missed: statement clobbers memory: slabs_available_chunks (slabs_clsid.110_85, 0B, &chunks_perslab);
+items.c:1090:5: missed: statement clobbers memory: pthread_mutex_lock (_129);
+items.c:1105:23: missed: statement clobbers memory: hv_148 = hash.87_139 (_147, _141);
+items.c:1108:26: missed: statement clobbers memory: hold_lock_149 = item_trylock (hv_148);
+items.c:1118:62: missed: not vectorized: volatile type: current_time.88_158 ={v} current_time;
+items.c:1130:54: missed: not vectorized: volatile type: current_time.90_163 ={v} current_time;
+items.c:119:48: missed: not vectorized: volatile type: current_time.1_166 ={v} current_time;
+items.c:1137:13: missed: statement clobbers memory: do_item_unlink_nolock (search_136, hv_148);
+items.c:1138:13: missed: statement clobbers memory: storage_delete (ext_storage.91_173, search_136);
+items.c:544:9: missed: statement clobbers memory: item_free (search_136);
+items.c:1141:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_149);
+items.c:1122:17: missed: statement clobbers memory: storage_delete (ext_storage.89_161, search_136);
+items.c:1123:17: missed: statement clobbers memory: do_item_unlink_nolock (search_136, hv_148);
+items.c:1124:17: missed: statement clobbers memory: item_trylock_unlock (hold_lock_149);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_129);
+items.c:544:9: missed: statement clobbers memory: item_free (it_236);
+items.c:1242:13: missed: statement clobbers memory: item_trylock_unlock (hold_lock_243);
+items.c:1232:5: missed: statement clobbers memory: pthread_mutex_unlock (_129);
+items.c:1396:9: missed: statement clobbers memory: pthread_mutex_lock (_92);
+items.c:1398:37: missed: not vectorized: volatile type: current_time.111_94 ={v} current_time;
+items.c:1402:9: missed: statement clobbers memory: pthread_mutex_unlock (_92);
+items.c:1408:9: missed: statement clobbers memory: pthread_mutex_lock (_106);
+items.c:1410:9: missed: statement clobbers memory: pthread_mutex_unlock (_106);
+items.c:1412:9: missed: statement clobbers memory: pthread_mutex_lock (_110);
+items.c:1414:9: missed: statement clobbers memory: pthread_mutex_unlock (_110);
+items.c:1420:13: missed: statement clobbers memory: _115 = lru_pull_tail.constprop (i_267, total_bytes_113, 2, hot_age_114);
+items.c:1421:13: missed: statement clobbers memory: _117 = lru_pull_tail (i_267, 64, total_bytes_113, 2, warm_age_116, 0B);
+items.c:1425:24: missed: statement clobbers memory: _119 = lru_pull_tail.constprop (i_267, total_bytes_113, 2);
+items.c:1425:24: missed: statement clobbers memory: lru_pull_tail.constprop (i_267, total_bytes_113, 2);
+items.c:1425:24: missed: statement clobbers memory: lru_pull_tail.constprop (i_267, total_bytes_113, 2);
+items.c:1321:5: missed: statement clobbers memory: pthread_mutex_lock (&bump_buf_lock);
+items.c:1346:5: missed: statement clobbers memory: pthread_mutex_unlock (&bump_buf_lock);
+items.c:1323:9: missed: statement clobbers memory: pthread_mutex_lock (_277);
+items.c:1324:33: missed: statement clobbers memory: be_279 = bipbuf_peek_all (_278, &size);
+items.c:1325:9: missed: statement clobbers memory: pthread_mutex_unlock (_277);
+items.c:1334:13: missed: statement clobbers memory: item_lock (_282);
+items.c:1335:13: missed: statement clobbers memory: do_item_update (_283);
+items.c:544:9: missed: statement clobbers memory: item_free (_284);
+items.c:1337:13: missed: statement clobbers memory: item_unlock (_285);
+items.c:1342:9: missed: statement clobbers memory: pthread_mutex_lock (_277);
+items.c:1343:33: missed: statement clobbers memory: bipbuf_poll (_290, size.112_289);
+items.c:1344:9: missed: statement clobbers memory: pthread_mutex_unlock (_277);
+items.c:1346:5: missed: statement clobbers memory: pthread_mutex_unlock (&bump_buf_lock);
+items.c:1621:56: missed: not vectorized: volatile type: current_time.107_22 ={v} current_time;
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:59:10: missed: statement clobbers memory: __builtin_memset (&todo, 0, 256);
+items.c:1463:13: missed: statement clobbers memory: pthread_mutex_lock (_2);
+items.c:1472:49: missed: not vectorized: volatile type: current_time.113_306 ={v} current_time;
+items.c:1494:43: missed: not vectorized: volatile type: current_time.114_324 ={v} current_time;
+items.c:1509:13: missed: not vectorized: volatile type: current_time.116_339 ={v} current_time;
+items.c:1509:13: missed: statement clobbers memory: logger_log (l_49, 4, 0B, _341, lru_name_342, low_watermark_305, available_reclaims_352, since_run_308, _340, _337, _301, _333);
+items.c:1521:13: missed: statement clobbers memory: pthread_mutex_unlock (_2);
+items.c:1523:26: missed: not vectorized: volatile type: current_time.117_344 ={v} current_time;
+items.c:1524:13: missed: statement clobbers memory: pthread_mutex_lock (_345);
+items.c:1528:13: missed: statement clobbers memory: pthread_mutex_unlock (_345);
+items.c:1531:43: missed: not vectorized: volatile type: current_time.118_349 ={v} current_time;
+items.c:1538:9: missed: statement clobbers memory: lru_crawler_start (&todo, tocrawl_limit_355, 0, cdata_45, 0B, 0);
+items.c:1623:32: missed: not vectorized: volatile type: last_crawler_check_64 ={v} current_time;
+items.c:1571:12: missed: not vectorized: volatile type: do_run_lru_maintainer_thread.108_23 ={v} do_run_lru_maintainer_thread;
+items.c:540:5: missed: statement clobbers memory: __assert_fail ("(it->it_flags & ITEM_SLABBED) == 0", "items.c", 540, &__PRETTY_FUNCTION__);
+items.c:1547:14: missed: statement clobbers memory: do_item_remove.part.0 ();
+items.c:1626:5: missed: statement clobbers memory: pthread_mutex_unlock (&lru_maintainer_lock);
+items.c:1628:5: missed: statement clobbers memory: free (cdata_45);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fwrite ("LRU maintainer thread stopping\n", 1, 31, stderr.109_25);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fwrite ("Failed to allocate logger for LRU maintainer thread\n", 1, 52, stderr.104_3);
+items.c:1565:9: missed: statement clobbers memory: abort ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __builtin_fwrite ("Failed to allocate crawler data for LRU maintainer thread\n", 1, 58, stderr.103_1);
+items.c:1558:9: missed: statement clobbers memory: abort ();
+items.c:1535:42: note: ***** Analysis failed with vector mode V32QI
+items.c:1535:42: note: ***** The result for vector mode V32QI would be the same
+items.c:1535:42: note: ***** Re-trying analysis with vector mode V16QI
+items.c:1535:42: note: ***** Analysis failed with vector mode V16QI
+items.c:1535:42: note: ***** Re-trying analysis with vector mode V8QI
+items.c:1535:42: note: ***** Analysis failed with vector mode V8QI
+items.c:1535:42: note: ***** Re-trying analysis with vector mode V4QI
+items.c:1535:42: note: ***** Analysis failed with vector mode V4QI
+items.c:1269:23: missed: statement clobbers memory: b_8 = calloc (1, 72);
+items.c:1274:14: missed: statement clobbers memory: _1 = bipbuf_new (131072);
+items.c:1280:5: missed: statement clobbers memory: pthread_mutex_init (_3, 0B);
+items.c:1256:5: missed: statement clobbers memory: pthread_mutex_lock (&bump_buf_lock);
+items.c:1257:5: missed: statement clobbers memory: __assert_fail ("b != bump_buf_head", "items.c", 1257, &__PRETTY_FUNCTION__);
+items.c:1264:5: missed: statement clobbers memory: pthread_mutex_unlock (&bump_buf_lock);
+items.c:1276:9: missed: statement clobbers memory: free (b_8);
+items.c:1259:13: note: ***** Analysis failed with vector mode V4DI
+items.c:1259:13: note: ***** The result for vector mode V32QI would be the same
+items.c:1259:13: note: ***** Re-trying analysis with vector mode V16QI
+items.c:1259:13: note: ***** Analysis failed with vector mode V16QI
+items.c:1259:13: note: ***** Re-trying analysis with vector mode V8QI
+items.c:1259:13: note: ***** Analysis failed with vector mode V8QI
+items.c:1259:13: note: ***** Re-trying analysis with vector mode V4QI
+items.c:1259:13: note: ***** Analysis failed with vector mode V4QI
+items.c:1637:5: missed: statement clobbers memory: pthread_mutex_lock (&lru_maintainer_lock);
+items.c:1639:34: missed: not vectorized: volatile type: do_run_lru_maintainer_thread ={v} 0;
+items.c:1640:5: missed: statement clobbers memory: pthread_mutex_unlock (&lru_maintainer_lock);
+items.c:1641:16: missed: statement clobbers memory: ret_11 = pthread_join (lru_maintainer_tid.99_1, 0B);
+items.c:1642:9: missed: statement clobbers memory: _2 = strerror (ret_11);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __fprintf_chk (stderr.100_3, 2, "Failed to stop LRU maintainer thread: %s\n", _2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: note: ***** Analysis failed with vector mode V4DI
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+items.c:1652:5: missed: statement clobbers memory: pthread_mutex_lock (&lru_maintainer_lock);
+items.c:1653:34: missed: not vectorized: volatile type: do_run_lru_maintainer_thread ={v} 1;
+items.c:1655:16: missed: statement clobbers memory: ret_12 = pthread_create (&lru_maintainer_tid, 0B, lru_maintainer_thread, arg_10(D));
+items.c:1662:5: missed: statement clobbers memory: thread_setname (lru_maintainer_tid.102_3, "mc-lrumaint");
+items.c:1663:5: missed: statement clobbers memory: pthread_mutex_unlock (&lru_maintainer_lock);
+items.c:1657:9: missed: statement clobbers memory: _1 = strerror (ret_12);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:111:10: missed: statement clobbers memory: __fprintf_chk (stderr.101_2, 2, "Can\'t create LRU maintainer thread: %s\n", _1);
+items.c:1659:9: missed: statement clobbers memory: pthread_mutex_unlock (&lru_maintainer_lock);
+items.c:1659:9: note: ***** Analysis failed with vector mode V32QI
+items.c:1659:9: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+items.c:1670:5: missed: statement clobbers memory: pthread_mutex_lock (&lru_maintainer_lock);
+items.c:1671:1: note: ***** Analysis failed with vector mode VOID
+items.c:1674:5: missed: statement clobbers memory: pthread_mutex_unlock (&lru_maintainer_lock);
+items.c:1675:1: note: ***** Analysis failed with vector mode VOID
+items.c:1680:5: missed: statement clobbers memory: __assert_fail ("it->it_flags == 1", "items.c", 1680, &__PRETTY_FUNCTION__);
+items.c:1681:5: missed: statement clobbers memory: __assert_fail ("it->nbytes == 0", "items.c", 1681, &__PRETTY_FUNCTION__);
+items.c:1686:5: missed: statement clobbers memory: __assert_fail ("it != *tail", "items.c", 1686, &__PRETTY_FUNCTION__);
+items.c:1687:5: missed: statement clobbers memory: __assert_fail ("(*head && *tail) || (*head == 0 && *tail == 0)", "items.c", 1687, &__PRETTY_FUNCTION__);
+items.c:1691:9: missed: statement clobbers memory: __assert_fail ("it->prev->next == 0", "items.c", 1691, &__PRETTY_FUNCTION__);
+items.c:1689:14: note: ***** Analysis succeeded with vector mode V16HI
+items.c:1689:14: note: SLPing BB part
+items.c:1689:14: note: Costing subgraph: 
+items.c:1689:14: note: node 0x2e5eb0b8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:1689:14: note: op template: it_12(D)->next = 0B;
+items.c:1689:14: note: 	stmt 0 it_12(D)->next = 0B;
+items.c:1689:14: note: 	stmt 1 it_12(D)->prev = 0B;
+items.c:1689:14: note: 	children 0x2e5eb140
+items.c:1689:14: note: node (constant) 0x2e5eb140 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:1689:14: note: 	{ 0B, 0B }
+items.c:1689:14: note: Cost model analysis: 
+items.c:1689:14: note: Cost model analysis for part in loop 0:
+  Vector cost: 28
+  Scalar cost: 32
+items.c:1689:14: note: Basic block will be vectorized using SLP
+items.c:1689:14: optimized: basic block part vectorized using 16 byte vectors
+items.c:1689:14: note: Vectorizing SLP tree:
+items.c:1689:14: note: node 0x2e5eb0b8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:1689:14: note: op template: it_12(D)->next = 0B;
+items.c:1689:14: note: 	stmt 0 it_12(D)->next = 0B;
+items.c:1689:14: note: 	stmt 1 it_12(D)->prev = 0B;
+items.c:1689:14: note: 	children 0x2e5eb140
+items.c:1689:14: note: node (constant) 0x2e5eb140 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:1689:14: note: 	{ 0B, 0B }
+items.c:1689:14: note: ------>vectorizing SLP node starting from: it_12(D)->next = 0B;
+items.c:1689:14: note: vect_is_simple_use: operand 0B, type of def: constant
+items.c:1689:14: note: transform store. ncopies = 1
+items.c:1689:14: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: it_12(D)->next
+items.c:1689:14: note: created vectp.550_18
+items.c:1689:14: note: add new stmt: MEM <vector(2) long unsigned int> [(struct _stritem * *)vectp.550_18] = { 0, 0 };
+items.c:1689:14: note: vectorizing stmts using SLP.
+items.c:1689:14: note: ***** The result for vector mode V32QI would be the same
+items.c:1705:9: missed: statement clobbers memory: __assert_fail ("it->prev == 0", "items.c", 1705, &__PRETTY_FUNCTION__);
+items.c:1712:5: missed: statement clobbers memory: __assert_fail ("it->next != it", "items.c", 1712, &__PRETTY_FUNCTION__);
+items.c:1709:9: missed: statement clobbers memory: __assert_fail ("it->next == 0", "items.c", 1709, &__PRETTY_FUNCTION__);
+items.c:1713:5: missed: statement clobbers memory: __assert_fail ("it->prev != it", "items.c", 1713, &__PRETTY_FUNCTION__);
+items.c:1717:5: note: ***** Analysis failed with vector mode V32QI
+items.c:1717:5: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V32QI
+items.c:1724:5: missed: statement clobbers memory: __assert_fail ("it->it_flags == 1", "items.c", 1724, &__PRETTY_FUNCTION__);
+items.c:1725:5: missed: statement clobbers memory: __assert_fail ("it->nbytes == 0", "items.c", 1725, &__PRETTY_FUNCTION__);
+items.c:1742:5: missed: statement clobbers memory: __assert_fail ("it->prev != it", "items.c", 1742, &__PRETTY_FUNCTION__);
+items.c:1752:9: missed: statement clobbers memory: __assert_fail ("it->next != it", "items.c", 1752, &__PRETTY_FUNCTION__);
+items.c:1754:13: missed: statement clobbers memory: __assert_fail ("it->prev->next == it", "items.c", 1754, &__PRETTY_FUNCTION__);
+items.c:1770:5: missed: statement clobbers memory: __assert_fail ("it->next != it", "items.c", 1770, &__PRETTY_FUNCTION__);
+items.c:1771:5: missed: statement clobbers memory: __assert_fail ("it->prev != it", "items.c", 1771, &__PRETTY_FUNCTION__);
+items.c:1731:9: missed: statement clobbers memory: __assert_fail ("*head == it", "items.c", 1731, &__PRETTY_FUNCTION__);
+items.c:1734:13: missed: statement clobbers memory: __assert_fail ("it->next->prev == it", "items.c", 1734, &__PRETTY_FUNCTION__);
+items.c:1762:18: note: ***** Analysis succeeded with vector mode V16HI
+items.c:1762:18: note: SLPing BB part
+items.c:1762:18: note: Costing subgraph: 
+items.c:1762:18: note: node 0x2e5eb0b8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:1762:18: note: op template: it_29(D)->next = prephitmp_26;
+items.c:1762:18: note: 	stmt 0 it_29(D)->next = prephitmp_26;
+items.c:1762:18: note: 	stmt 1 it_29(D)->prev = _17;
+items.c:1762:18: note: 	children 0x2e5eb1c8
+items.c:1762:18: note: node (external) 0x2e5eb1c8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:1762:18: note: 	{ prephitmp_26, _17 }
+items.c:1762:18: note: Cost model analysis: 
+items.c:1762:18: note: Cost model analysis for part in loop 0:
+  Vector cost: 26
+  Scalar cost: 32
+items.c:1762:18: note: Basic block will be vectorized using SLP
+items.c:1762:18: optimized: basic block part vectorized using 16 byte vectors
+items.c:1762:18: note: Vectorizing SLP tree:
+items.c:1762:18: note: node 0x2e5eb0b8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+items.c:1762:18: note: op template: it_29(D)->next = prephitmp_26;
+items.c:1762:18: note: 	stmt 0 it_29(D)->next = prephitmp_26;
+items.c:1762:18: note: 	stmt 1 it_29(D)->prev = _17;
+items.c:1762:18: note: 	children 0x2e5eb1c8
+items.c:1762:18: note: node (external) 0x2e5eb1c8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+items.c:1762:18: note: 	{ prephitmp_26, _17 }
+items.c:1762:18: note: ------>vectorizing SLP node starting from: it_29(D)->next = prephitmp_26;
+items.c:1762:18: note: vect_is_simple_use: operand prephitmp_26->prev, type of def: internal
+items.c:1762:18: note: transform store. ncopies = 1
+items.c:1762:18: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: it_29(D)->next
+items.c:1762:18: note: created vectp.558_13
+items.c:1762:18: note: add new stmt: MEM <vector(2) long unsigned int> [(struct _stritem * *)vectp.558_13] = _15;
+items.c:1762:18: note: vectorizing stmts using SLP.
+items.c:1762:18: note: ***** The result for vector mode V32QI would be the same
