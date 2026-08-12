@@ -40,7 +40,8 @@ picture, then drill into a file below.
 ### External storage (partial - storage + bipbuffer done)
 - [storage.md](storage.md)
 - [bipbuffer.md](bipbuffer.md)
-- _pending: extstore.c, restart.c (summarized in ../submodules-overview.md)_
+- [restart.md](restart.md)
+- _pending: extstore.c (summarized in ../submodules-overview.md)_
 
 ### Platform privilege drop (complete)
 - [linux_priv.md](linux_priv.md)
@@ -51,7 +52,8 @@ picture, then drill into a file below.
 - [assoc.md](assoc.md)
 - [slabs.md](slabs.md)
 - [slab_automove.md](slab_automove.md)
-- _pending: crawler.c, slabs_mover.c, slab_automove_extstore.c (summarized in ../submodules-overview.md)_
+- [slab_automove_extstore.md](slab_automove_extstore.md)
+- _pending: crawler.c, slabs_mover.c (summarized in ../submodules-overview.md)_
 
 ### Logging / stats (partial)
 - [stats_prefix.md](stats_prefix.md)
