@@ -60,10 +60,11 @@ picture, then drill into a file below.
 - [stats_prefix.md](stats_prefix.md)
 - [logger.md](logger.md)
 
-### Protocol handling (critical path done)
+### Protocol handling (complete)
 - [proto_parser.md](proto_parser.md)
 - [proto_text.md](proto_text.md)
-- _pending: proto_bin.c (summarized in ../submodules-overview.md)_
+- [proto_bin.md](proto_bin.md)
+- [proto_proxy.md](proto_proxy.md)
 
 ### Proxy (in progress)
 Key distribution / hashing:
@@ -84,6 +85,10 @@ Config / request / inspection:
 - [proxy_config.md](proxy_config.md)
 - [proxy_request.md](proxy_request.md)
 - [proxy_inspector.md](proxy_inspector.md)
+- [proxy_mutator.md](proxy_mutator.md)
 
-- _pending: proto_proxy.c, proxy_network.c, proxy_mutator.c, proxy_lua.c,
-  proxy_luafgen.c, vendored mcmc.c (summarized in ../submodules-overview.md)_
+Backend network (integration in [proto_proxy.md](proto_proxy.md)):
+- [proxy_network.md](proxy_network.md)
+
+- _pending: proxy_lua.c, proxy_luafgen.c, vendored mcmc.c
+  (summarized in ../submodules-overview.md)_
