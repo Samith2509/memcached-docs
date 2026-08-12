@@ -41,7 +41,7 @@ picture, then drill into a file below.
 - [storage.md](storage.md)
 - [bipbuffer.md](bipbuffer.md)
 - [restart.md](restart.md)
-- _pending: extstore.c (summarized in ../submodules-overview.md)_
+- [extstore.md](extstore.md)
 
 ### Platform privilege drop (complete)
 - [linux_priv.md](linux_priv.md)
@@ -53,11 +53,12 @@ picture, then drill into a file below.
 - [slabs.md](slabs.md)
 - [slab_automove.md](slab_automove.md)
 - [slab_automove_extstore.md](slab_automove_extstore.md)
-- _pending: crawler.c, slabs_mover.c (summarized in ../submodules-overview.md)_
+- [crawler.md](crawler.md)
+- [slabs_mover.md](slabs_mover.md)
 
-### Logging / stats (partial)
+### Logging / stats (complete)
 - [stats_prefix.md](stats_prefix.md)
-- _pending: logger.c (summarized in ../submodules-overview.md)_
+- [logger.md](logger.md)
 
 ### Protocol handling (critical path done)
 - [proto_parser.md](proto_parser.md)
@@ -75,6 +76,10 @@ Lua-exposed helpers:
 - [proxy_ratelim.md](proxy_ratelim.md)
 - [proxy_result.md](proxy_result.md)
 
-- _pending: proto_proxy.c, proxy_config.c, proxy_internal.c, proxy_inspector.c,
-  proxy_request.c, proxy_network.c, proxy_mutator.c, proxy_tls.c, proxy_lua.c,
-  proxy_luafgen.c, vendored mcmc.c (summarized in ../submodules-overview.md)_
+Execution / backends:
+- [proxy_internal.md](proxy_internal.md)
+- [proxy_tls.md](proxy_tls.md)
+
+- _pending: proto_proxy.c, proxy_config.c, proxy_inspector.c, proxy_request.c,
+  proxy_network.c, proxy_mutator.c, proxy_lua.c, proxy_luafgen.c, vendored mcmc.c
+  (summarized in ../submodules-overview.md)_
