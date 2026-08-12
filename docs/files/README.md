@@ -27,7 +27,7 @@ picture, then drill into a file below.
 - [md5.md](md5.md)
 - [sasl_defs.md](sasl_defs.md)
 - [authfile.md](authfile.md)
-- _pending: tls.c (summarized in ../submodules-overview.md)_
+- [tls.md](tls.md)
 
 ### Core server / event loop (critical path done)
 - [memcached.md](memcached.md)
@@ -80,6 +80,10 @@ Execution / backends:
 - [proxy_internal.md](proxy_internal.md)
 - [proxy_tls.md](proxy_tls.md)
 
-- _pending: proto_proxy.c, proxy_config.c, proxy_inspector.c, proxy_request.c,
-  proxy_network.c, proxy_mutator.c, proxy_lua.c, proxy_luafgen.c, vendored mcmc.c
-  (summarized in ../submodules-overview.md)_
+Config / request / inspection:
+- [proxy_config.md](proxy_config.md)
+- [proxy_request.md](proxy_request.md)
+- [proxy_inspector.md](proxy_inspector.md)
+
+- _pending: proto_proxy.c, proxy_network.c, proxy_mutator.c, proxy_lua.c,
+  proxy_luafgen.c, vendored mcmc.c (summarized in ../submodules-overview.md)_
