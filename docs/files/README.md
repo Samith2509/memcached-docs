@@ -9,6 +9,11 @@ Each file here documents one memcached C source file at four levels:
 Start with `../architecture.md` and `../submodules-overview.md` for the big
 picture, then drill into a file below.
 
+**Status: complete.** Every built C source file now has an L1-L4 document. The
+four platform privilege-drop files (darwin/freebsd/openbsd/solaris_priv.c) are
+documented together in `platform_priv_other.md` since only one compiles per
+target; the vendored client library is documented in `mcmc.md`.
+
 ## Status by subsystem
 
 ### Hashing / checksums (complete)
@@ -90,5 +95,12 @@ Config / request / inspection:
 Backend network (integration in [proto_proxy.md](proto_proxy.md)):
 - [proxy_network.md](proxy_network.md)
 
-- _pending: proxy_lua.c, proxy_luafgen.c, vendored mcmc.c
-  (summarized in ../submodules-overview.md)_
+Lua API + route execution engine:
+- [proxy_lua.md](proxy_lua.md)
+- [proxy_luafgen.md](proxy_luafgen.md)
+
+Vendored client library (used to talk to backends):
+- [mcmc.md](mcmc.md)
+
+### Test harness (complete)
+- [testapp.md](testapp.md)
