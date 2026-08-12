@@ -24,7 +24,10 @@ picture, then drill into a file below.
 
 ### Crypto / auth / TLS (partial - base64 done)
 - [base64.md](base64.md)
-- _pending: tls.c, md5.c, sasl_defs.c, authfile.c (summarized in ../submodules-overview.md)_
+- [md5.md](md5.md)
+- [sasl_defs.md](sasl_defs.md)
+- [authfile.md](authfile.md)
+- _pending: tls.c (summarized in ../submodules-overview.md)_
 
 ### Core server / event loop (critical path done)
 - [memcached.md](memcached.md)
@@ -59,5 +62,17 @@ picture, then drill into a file below.
 - [proto_text.md](proto_text.md)
 - _pending: proto_bin.c (summarized in ../submodules-overview.md)_
 
-### Proxy (pending)
-- _pending: proto_proxy.c and all proxy_*.c, vendored mcmc.c_
+### Proxy (in progress)
+Key distribution / hashing:
+- [proxy_xxhash.md](proxy_xxhash.md)
+- [proxy_jump_hash.md](proxy_jump_hash.md)
+- [proxy_ring_hash.md](proxy_ring_hash.md)
+
+Lua-exposed helpers:
+- [proxy_ustats.md](proxy_ustats.md)
+- [proxy_ratelim.md](proxy_ratelim.md)
+- [proxy_result.md](proxy_result.md)
+
+- _pending: proto_proxy.c, proxy_config.c, proxy_internal.c, proxy_inspector.c,
+  proxy_request.c, proxy_network.c, proxy_mutator.c, proxy_tls.c, proxy_lua.c,
+  proxy_luafgen.c, vendored mcmc.c (summarized in ../submodules-overview.md)_
